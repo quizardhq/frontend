@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,7 +12,7 @@
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: "Poppins", -apple-system, sans-serif;
+  font-family: 'Poppins', -apple-system, sans-serif;
 }
 
 a {
@@ -16,3 +20,8 @@ a {
   text-decoration: none;
 }
 
+.header {
+  font-size: 4rem;
+  background: linear-gradient(to right, blue, transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
