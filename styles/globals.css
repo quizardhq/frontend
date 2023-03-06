@@ -22,6 +22,5 @@ a {
 
 .header {
   font-size: 4rem;
-  background: linear-gradient(to right, blue, transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+  /* background: url(https://grainy-gradients.vercel.app/noise.svg); */
 }
