@@ -1,6 +1,5 @@
 import '@/styles/globals.css';
 import Head from 'next/head';
-import { Fragment } from 'react';
 import { Poppins } from '@next/font/google';
 
 const poppins = Poppins({
@@ -11,19 +10,17 @@ const poppins = Poppins({
 
 export default function App({ Component, pageProps }) {
   return (
-    <Fragment>
-      <div className={poppins.className}>
-        <Head>
-          <title>Quizard</title>
-          <meta
-            name="Students aids"
-            content="Created by Quizard Open Source team"
-          />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Component {...pageProps} />
-      </div>
-    </Fragment>
+    <div className={poppins.className}>
+      <Head>
+        <title>Quizard</title>
+        <meta
+          name="Students aids"
+          content="Created by Quizard Open Source team"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Component {...pageProps} />
+    </div>
   );
 }
