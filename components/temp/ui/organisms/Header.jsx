@@ -15,7 +15,10 @@ export default function Header() {
           <div>About us</div>
           <div>FAQ</div>
           <div>
-            <button className="bg-[#00ED85] text-[#00391B] px-4 py-3 rounded-md">
+            <button
+              type="button"
+              className="bg-[#00ED85] text-[#00391B] px-4 py-3 rounded-md"
+            >
               JOIN THE WAITLIST
             </button>
           </div>
