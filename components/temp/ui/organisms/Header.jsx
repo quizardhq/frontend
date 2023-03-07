@@ -3,7 +3,7 @@ import React from 'react';
 export default function Header() {
   return (
     <header className="bg-[#C4FBDD] bg-[url(/assets/noise.svg)] px-32 py-5 sticky top-0">
-      <div className="max-w-7xl flex justify-between items-center text-[#00391B] font-medium">
+      <div className="max-w-7xl mx-auto flex justify-between items-center text-[#00391B] font-medium">
         {/* Logo */}
         <div>
           <img src="/assets/logo-full.svg" alt="Quizard logo" />
