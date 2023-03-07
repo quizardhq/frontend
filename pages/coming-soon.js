@@ -1,4 +1,4 @@
-import HomeLayout from '@/components/temp/layouts/HomeLayout';
+import HomeLayout from '@/layouts/HomeLayout';
 
 export default function ComingSoon() {
   return (
