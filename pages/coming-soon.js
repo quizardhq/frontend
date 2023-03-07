@@ -28,17 +28,14 @@ export default function ComingSoon() {
             {/* Waitlist form */}
             <div className="max-w-md">
               <form>
-                <label
-                  htmlFor="waitlistEmail"
-                  className="text-sm text-[#00391B]"
-                >
+                <div className="text-sm text-[#00391B]">
                   Join the waitlist to get notified when we launch
-                </label>
+                </div>
                 <div className="w-full flex border border-[#00A65B] rounded-md p-1">
                   <input
                     type="email"
-                    name="waitlistEmail"
-                    id="waitlistEmail"
+                    name="waitlist_email"
+                    id="waitlist_email"
                     placeholder="Email address"
                     className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
                   />
