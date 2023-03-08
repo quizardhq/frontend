@@ -1,5 +1,5 @@
 import HomeLayout from '@/layouts/HomeLayout';
-import Button from "@/components/btn/Button";
+import Button from '@/components/btn/Button';
 
 export default function ComingSoon() {
   return (
@@ -41,10 +41,10 @@ export default function ComingSoon() {
                     className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
                   />
                   <Button
-                    type="submit"
+                    submit
                     text="Join"
                     className="bg-[#00ED85] text-[#006D3A] px-8 py-3 rounded-md"
-                 />
+                  />
                 </div>
               </form>
             </div>
