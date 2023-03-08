@@ -1,9 +1,10 @@
 import HomeLayout from '@/components/temp/layouts/HomeLayout';
+import Button from '@/components/temp/btn/Button';
 
 export default function ComingSoon() {
   return (
     <HomeLayout>
-      <div>Coming soon</div>
+      <Button type="submit" text="Coming Soon" />
     </HomeLayout>
   );
 }
