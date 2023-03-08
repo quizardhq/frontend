@@ -19,3 +19,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.primary-btn {
+  @apply bg-[#00ED85] px-8 py-3 rounded-md;
+}
+
+.secondary-btn {
+  @apply border border-[#00ED85] text-[#006D3A] px-8 py-3 rounded-md;
+}

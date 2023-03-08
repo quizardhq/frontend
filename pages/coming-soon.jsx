@@ -1,5 +1,5 @@
 import HomeLayout from '@/layouts/HomeLayout';
-import Button from '@/components/btn/Button';
+import Button from '@/components/ui/atoms/btn/Button';
 
 export default function ComingSoon() {
   return (
@@ -43,7 +43,7 @@ export default function ComingSoon() {
                   <Button
                     submit
                     text="Join"
-                    className="bg-[#00ED85] text-[#006D3A] px-8 py-3 rounded-md"
+                    className="primary-btn text-[#006D3A]"
                   />
                 </div>
               </form>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@/components/btn/Button';
+import Button from '@/components/ui/atoms/btn/Button';
 
 export default function Header() {
   return (
@@ -18,7 +18,7 @@ export default function Header() {
           <div>
             <Button
               submit
-              className="bg-[#00ED85] text-[#00391B] px-4 py-3 rounded-md"
+              className="primary-btn text-[#00391B]"
               text="JOIN THE WAITLIST"
             />
           </div>
