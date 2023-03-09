@@ -1,9 +1,8 @@
-import HomeLayout from '@/layouts/HomeLayout';
-import Button from '@/components/ui/atoms/btn/Button';
+import Button from '../atoms/btn/Button';
 
 export default function ComingSoon() {
   return (
-    <HomeLayout>
+    <>
       {/* --- Hero Section --- */}
       <section className="p-5 lg:px-32 lg:py-20 bg-[url(/assets/waves.svg)] bg-no-repeat bg-bottom bg-cover min-h-screen">
         <div className="max-w-7xl mx-auto grid gap-5 lg:grid-cols-2 items-center">
@@ -51,6 +50,6 @@ export default function ComingSoon() {
           </div>
         </div>
       </section>
-    </HomeLayout>
+    </>
   );
 }

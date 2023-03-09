@@ -1,9 +1,10 @@
+import ComingSoon from '@/components/ui/organisms/ComingSoon';
+import HomeLayout from '@/layouts/HomeLayout';
+
 export default function Home() {
   return (
-    <main>
-      <div>
-        <h1>Hello World</h1>
-      </div>
-    </main>
+    <HomeLayout>
+      <ComingSoon />
+    </HomeLayout>
   );
 }
