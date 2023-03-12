@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo '🏗️👷 Running checks on your code before committing'🔍🧐
+echo '🏗️👷 Running checks on your code before committing' 🔍🧐
 
 npx lint-staged
 
@@ -20,4 +20,4 @@ npx lint-staged
 # )
 
 # If everything passes... Now we can commit
-echo '✅✅ Awesome!... I am committing this now.✅✅'
+echo '✅✅ Awesome!... I am committing this now. ✅✅'
