@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+npx lint-staged
+
 echo '🏗️👷 Running checks on your code before committing'🔍🧐
 
 # Check Prettier standards
