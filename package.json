@@ -30,9 +30,9 @@
     "prettier": "^2.8.4"
   },
   "lint-staged": {
-    "**/*.{js,jsx}": [
-      "eslint . --fix",
-      "prettier --write ."
+    "*": [
+      "yarn format .",
+      "yarn lint ."
     ]
   }
 }
