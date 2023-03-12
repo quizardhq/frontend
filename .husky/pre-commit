@@ -5,4 +5,4 @@ echo '🏗️👷 Running checks on your code before committing' 🔍🧐
 
 npx lint-staged
 
-echo '✅✅ Awesome work! ✅✅'
+echo '✅✅ Awesome work! Run `git push` to upload your changes to the remote repository ✅✅'
