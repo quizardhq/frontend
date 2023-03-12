@@ -1,16 +1,15 @@
 import '@/styles/globals.css';
 import Head from 'next/head';
-import { Poppins } from '@next/font/google';
+import localFont from '@next/font/local';
 
-const poppins = Poppins({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
+const mena = localFont({
+  src: '../fonts/MenaGrotesk-Regular.woff2',
+  variable: '--mena-grotesk',
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={poppins.className}>
+    <div className={`${mena.variable} font-sans`}>
       <Head>
         <title>Quizard</title>
         <meta
@@ -18,7 +17,7 @@ export default function App({ Component, pageProps }) {
           content="Created by Quizard Open Source team"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/quizzard.ico" />
+        <link rel="icon" href="/assets/quizzard.ico" />
       </Head>
       <Component {...pageProps} />
     </div>
