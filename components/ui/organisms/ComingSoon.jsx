@@ -5,7 +5,7 @@ export default function ComingSoon() {
     <>
       {/* --- Hero Section --- */}
       <section className="p-5 lg:px-32 lg:py-20 bg-[url(/assets/waves.svg)] bg-no-repeat bg-bottom bg-cover min-h-screen">
-        <div className="max-w-7xl mx-auto grid gap-5 lg:grid-cols-2 items-center">
+        <div className="max-w-7xl mx-auto grid gap-20 lg:grid-cols-2 items-center">
           {/* Illustration */}
           <div className="w-full lg:order-2">
             <img
@@ -17,8 +17,9 @@ export default function ComingSoon() {
 
           {/* Content */}
           <div className="grid gap-5 text-center lg:text-left">
-            <h1 className="font-semibold text-3xl lg:text-5xl leading-snug text-[#00391B]">
-              Engage & Interact with your Audience
+            <h1 className="font-semibold text-3xl leading-snug lg:text-5xl lg:leading-snug text-[#00391B]">
+              <div>Engage & Interact</div>
+              <div>with your Audience</div>
             </h1>
             <p className="text-base lg:text-2xl font-light text-[#00210E]">
               Quizard is an all-in-one platform for engaging your audience with
