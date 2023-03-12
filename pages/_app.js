@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
           content="Created by Quizard Open Source team"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/quizzard.ico" />
       </Head>
       <Component {...pageProps} />
     </div>
