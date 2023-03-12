@@ -8,7 +8,9 @@
     "linebreak-style": "off",
     "react/no-unescaped-entities": "off",
     "react-hooks/exhaustive-deps": "off",
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }
 
