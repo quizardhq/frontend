@@ -1,4 +1,21 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn pre-commit
+echo '🏗️👷 Running checks on your code before committing'🔍🧐
+
+# Check Prettier standards
+yarn format:check || (
+  echo '🤨 It seems you did not format your code with Prettier.
+  Run yarn format, add changes and try to commit again.';
+  false;
+)
+
+# Check ESLint standards
+yarn lint || (
+  echo '🤔 There are linting errors in your code. 👾
+  Please fix them now, add changes and try to commit again.';
+  false;
+)
+
+# If everything passes... Now we can commit
+echo '✅✅ Awesome!... I am committing this now.✅✅'

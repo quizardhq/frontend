@@ -2,7 +2,7 @@
 
 This repository contains the Frontend source code for quizard app.
 
-## Getting Started 
+## Getting Started
 
 This guide assumed you have NodeJS 16+ installed on your pc.
 
@@ -18,7 +18,7 @@ Use the content of .env.example to create a .env file. Alternatively, you can ru
 cp .env.example .env
 ```
 
-### Install all dependencies 
+### Install all dependencies
 
 ```bash
 # using npm
@@ -51,7 +51,6 @@ To learn more about Next.js, take a look at the following resources:
 ## Project Scope
 
 ### quizard-documentation
-
 
 Welcome to Quizard, an open-source alternative platform for creating and playing interactive quizzes and games.
 
