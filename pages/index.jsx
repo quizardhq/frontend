@@ -8,5 +8,3 @@ export default function Home() {
     </HomeLayout>
   );
 }
-
-const test = 'whoopee';
