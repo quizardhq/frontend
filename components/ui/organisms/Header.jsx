@@ -13,7 +13,7 @@ export default function Header() {
         {/* Nav */}
         <nav className="hidden lg:flex space-x-5 items-center text-[#00210E]">
           <div>Features</div>
-          <div>About us</div>
+          <div>About Us</div>
           <div>FAQ</div>
           <div>
             <Button
