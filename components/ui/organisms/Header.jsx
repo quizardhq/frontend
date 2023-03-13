@@ -11,14 +11,14 @@ export default function Header() {
         </div>
 
         {/* Nav */}
-        <nav className="hidden lg:flex space-x-5 items-center text-[#00210E]">
+        <nav className="hidden lg:flex font-medium space-x-5 items-center text-[#00210E]">
           <div>Features</div>
           <div>About Us</div>
           <div>FAQ</div>
           <div>
             <Button
               submit
-              className="primary-btn text-[#00391B]"
+              className="primary-btn text-[#00391B] font-medium"
               text="JOIN THE WAITLIST"
             />
           </div>
