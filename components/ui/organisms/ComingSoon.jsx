@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Button from '../atoms/btn/Button';
-import IpadPreview from '/public/assets/Wireframe/Mockups.svg';
+import IpadPreview from '../../../public/assets/Wireframe/Mockups.svg';
 
 export default function ComingSoon() {
   return (
@@ -15,7 +15,7 @@ export default function ComingSoon() {
               // width={3000}
               // height={3000}
               alt="Quizard game play"
-              src={IpadPreview} //TODO: replace with a better cropped image
+              src={IpadPreview} //  TODO: replace with a better cropped image
               style={{
                 maxWidth: '100%',
                 height: '100%',
