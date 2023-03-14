@@ -3,7 +3,7 @@
 
 echo '🏗️👷 Running checks on your code before committing' 🔍🧐
 
-yarn lint
+npx lint-staged
 
 echo '✅✅ Awesome work! ✅✅'
 echo '🚀⛅ Run git push to upload your changes to the remote repository ⛅🚀'

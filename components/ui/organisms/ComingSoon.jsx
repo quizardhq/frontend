@@ -14,7 +14,7 @@ export default function ComingSoon() {
               priority
               // width={3000}
               // height={3000}
-              alt="Quizard game play"
+              alt="A mobile phone and tablet each showing a Quizard game session"
               src={IpadPreview} //  TODO: replace with a better cropped image
               style={{
                 maxWidth: '100%',
