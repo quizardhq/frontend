@@ -6,7 +6,7 @@ export default function ComingSoon() {
   return (
     <>
       {/* --- Hero Section --- */}
-      <section className="p-5 lg:px-32 lg:py-20 bg-[url(/assets/waves.png.svg)] bg-no-repeat bg-bottom bg-cover min-h-screen">
+      <section className="p-5 lg:px-32 lg:pt-20 lg:pb-40 bg-[url(/assets/waves.png.svg)] bg-no-repeat bg-bottom bg-cover">
         <div className="max-w-7xl mx-auto grid gap-20 lg:grid-cols-2 items-center">
           {/* Illustration */}
           <div className="w-full h-full lg:order-2">
