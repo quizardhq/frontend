@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format": "prettier --write",
+    "format:check": "prettier --check"
   },
   "dependencies": {
     "@next/font": "^13.1.2",
@@ -30,7 +30,7 @@
     "prettier": "^2.8.4"
   },
   "lint-staged": {
-    "*": [
+    "**/*.{js,jsx,css}": [
       "yarn format .",
       "yarn lint ."
     ]
