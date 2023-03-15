@@ -56,50 +56,56 @@ export default function ComingSoon() {
               priority
               alt="A mobile phone and tablet each showing a Quizard game session"
               src={GamePreviewImage}
+              className="w-full"
             />
           </div>
         </div>
       </section>
 
       {/* What is Quizard */}
-      <section className="p-5 lg:py-12">
-        {/* Section Title */}
-        <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
-          What is Quizard
-        </div>
-
-        {/* Section Content */}
-        <div className="grid gap-5">
-          {/* Illustration */}
-          <div>
-            <Image
-              src={GroupDiscussion}
-              alt="A vector illustration showing five people discussing"
-            />
+      <section className="p-5 lg:py-12 lg:px-32">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Title */}
+          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
+            What is Quizard
           </div>
 
-          {/* Divider */}
-          <Divider />
+          {/* Section Content */}
+          <div className="grid gap-5 lg:grid-cols-5 items-center">
+            {/* Illustration */}
+            <div className="lg:col-span-2">
+              <Image
+                src={GroupDiscussion}
+                alt="A vector illustration showing five people discussing"
+                className="w-full"
+              />
+            </div>
 
-          {/* Content */}
-          <div className="text-[#00522A] text-sm grid gap-5">
-            <p>
-              Quizard is an all-in-one platform for interactive quizzes that
-              makes it easy for you to engage your audience and collect valuable
-              feedback.
-            </p>
-            <p>
-              It is perfect for hosting interactive quiz games at events, being
-              it for techies or just a birthday party, corporate gathering, or
-              just hanging out with friends. An ultimate quiz platform for
-              proving who's the smartest in the room.
-            </p>
-            <p>
-              And guess what? It is open source, which means it's customizable,
-              flexible, and has a rebellious streak a mile wide. We are
-              currently working on V1 focusing on basics of creating and hosting
-              games.
-            </p>
+            <div className="flex flex-col space-y-5 lg:flex-row lg:col-span-3">
+              {/* Divider */}
+              <Divider />
+
+              {/* Content */}
+              <div className="text-[#00522A] text-sm lg:text-xl grid gap-5">
+                <p>
+                  Quizard is an all-in-one platform for interactive quizzes that
+                  makes it easy for you to engage your audience and collect
+                  valuable feedback.
+                </p>
+                <p>
+                  It is perfect for hosting interactive quiz games at events,
+                  being it for techies or just a birthday party, corporate
+                  gathering, or just hanging out with friends. An ultimate quiz
+                  platform for proving who's the smartest in the room.
+                </p>
+                <p>
+                  And guess what? It is open source, which means it's
+                  customizable, flexible, and has a rebellious streak a mile
+                  wide. We are currently working on V1 focusing on basics of
+                  creating and hosting games.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
