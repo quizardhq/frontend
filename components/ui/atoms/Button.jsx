@@ -1,8 +1,8 @@
-export default function Button({ text, submit, className }) {
+export default function Button({ children, submit, className }) {
   return (
     <div>
       <button type={submit ? 'submit' : 'button'} className={className}>
-        {text}
+        {children}
       </button>
     </div>
   );
