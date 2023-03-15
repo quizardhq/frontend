@@ -127,19 +127,19 @@ export default function ComingSoon() {
           {/* Section Content */}
           <div className="grid gap-5">
             {/* Feature One */}
-            <div>
-              <div className="p-5 border-t border-x border-[#5DFF9E] rounded-t-lg">
+            <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
+              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
                 <Image
                   src={InteractiveSessions}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] rounded-b-lg bg-[#EAFFEB]">
-                <div className="font-medium text-2xl mb-2">
+              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-medium text-2xl lg:text-4xl mb-2">
                   Interactive Sessions
                 </div>
-                <div className="text-sm">
+                <div className="text-sm lg:text-2xl">
                   Engage your audience with interactive questions that include
                   multiple-choice, true/false, and open-ended responses.
                 </div>
@@ -147,19 +147,19 @@ export default function ComingSoon() {
             </div>
 
             {/* Feature Two */}
-            <div>
-              <div className="p-5 border-t border-x border-[#5DFF9E] rounded-t-lg">
+            <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
+              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
                 <Image
                   src={RealtimeResults}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] rounded-b-lg bg-[#EAFFEB]">
-                <div className="font-medium text-2xl mb-2">
+              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-medium text-2xl lg:text-4xl mb-2">
                   Real-time Results
                 </div>
-                <div className="text-sm">
+                <div className="text-sm lg:text-2xl">
                   See results in real-time as users complete your quizzes,
                   surveys, and polls.
                 </div>
@@ -167,17 +167,19 @@ export default function ComingSoon() {
             </div>
 
             {/* Feature Three */}
-            <div>
-              <div className="p-5 border-t border-x border-[#5DFF9E] rounded-t-lg">
+            <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
+              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
                 <Image
                   src={EasySharing}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] rounded-b-lg bg-[#EAFFEB]">
-                <div className="font-medium text-2xl mb-2">Easy Sharing</div>
-                <div className="text-sm">
+              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-medium text-2xl lg:text-4xl mb-2">
+                  Easy Sharing
+                </div>
+                <div className="text-sm lg:text-2xl">
                   Share your quizzes on social media, email, and other platforms
                   with just a few clicks.
                 </div>
