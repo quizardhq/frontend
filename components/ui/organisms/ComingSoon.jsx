@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { GamePreviewImage, GroupDiscussion } from '@/components/assets';
 import Button from '../atoms/Button';
+import Divider from '../atoms/Divider';
 
 export default function ComingSoon() {
   return (
@@ -76,6 +77,9 @@ export default function ComingSoon() {
               alt="A vector illustration showing five people discussing"
             />
           </div>
+
+          {/* Divider */}
+          <Divider />
 
           {/* Content */}
           <div className="text-[#00522A] text-sm grid gap-5">
