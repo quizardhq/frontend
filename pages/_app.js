@@ -28,7 +28,7 @@ const mena = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={`${mena.variable} font-sans`}>
+    <div className={`${mena.variable} font-sans bg-[#F5FFF3]`}>
       <Head>
         <title>Quizard - Engage and Interact with your Audience</title>
         <meta
