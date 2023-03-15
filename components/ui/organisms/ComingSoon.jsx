@@ -1,42 +1,35 @@
 import Image from 'next/image';
-import Button from '../atoms/btn/Button';
-import IpadPreview from '../../../public/assets/Wireframe/Mockups.svg';
+import { GamePreviewImage, GroupDiscussion } from '@/components/assets';
+import Button from '../atoms/Button';
 
 export default function ComingSoon() {
   return (
     <>
       {/* --- Hero Section --- */}
-      <section className="p-5 lg:px-32 lg:pt-20 lg:pb-40 bg-[url(/assets/waves.png.svg)] bg-no-repeat bg-bottom bg-cover">
-        <div className="max-w-7xl mx-auto grid gap-20 lg:grid-cols-2 items-center">
-          {/* Illustration */}
-          <div className="w-full h-full lg:order-2">
-            <Image
-              priority
-              // width={3000}
-              // height={3000}
-              alt="A mobile phone and tablet each showing a Quizard game session"
-              src={IpadPreview} //  TODO: replace with a better cropped image
-              style={{
-                maxWidth: '100%',
-                height: '100%',
-              }}
-            />
-          </div>
-
+      <section className="p-5 lg:px-32 lg:pt-20 lg:pb-40 bg-[url(/assets/waves.svg)] bg-no-repeat bg-bottom bg-cover">
+        <div className="max-w-7xl mx-auto grid gap-10 lg:gap-20 lg:grid-cols-2 items-center">
           {/* Content */}
-          <div className="grid gap-5 text-center lg:text-left">
+          <div className="grid gap-5">
             <h1 className="text-3xl leading-snug lg:text-5xl lg:leading-[1.1] text-[#00391B] font-bold">
               <div>Engage & Interact</div>
               <div>with your Audience</div>
             </h1>
-            <p className="mb-6 text-base lg:text-xl font-thin text-[#00210E]">
+            <p className="mb-6 lg:text-xl text-[#00210E]">
               Quizard is an all-in-one platform for engaging your audience with
               interactive quiz sessions and collect valuable results/feedback.
             </p>
 
             {/* Waitlist form */}
             <div className="max-w-md">
-              <form>
+              {/* On Mobile view */}
+              <div className="lg:hidden">
+                <Button className="primary-btn text-[#00210E]">
+                  JOIN THE WAITLIST
+                </Button>
+              </div>
+
+              {/* On Desktop view */}
+              <form className="hidden lg:block">
                 <div className="text-sm font-light mb-2 text-[#00391B]">
                   Join the waitlist to get notified when we launch
                 </div>
@@ -48,14 +41,55 @@ export default function ComingSoon() {
                     placeholder="Email address"
                     className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
                   />
-                  <Button
-                    submit
-                    text="Join"
-                    className="primary-btn text-[#00210E]"
-                  />
+                  <Button submit className="primary-btn text-[#00210E]">
+                    Join
+                  </Button>
                 </div>
               </form>
             </div>
+          </div>
+
+          {/* Illustration */}
+          <div>
+            <Image
+              priority
+              alt="A mobile phone and tablet each showing a Quizard game session"
+              src={GamePreviewImage}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* What is Quizard */}
+      <section className="p-5 lg:py-12">
+        {/* Section Title */}
+        <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B]">
+          What is Quizard
+        </div>
+
+        {/* Section Content */}
+        <div>
+          {/* Illustration */}
+          <div>
+            <Image
+              src={GroupDiscussion}
+              alt="A vector illustration showing five people discussing"
+            />
+          </div>
+
+          {/* Content */}
+          <div>
+            <p>
+              Quizard is an all-in-one platform for interactive quizzes that
+              makes it easy for you to engage your audience and collect valuable
+              feedback... With Quizard, you'll be able to create custom quizzes
+              tailored to your specific needs in just a few clicks.
+            </p>
+            <p>
+              Whether you're looking to engage your audience at your next event,
+              assess your employees' skills, gather customer feedback, or simply
+              entertain your friends and family, Quizard has you covered.
+            </p>
           </div>
         </div>
       </section>
