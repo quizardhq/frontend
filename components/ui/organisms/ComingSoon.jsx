@@ -1,5 +1,11 @@
 import Image from 'next/image';
-import { GamePreviewImage, GroupDiscussion } from '@/components/assets';
+import {
+  EasySharing,
+  GamePreviewImage,
+  GroupDiscussion,
+  InteractiveSessions,
+  RealtimeResults,
+} from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
 
@@ -62,7 +68,7 @@ export default function ComingSoon() {
         </div>
       </section>
 
-      {/* What is Quizard */}
+      {/* --- What is Quizard --- */}
       <section className="p-5 lg:py-12 lg:px-32">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
@@ -104,6 +110,77 @@ export default function ComingSoon() {
                   wide. We are currently working on V1 focusing on basics of
                   creating and hosting games.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- Features --- */}
+      <section className="p-5 lg:py-12 lg:px-32">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Title */}
+          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
+            Features
+          </div>
+
+          {/* Section Content */}
+          <div className="grid gap-5">
+            {/* Feature One */}
+            <div>
+              <div className="p-5 border-t border-x border-[#5DFF9E] rounded-t-lg">
+                <Image
+                  src={InteractiveSessions}
+                  alt="A vector illustration showing five people discussing"
+                  className="w-full"
+                />
+              </div>
+              <div className="text-[#00522A] p-2 border border-[#5DFF9E] rounded-b-lg bg-[#EAFFEB]">
+                <div className="font-medium text-2xl mb-2">
+                  Interactive Sessions
+                </div>
+                <div className="text-sm">
+                  Engage your audience with interactive questions that include
+                  multiple-choice, true/false, and open-ended responses.
+                </div>
+              </div>
+            </div>
+
+            {/* Feature Two */}
+            <div>
+              <div className="p-5 border-t border-x border-[#5DFF9E] rounded-t-lg">
+                <Image
+                  src={RealtimeResults}
+                  alt="A vector illustration showing five people discussing"
+                  className="w-full"
+                />
+              </div>
+              <div className="text-[#00522A] p-2 border border-[#5DFF9E] rounded-b-lg bg-[#EAFFEB]">
+                <div className="font-medium text-2xl mb-2">
+                  Real-time Results
+                </div>
+                <div className="text-sm">
+                  See results in real-time as users complete your quizzes,
+                  surveys, and polls.
+                </div>
+              </div>
+            </div>
+
+            {/* Feature Three */}
+            <div>
+              <div className="p-5 border-t border-x border-[#5DFF9E] rounded-t-lg">
+                <Image
+                  src={EasySharing}
+                  alt="A vector illustration showing five people discussing"
+                  className="w-full"
+                />
+              </div>
+              <div className="text-[#00522A] p-2 border border-[#5DFF9E] rounded-b-lg bg-[#EAFFEB]">
+                <div className="font-medium text-2xl mb-2">Easy Sharing</div>
+                <div className="text-sm">
+                  Share your quizzes on social media, email, and other platforms
+                  with just a few clicks.
+                </div>
               </div>
             </div>
           </div>
