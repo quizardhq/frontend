@@ -30,11 +30,48 @@ export default function App({ Component, pageProps }) {
   return (
     <div className={`${mena.variable} font-sans`}>
       <Head>
-        <title>Quizard</title>
+        <title>Quizard - Engage and Interact with your Audience</title>
         <meta
-          name="Students aids"
-          content="Created by Quizard Open Source team"
+          name="title"
+          content="Quizard - Engage and Interact with your Audience"
         />
+        <meta
+          name="description"
+          content="Quizard is an all-in-one platform for engaging your audience with interactive quiz sessions"
+        />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://quizard-frontend.vercel.app/"
+        />
+        <meta
+          property="og:title"
+          content="Quizard - Engage and Interact with your Audience"
+        />
+        <meta
+          property="og:description"
+          content="Quizard is an all-in-one platform for engaging your audience with interactive quiz sessions"
+        />
+        <meta property="og:image" content="" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://quizard-frontend.vercel.app/"
+        />
+        <meta
+          property="twitter:title"
+          content="Quizard - Engage and Interact with your Audience"
+        />
+        <meta
+          property="twitter:description"
+          content="Quizard is an all-in-one platform for engaging your audience with interactive quiz sessions"
+        />
+        <meta property="twitter:image" content="" />
+
+        {/* Others */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.ico" />
       </Head>
