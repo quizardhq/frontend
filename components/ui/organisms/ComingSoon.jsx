@@ -63,12 +63,12 @@ export default function ComingSoon() {
       {/* What is Quizard */}
       <section className="p-5 lg:py-12">
         {/* Section Title */}
-        <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B]">
+        <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
           What is Quizard
         </div>
 
         {/* Section Content */}
-        <div>
+        <div className="grid gap-5">
           {/* Illustration */}
           <div>
             <Image
@@ -78,17 +78,23 @@ export default function ComingSoon() {
           </div>
 
           {/* Content */}
-          <div>
+          <div className="text-[#00522A] text-sm grid gap-5">
             <p>
               Quizard is an all-in-one platform for interactive quizzes that
               makes it easy for you to engage your audience and collect valuable
-              feedback... With Quizard, you'll be able to create custom quizzes
-              tailored to your specific needs in just a few clicks.
+              feedback.
             </p>
             <p>
-              Whether you're looking to engage your audience at your next event,
-              assess your employees' skills, gather customer feedback, or simply
-              entertain your friends and family, Quizard has you covered.
+              It is perfect for hosting interactive quiz games at events, being
+              it for techies or just a birthday party, corporate gathering, or
+              just hanging out with friends. An ultimate quiz platform for
+              proving who's the smartest in the room.
+            </p>
+            <p>
+              And guess what? It is open source, which means it's customizable,
+              flexible, and has a rebellious streak a mile wide. We are
+              currently working on V1 focusing on basics of creating and hosting
+              games.
             </p>
           </div>
         </div>
