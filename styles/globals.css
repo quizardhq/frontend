@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.primary-btn {
+  @apply bg-[#00ED85] px-8 py-3 rounded-md;
+}
+
+.secondary-btn {
+  @apply border border-[#00ED85] text-[#006D3A] px-8 py-3 rounded-md;
+}
