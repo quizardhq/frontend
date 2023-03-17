@@ -48,6 +48,10 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 
+## Build Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/286f8501-5e9a-474d-9aae-c0a1d622ed98/deploy-status)](https://app.netlify.com/sites/quizardhq/deploys)
+
+
 ## Project Scope
 
 ### quizard-documentation
