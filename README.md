@@ -42,16 +42,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
+![deploy-status](https://api.netlify.com/api/v1/badges/bbab0723-4a8b-40c3-83a7-03894ac24f33/deploy-status) 
+
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 
-## Build Status
-
-
-![deploy-status](https://api.netlify.com/api/v1/badges/bbab0723-4a8b-40c3-83a7-03894ac24f33/deploy-status)
 
 ## Project Scope
 
