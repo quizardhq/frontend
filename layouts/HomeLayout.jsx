@@ -1,4 +1,4 @@
-import Header from '@/components/ui/organisms/Header';
+import Header from "@/components/ui/organisms/Header";
 
 export default function HomeLayout({ children }) {
   return (

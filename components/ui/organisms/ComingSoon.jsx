@@ -1,13 +1,13 @@
-import Image from 'next/image';
+import Image from "next/image";
 import {
   EasySharing,
   GamePreviewImage,
   GroupDiscussion,
   InteractiveSessions,
   RealtimeResults,
-} from '@/components/assets';
-import Button from '../atoms/Button';
-import Divider from '../atoms/Divider';
+} from "@/components/assets";
+import Button from "../atoms/Button";
+import Divider from "../atoms/Divider";
 
 export default function ComingSoon() {
   return (

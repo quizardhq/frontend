@@ -1,5 +1,5 @@
-import ComingSoon from '@/components/ui/organisms/ComingSoon';
-import HomeLayout from '@/layouts/HomeLayout';
+import ComingSoon from "@/components/ui/organisms/ComingSoon";
+import HomeLayout from "@/layouts/HomeLayout";
 
 export default function Home() {
   return (
