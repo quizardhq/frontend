@@ -51,7 +51,7 @@ To learn more about Next.js, take a look at the following resources:
 ## Build Status
 
 
-https://api.netlify.com/api/v1/badges/bbab0723-4a8b-40c3-83a7-03894ac24f33/deploy-status
+![deploy-status](https://api.netlify.com/api/v1/badges/bbab0723-4a8b-40c3-83a7-03894ac24f33/deploy-status)
 
 ## Project Scope
 
