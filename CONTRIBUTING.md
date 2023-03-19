@@ -2,7 +2,7 @@
 
 <!-- Add a thank you message for new/existing contributors -->
 
-To get an overview of the project, take a look at the [README.md](README.md) file.
+To get an overview of the project, look at the [README.md](README.md) file.
 
 This guide will cover the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
@@ -22,18 +22,18 @@ Read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand how you can help ke
 
 ## First Time Contributor
 
-<!-- Helpful links and things the contributor should know about contributing to the project: Like our stack (Next.js, TailwindCSS, Git, GitHub etc), helpful links on setting up and working with each tool in the stack -->
+<!-- Helpful links and things the contributor should know about contributing to the project: Like our stack (Next.js, TailwindCSS, Git, GitHub etc.), helpful links on setting up and working with each tool in the stack -->
 
-We use the following tools on this project's frontend
+We use the following tools on this codebase:
 
 - [Next.js](https://nextjs.org/) - A React Framework. [This helpful guide](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH) covers the basics
 - [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid prototyping. [Learn how to use it here](https://www.youtube.com/watch?v=pfaSUYaSgRo)
 - [Husky](https://typicode.github.io/husky/) - To manage githooks
 - [ESLint](https://eslint.org/) - To check for and prevent human errors in the codebase
 - [Prettier](https://prettier.io/) - To maintain proper formatting in the codebase
-- [Git](https://git-scm.com/) - To store updates to the codebase in commits. A few basic tips to keep in mind
+- [Git](https://git-scm.com/) - To store updates to the codebase in commits. Here are a few basic tips to keep in mind
 - [GitHub](https://github.com/) - For collaboration. [Here's a crash course](https://www.youtube.com/watch?v=8Dd7KRpKeaE) that covers the basics
-- You are free to use any code editor you want, however we strongly recommend using [Visual Studio Code](https://code.visualstudio.com/) for a good developer experience
+- You are free to use any code editor you want; however, we strongly recommend using [Visual Studio Code](https://code.visualstudio.com/) for a good developer experience
 
 ## Getting Started
 
@@ -42,11 +42,11 @@ We use the following tools on this project's frontend
 ### Finding an Issue
 
 <!-- A concise guide to finding an issue on the repo -->
-<!-- Here you can talk about the different labels on the project and what they mean. I think you should also add that if the contributor finds a new issue, they should comment on it and get approval first -->
+<!-- Here, you can talk about the different labels on the project and what they mean. I think you should also add that if the contributor finds a new issue, they should comment on it and get approval first -->
 
 Here's a complete list of our frontend's [open issues](https://github.com/quizardhq/frontend/issues).
 
-We use labels to indicate the priority, status, and beginner-friendliness of various issues. To find a good issue to work on, look out for some of these labels:
+We use labels to indicate each issue's priority, status, and beginner-friendliness. Look out for some of these labels:
 
 **Issues available for community contribution**
 
@@ -61,7 +61,7 @@ Once you've found an issue you would like to work on, check out our [contributio
 
 The following tags mark issues that are _not_ open for community contribution:
 
-- **🔒 core team only** -> To work on this, you need to join the core team.
+- **🔒 core team only** -> To work on this, you need to join the core team
 
 **Issues not ready to be worked on yet**
 
@@ -74,23 +74,23 @@ The following tags mark issues that are not ready to be worked on yet:
 
 <!-- How to get started with contributing once you find an issue -->
 
-<!-- commenting on an issue and get it assigned to you -->
+<!-- commenting on an issue and getting it assigned to you -->
 <!-- forking and cloning the repo -->
 <!-- creating a separate branch for each feature and making changes as required using a mobile-first approach -->
 <!-- sending a pull request -->
 
 **Picking an issue to work on**
 
-<!-- Comment on the isue and get it assigned to you first -->
+<!-- Comment on the issue and get it assigned to you first -->
 
 **Forking and cloning the repo**
 
 <!-- Click the fork icon at the top right corner of the project and fork the repo -->
-<!-- In your fork, click on the code button, and copy the git url to clone to your local PC. See how to clone here -->
+<!-- In your fork, click the code button, and copy the git URL to clone to your local PC. See how to clone here -->
 
 **Working on your chosen issue in a separate branch**
 
-<!-- Create a branch with feat/refactor/bugfix/docs... basically following these concise branching guidelines -->
+<!-- Create a branch with feat/refactor/bugfix/docs... following these concise branching guidelines -->
 
 **Sending a pull request**
 
@@ -100,9 +100,9 @@ The following tags mark issues that are not ready to be worked on yet:
 
 <!-- Didn't find an issue? How to raise a new one -->
 
-If you discover any bugs while going through the project, or improvements that could be made, **check the list of open issues first** to see if it has been raised already.
+If you discover any bugs or possible improvements while going through the project, **check the list of open issues first** to see if someone else has already proposed it.
 
-If it hasn't, you can file a bug report or suggest a new feature.
+You can **only** file a bug report or suggest a new feature **if no open issues exist addressing it**.
 
 **How to file a bug report**
 
