@@ -1,18 +1,21 @@
 # Contributing to Quizard (Frontend)
 
 <!-- Add a thank you message for new/existing contributors -->
+<!-- Include link to README.md file here -->
 
-## Code of Conduct
+# Ground Rules
 
 <!-- Include link to Code of Conduct md file -->
 
-## Project Documentation
-
-<!-- Include link to README.md file here -->
-
-## How to Contribute
+# How to Contribute
 
 <!-- Add an introduction here -->
+
+## First Time Contributor
+
+<!-- Helpful links and things the contributor should know about contributing to the project: Like our stack (Next.js, TailwindCSS, Git, GitHub etc), helpful links on setting up and working with each tool in the stack -->
+
+## Getting Started
 
 ### Finding an Issue
 
@@ -57,9 +60,21 @@ The following tags mark issues that are not ready to be worked on yet:
 
 <!-- Didn't find an issue? How to raise a new one -->
 
-## Support
+If you discover any bugs while going through the project, or improvements that could be made, **check the list of open issues first** to see if it has been raised already.
 
-<!-- Add link to Slack Workspace here -->
+If it hasn't, you can file a bug report or suggest a new feature.
+
+**How to file a bug report**
+
+**How to suggest a new feature**
+
+# Support
+
+Do you have any questions about the source code, setting up the project, or contributing? [Join our community on Slack](https://join.slack.com/t/quizardhq/shared_invite/zt-1r9mceq39-jiXnF2o6P7foWawNODsPsQ) so we can have interesting discussions on it.
+
+You can also connect with us on Twitter and LinkedIn.
+
+<!-- Add link to Slack Workspace here, and other means to get in touch with members of the core team, like Twitter and LinkedIn -->
 
 Thanks once again for volunteering to work on this project with us. We look forward to reviewing and merging your contributions.
 
