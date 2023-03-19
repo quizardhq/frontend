@@ -29,8 +29,8 @@ We use the following tools on this project's frontend
 - [Next.js](https://nextjs.org/) - A React Framework. [This helpful guide](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH) covers the basics
 - [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid prototyping. [Learn how to use it here](https://www.youtube.com/watch?v=pfaSUYaSgRo)
 - [Husky](https://typicode.github.io/husky/) - To manage githooks
-- [ESLint](https://eslint.org/) - To check for and prevent human errors in our codebase
-- [Prettier](https://prettier.io/) - To maintain proper formatting in our codebase
+- [ESLint](https://eslint.org/) - To check for and prevent human errors in the codebase
+- [Prettier](https://prettier.io/) - To maintain proper formatting in the codebase
 - [Git](https://git-scm.com/) - To store updates to the codebase in commits. A few basic tips to keep in mind
 - [GitHub](https://github.com/) - For collaboration. [Here's a crash course](https://www.youtube.com/watch?v=8Dd7KRpKeaE) that covers the basics
 - You are free to use any code editor you want, however we strongly recommend using [Visual Studio Code](https://code.visualstudio.com/) for a good developer experience
@@ -55,7 +55,7 @@ The following tags mark issues that are open for community contribution:
 - **good first issue** -> Open to participation from the community and friendly towards new contributors
 - **help wanted** -> Open to participation from the community but not necessarily beginner-friendly
 
-Once you've found an issue you would like to work on, check out our [contribution process](###contribution-process) to get started
+Once you've found an issue you would like to work on, check out our [contribution process](#contribution-process) to get started
 
 **Issues not available for community contribution**
 
