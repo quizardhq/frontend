@@ -1,19 +1,20 @@
 # Contributing to Quizard (Frontend)
 
 <!-- Add a thank you message for new/existing contributors -->
-<!-- Include link to README.md file here -->
 
 To get an overview of the project, take a look at the [README.md](README.md) file.
 
-In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
+This guide will cover the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
-Use the table of contents icon <img src="public/assets/table-of-contents.png" width="24" height="24" /> on the top left corner of this document to get to a specific section of this guide quickly.
+Use the table of contents icon <img src="public/assets/table-of-contents.png" width="24" height="24" /> on the top left corner of this document to get to a specific section quickly.
 
 # Ground Rules
 
-<!-- Include link to Code of Conduct md file -->
+Read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand how you can help keep our community approachable and respectable.
 
-Read our [Code of Conduct](CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
+### A quick summary
+
+<!-- a quick summary of the Code of Conduct -->
 
 # How to Contribute
 
@@ -25,15 +26,18 @@ Read our [Code of Conduct](CODE_OF_CONDUCT.md) to keep our community approachabl
 
 We use the following tools on this project's frontend
 
-- Next.js - A React Framework. This helpful guide covers the basics
-- TailwindCSS - A CSS
-- Husky - To manage githooks
-- ESLint -
-- Prettier -
-- Git -
-- GitHub -
+- [Next.js](https://nextjs.org/) - A React Framework. [This helpful guide](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH) covers the basics
+- [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid prototyping. [Learn how to use it here](https://www.youtube.com/watch?v=pfaSUYaSgRo)
+- [Husky](https://typicode.github.io/husky/) - To manage githooks
+- [ESLint](https://eslint.org/) - To check for and prevent human errors in our codebase
+- [Prettier](https://prettier.io/) - To maintain proper formatting in our codebase
+- [Git](https://git-scm.com/) - To store updates to the codebase in commits. A few basic tips to keep in mind
+- [GitHub](https://github.com/) - For collaboration. [Here's a crash course](https://www.youtube.com/watch?v=8Dd7KRpKeaE) that covers the basics
+- You are free to use any code editor you want, however we strongly recommend using [Visual Studio Code](https://code.visualstudio.com/) for a good developer experience
 
 ## Getting Started
+
+<!-- Add an introduction here -->
 
 ### Finding an Issue
 
@@ -74,6 +78,23 @@ The following tags mark issues that are not ready to be worked on yet:
 <!-- forking and cloning the repo -->
 <!-- creating a separate branch for each feature and making changes as required using a mobile-first approach -->
 <!-- sending a pull request -->
+
+**Picking an issue to work on**
+
+<!-- Comment on the isue and get it assigned to you first -->
+
+**Forking and cloning the repo**
+
+<!-- Click the fork icon at the top right corner of the project and fork the repo -->
+<!-- In your fork, click on the code button, and copy the git url to clone to your local PC. See how to clone here -->
+
+**Working on your chosen issue in a separate branch**
+
+<!-- Create a branch with feat/refactor/bugfix/docs... basically following these concise branching guidelines -->
+
+**Sending a pull request**
+
+<!-- Send a pull request from your branch to the repo's staging branch -->
 
 ### Proposing a New Issue
 
