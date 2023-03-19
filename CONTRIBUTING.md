@@ -3,9 +3,17 @@
 <!-- Add a thank you message for new/existing contributors -->
 <!-- Include link to README.md file here -->
 
+To get an overview of the project, take a look at the [README.md](README.md) file.
+
+In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
+
+Use the table of contents icon <img src="public/assets/table-of-contents.png" width="24" height="24" /> on the top left corner of this document to get to a specific section of this guide quickly.
+
 # Ground Rules
 
 <!-- Include link to Code of Conduct md file -->
+
+Read our [Code of Conduct](CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
 # How to Contribute
 
@@ -14,6 +22,16 @@
 ## First Time Contributor
 
 <!-- Helpful links and things the contributor should know about contributing to the project: Like our stack (Next.js, TailwindCSS, Git, GitHub etc), helpful links on setting up and working with each tool in the stack -->
+
+We use the following tools on this project's frontend
+
+- Next.js - A React Framework. This helpful guide covers the basics
+- TailwindCSS - A CSS
+- Husky - To manage githooks
+- ESLint -
+- Prettier -
+- Git -
+- GitHub -
 
 ## Getting Started
 
@@ -33,6 +51,8 @@ The following tags mark issues that are open for community contribution:
 - **good first issue** -> Open to participation from the community and friendly towards new contributors
 - **help wanted** -> Open to participation from the community but not necessarily beginner-friendly
 
+Once you've found an issue you would like to work on, check out our [contribution process](###contribution-process) to get started
+
 **Issues not available for community contribution**
 
 The following tags mark issues that are _not_ open for community contribution:
@@ -46,15 +66,14 @@ The following tags mark issues that are not ready to be worked on yet:
 - **🚧 status: blocked** -> Blocked by other work that needs to be done first
 - **🧹 status: ticket work required** -> Needs additional work before it is ready to be taken up
 
-<!-- Comment on an issue and get it assigned to you -->
-
 ### Contribution Process
 
 <!-- How to get started with contributing once you find an issue -->
-<!-- Step 1: Fork the repo -->
-<!-- Step 2: Clone your fork to local -->
-<!-- Step 3: Create a separate branch using {recommended convention} -->
-<!-- Make changes as required using -->
+
+<!-- commenting on an issue and get it assigned to you -->
+<!-- forking and cloning the repo -->
+<!-- creating a separate branch for each feature and making changes as required using a mobile-first approach -->
+<!-- sending a pull request -->
 
 ### Proposing a New Issue
 
