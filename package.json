@@ -30,7 +30,7 @@
     "prettier": "^2.8.4"
   },
   "lint-staged": {
-    "**/*.{js,jsx,css}": [
+    "**/*.{js,jsx,css,md}": [
       "yarn format:check .",
       "yarn lint ."
     ]
