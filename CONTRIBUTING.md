@@ -67,6 +67,6 @@ Have a wonderful day!
 
 Love 💚,
 
-![Quizard Logo](../components/assets/logo/logo-full.svg)
+![Quizard Logo](components/assets/logo/logo-full.svg)
 
 Frontend Team
