@@ -1,12 +1,9 @@
-
-![deploy-status](https://api.netlify.com/api/v1/badges/bbab0723-4a8b-40c3-83a7-03894ac24f33/deploy-status)
-
 <br />
 <p align="center">
     <a href="https://quizardhq.com" target="_blank"><img width="260" height="39" src="./components/assets/logo/logo-full.svg" alt="Quizard Design Logo"></a>
     <br />
     <br />
-    <b>Welcome to Quizard, an open-source alternative platform for creating and playing interactive quizzes and games.</b>
+    <b>Welcome to Quizard, an open-source alternative platform for creating and playing interactive quizzes and games. This repository contains the Frontend source code for quizard app.</b>
     <br />
     <br />
 </p>
@@ -48,8 +45,9 @@ All code contributions - including those from people with commit access - must g
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources: 
+To learn more about this project, take a look at the following resources: 
 
+- [quizardhq](https://quizardhq.com/) - learn about our website and its features.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 
 
