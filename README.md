@@ -11,19 +11,11 @@
     <br />
 </p>
 
-# Quizard App
-
-This repository contains the Frontend source code for quizard app.
-
 ## Getting Started
 
-This guide assumed you have NodeJS 16+ installed on your pc.
+This guide assumes that you have NodeJS 16+ installed on your pc.
 
-## Clone this repository
-
-git clone https://github.com/CeoFred/quizard-frontend.git
-
-## Set up environment variables
+### Set up environment variables
 
 Use the content of .env.example to create a .env file. Alternatively, you can run the command to perform that operation
 
@@ -41,7 +33,7 @@ npm install
 yarn install
 ```
 
-Then, run the development server or app:
+### Run the development server or app:
 
 ```bash
 npm run dev
@@ -51,10 +43,8 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
+## Contributing
+All code contributions - including those from people with commit access - must go through a pull request and be approved by a core developer before being merged. This is to ensure a proper review of all the code. If you wish to help, you can learn more about how you can contribute to this project in the contribution guide.
 
 ## Learn More
 
@@ -65,7 +55,7 @@ To learn more about Next.js, take a look at the following resources:
 
 ## Project Scope
 
-### quizard-documentation
+### Quizard Documentation
 
 
 Our mission is to provide a free and accessible platform for educators, students, and anyone else interested in creating and playing interactive quizzes and games. We believe that learning should be fun and interactive, and that everyone should have the opportunity to access high-quality educational resources.
