@@ -62,3 +62,7 @@ Our platform is open-source, which means that it is freely available for anyone 
 Our platform allows users to create and share quizzes and games, with features such as multiple choice questions, true or false questions, and more. It also includes a live game mode for real-time play, and analytics for tracking student progress.
 
 Whether you're an educator looking for a new tool to engage your students, or a student looking for a fun way to study, Quizard has something for you. We invite you to try out our platform and join our community of users and developers. Together, we can make learning fun and interactive for everyone.
+
+## License
+
+This repository is available under the [MIT](./LICENSE).
