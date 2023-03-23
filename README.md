@@ -51,10 +51,7 @@ To learn more about this project, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 
 
-## Project Scope
-
-### Quizard Documentation
-
+## Quizard Documentation
 
 Our mission is to provide a free and accessible platform for educators, students, and anyone else interested in creating and playing interactive quizzes and games. We believe that learning should be fun and interactive, and that everyone should have the opportunity to access high-quality educational resources.
 
