@@ -1,6 +1,6 @@
 import { Christi, Codemon, Divine, Jonathan, Praise, ShowBaba } from '..';
 
-export const team = [
+const team = [
   {
     image: Codemon,
     name: 'Codemon',
@@ -44,3 +44,5 @@ export const team = [
     linkedin: '',
   },
 ];
+
+export default team

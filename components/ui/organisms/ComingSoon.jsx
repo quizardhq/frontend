@@ -11,7 +11,7 @@ import {
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
-import { team } from '@/components/assets/data';
+import team from "../../assets/data"
 
 export default function ComingSoon() {
   return (
@@ -222,8 +222,8 @@ export default function ComingSoon() {
 
           {/* Team Members */}
           <div className="flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
-            {team.map((member, idx) => (
-              <div key={idx} className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4">
+            {team.map((member) => (
+              <div key={member.name} className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4">
                 <Image src={member.image} alt={member.name} className="w-full" />
                 <div className="flex align-top justify-between mt-4">
                   <div>
