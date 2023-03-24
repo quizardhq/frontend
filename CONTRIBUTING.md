@@ -1,12 +1,19 @@
 # Contributing to Quizard (Frontend)
 
 <!-- Add a thank you message for new/existing contributors -->
+Welcome to QuizardHq! We appreciate your interest in contributing to our open-source project. Below are some guidelines to help you get started.
 
 To get an overview of the project, look at the [README.md](README.md) file.
 
-This guide will cover the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
+This guide will cover the contribution workflow from opening an issue, creating a PR, reviewing, and merging a Pull Request.
 
 Use the table of contents icon <img src="public/assets/table-of-contents.png" width="24" height="24" /> on the top left corner of this document to get to a specific section quickly.
+
+<!-- ## Getting Started
+1. Fork the repository to your own GitHub account.
+2. Clone the repository to your local machine.
+3. Install any necessary dependencies for the project.
+4. Create a new branch for your changes. -->
 
 # Ground Rules
 
@@ -15,6 +22,9 @@ Read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand how you can help ke
 ### A quick summary
 
 <!-- a quick summary of the Code of Conduct -->
+Quizard is committed to creating a respectful, collaborative, and transparent community where individuals from different backgrounds can share their ideas without fear of harassment or discrimination. The Code of Conduct outlines the standards of behavior expected of all contributors and maintainers, including using respectful and inclusive language, accepting constructive criticism, and focusing on what is best for the community.
+
+Unacceptable behavior includes harassment, violence, and spreading misinformation, among other things. Project maintainers are responsible for enforcing these standards and may take corrective action when necessary. The Code of Conduct applies both within project spaces and in public spaces where individuals are representing the project or its community.
 
 # How to Contribute
 
