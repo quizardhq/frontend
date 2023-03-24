@@ -227,12 +227,12 @@ export default function ComingSoon() {
                 <Image src={member.image} alt={member.name} className="w-full" />
                 <div className="flex align-top justify-between mt-4"> 
                   <div>
-                    <div className="text-[#00391B] font-semibold text-3xl">{member.name}</div>
+                    <div className="text-[#00391B] font-semibold md:text-3xl text-lg">{member.name}</div>
                     <div className="text-lg text-[#006D3A] font-normal">{member.role}</div>
                   </div>
                   <div className="flex gap-2">
-                    <Image className="w-[32px] h-[32px]" src={Twitter} alt="twitter" />
-                    <Image className="w-[32px] h-[32px]" src={LinkedIn} alt="LinkedIn" />
+                    <Image className="w-6 h-6 md:w-8 md:h-8" src={Twitter} alt="twitter" />
+                    <Image className="w-6 h-6 md:w-8 md:h-8" src={LinkedIn} alt="LinkedIn" />
                   </div>
                 </div>
               </div>
