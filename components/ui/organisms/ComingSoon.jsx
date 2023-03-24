@@ -225,7 +225,7 @@ export default function ComingSoon() {
             {team.map((member) => (
               <div key={member.name} className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4">
                 <Image src={member.image} alt={member.name} className="w-full" />
-                <div className="flex align-top justify-between mt-4">
+                <div className="flex align-top justify-between mt-4"> 
                   <div>
                     <div className="text-[#00391B] font-semibold text-3xl">{member.name}</div>
                     <div className="text-lg text-[#006D3A] font-normal">{member.role}</div>
