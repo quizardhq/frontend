@@ -5,9 +5,13 @@ import {
   GroupDiscussion,
   InteractiveSessions,
   RealtimeResults,
+  Pana,
+  Twitter,
+  LinkedIn
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
+import { team } from '@/components/assets/data';
 
 export default function ComingSoon() {
   return (
@@ -185,6 +189,54 @@ export default function ComingSoon() {
                 </div>
               </div>
             </div>
+
+            {/* Feature Four */}
+            <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
+              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
+                <Image
+                  src={Pana}
+                  alt="A vector illustration showing five people discussing"
+                  className="w-full"
+                />
+              </div>
+              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-medium text-2xl lg:text-4xl mb-2">
+                  Free to use
+                </div>
+                <div className="text-sm lg:text-2xl">
+                  Capitalism has nothing on us, creating and hosting quizzes on
+                  Quizard will always be free, We Promise.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Team */}
+      <section className="p-20 bg-[url('/assets/Background.svg')] bg-no-repeat bg-cover">
+        <div className="max-w-full py-10 mx-auto">
+          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
+            Meet the Team
+          </div>
+
+          {/* Team Members */}
+          <div className="flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
+            {team.map((member, idx) => (
+              <div key={idx} className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4">
+                <Image src={member.image} alt={member.name} className="w-full" />
+                <div className="flex align-top justify-between mt-4">
+                  <div>
+                    <div className="text-[#00391B] font-semibold text-3xl">{member.name}</div>
+                    <div className="text-lg text-[#006D3A] font-normal">{member.role}</div>
+                  </div>
+                  <div className="flex gap-2">
+                    <Image className="w-[32px] h-[32px]" src={Twitter} alt="twitter" />
+                    <Image className="w-[32px] h-[32px]" src={LinkedIn} alt="LinkedIn" />
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
