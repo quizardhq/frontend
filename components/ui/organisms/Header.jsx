@@ -7,23 +7,23 @@ export default function Header() {
     <header className="bg-[#C4FBDD] bg-[url(/assets/noise.svg)] p-5 lg:px-32 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center font-medium">
         {/* Logo */}
-        <div className="h-6 lg:h-max">
+        <a href="#" className="h-6 lg:h-max cursor-pointer">
           <Image
             src={QuizardFullLogo}
             alt="Quizard logo"
             className="h-full w-max"
           />
-        </div>
+        </a>
 
         {/* Nav */}
         <div className="lg:hidden">
           <Image src={MenuIcon} alt="Hamburger Menu" />
         </div>
 
-        <nav className="hidden lg:flex font-medium space-x-5 items-center text-[#00210E]">
-          <div>Features</div>
-          <div>About Us</div>
-          <div>FAQ</div>
+        <nav className="hidden lg:flex font-medium space-x-5 items-center text-[#00210E] cursor-pointer">
+          <a href="#features">Features</a>
+          <a href="#about-us">About Us</a>
+          <a href="#faq">FAQ</a>
           <div>
             <Button submit className="primary-btn text-[#00391B] font-medium">
               JOIN THE WAITLIST
