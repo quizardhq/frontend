@@ -47,6 +47,7 @@ export default function ComingSoon() {
                     id="waitlist_email"
                     placeholder="Email address"
                     className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
+                    autoComplete="off"
                   />
                   <Button submit className="primary-btn text-[#00210E]">
                     Join

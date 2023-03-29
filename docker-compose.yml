@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/quizardhq-frontend
+      - /quizardhq-frontend/node_modules
+    environment:
+      NODE_ENV: development
