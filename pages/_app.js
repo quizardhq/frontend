@@ -41,10 +41,7 @@ export default function App({ Component, pageProps }) {
         />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://quizard-frontend.vercel.app/"
-        />
+        <meta property="og:url" content="https://quizardhq.com/" />
         <meta
           property="og:title"
           content="Quizard - Engage and Interact with your Audience"
@@ -53,14 +50,11 @@ export default function App({ Component, pageProps }) {
           property="og:description"
           content="Quizard is an all-in-one platform for engaging your audience with interactive quiz sessions"
         />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="/assets/meta-image.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://quizard-frontend.vercel.app/"
-        />
+        <meta property="twitter:url" content="https://quizardhq.com/" />
         <meta
           property="twitter:title"
           content="Quizard - Engage and Interact with your Audience"
@@ -69,7 +63,7 @@ export default function App({ Component, pageProps }) {
           property="twitter:description"
           content="Quizard is an all-in-one platform for engaging your audience with interactive quiz sessions"
         />
-        <meta property="twitter:image" content="" />
+        <meta property="twitter:image" content="meta-image.png" />
 
         {/* Others */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />

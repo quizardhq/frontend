@@ -43,15 +43,15 @@ pnpm dev
 ```
 
 ## Contributing
+
 All code contributions - including those from people with commit access - must go through a pull request and be approved by a core developer before being merged. This is to ensure a proper review of all the code. If you wish to help, you can learn more about how you can contribute to this project in the contribution guide.
 
 ## Learn More
 
-To learn more about this project, take a look at the following resources: 
+To learn more about this project, take a look at the following resources:
 
 - [quizardhq](https://quizardhq.com/) - learn about our website and its features.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-
 
 ## Quizard Documentation
 
