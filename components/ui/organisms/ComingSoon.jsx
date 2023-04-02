@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import {
   EasySharing,
@@ -10,6 +11,24 @@ import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
 
 export default function ComingSoon() {
+  const [email, setEmail] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleJoinWaitlist = (e) => {
+    e.preventDefault();
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      setErrorMessage('Please enter a valid email address.');
+      return;
+    }
+    // Code to submit the form and add the email to the waitlist goes here
+    setErrorMessage('Thank you for joining the waitlist!');
+    setEmail('');
+  };
+
   return (
     <>
       {/* --- Hero Section --- */}
@@ -36,7 +55,7 @@ export default function ComingSoon() {
               </div>
 
               {/* On Desktop view */}
-              <form className="hidden lg:block">
+              <form className="hidden lg:block" onSubmit={handleJoinWaitlist}>
                 <div className="text-sm font-light mb-2 text-[#00391B]">
                   Join the waitlist to get notified when we launch
                 </div>
@@ -48,11 +67,14 @@ export default function ComingSoon() {
                     placeholder="Email address"
                     className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
                     autoComplete="off"
+                    value={email}
+                    onChange={handleEmailChange}
                   />
                   <Button submit className="primary-btn text-[#00210E]">
                     Join
                   </Button>
                 </div>
+                {errorMessage && <p className="text-red-500 text-sm">{errorMessage}</p>}
               </form>
             </div>
           </div>
