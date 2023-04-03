@@ -8,6 +8,7 @@ import {
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
+import FloatingImage from '../molecules/FloatingImage';
 
 export default function ComingSoon() {
   return (
@@ -49,7 +50,10 @@ export default function ComingSoon() {
                     className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
                     autoComplete="off"
                   />
-                  <Button submit className="primary-btn text-[#00210E]">
+                  <Button
+                    submit
+                    className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
+                  >
                     Join
                   </Button>
                 </div>
@@ -59,12 +63,14 @@ export default function ComingSoon() {
 
           {/* Illustration */}
           <div>
-            <Image
-              priority
-              alt="A mobile phone and tablet each showing a Quizard game session"
-              src={GamePreviewImage}
-              className="w-full"
-            />
+            <FloatingImage>
+              <Image
+                priority
+                alt="A mobile phone and tablet each showing a Quizard game session"
+                src={GamePreviewImage}
+                className="w-full"
+              />
+            </FloatingImage>
           </div>
         </div>
       </section>
@@ -73,7 +79,7 @@ export default function ComingSoon() {
       <section className="p-5 lg:py-12 lg:px-32">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
-          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
+          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10 ">
             What is Quizard
           </div>
 
