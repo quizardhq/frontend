@@ -140,7 +140,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- Features --- */}
-      <section className="p-5 lg:py-12 lg:px-32">
+      <section id="features" className="p-5 lg:py-12 lg:px-32">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
