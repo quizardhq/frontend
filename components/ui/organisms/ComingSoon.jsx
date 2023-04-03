@@ -78,7 +78,9 @@ export default function ComingSoon() {
                     Join
                   </Button>
                 </div>
-                {errorMessage && <p className="text-red-500 text-sm">{errorMessage}</p>}
+                {errorMessage && (
+                  <p className="text-red-500 text-sm">{errorMessage}</p>
+                )}
               </form>
             </div>
           </div>
@@ -101,7 +103,7 @@ export default function ComingSoon() {
       <section className="p-5 lg:py-12 lg:px-32">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
-          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10 ">
+          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
             What is Quizard
           </div>
 
