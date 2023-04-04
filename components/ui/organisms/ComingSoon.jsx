@@ -9,6 +9,7 @@ import {
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
+import FloatingImage from '../molecules/FloatingImage';
 
 export default function ComingSoon() {
   const [email, setEmail] = useState('');
@@ -70,23 +71,30 @@ export default function ComingSoon() {
                     value={email}
                     onChange={handleEmailChange}
                   />
-                  <Button submit className="primary-btn text-[#00210E]">
+                  <Button
+                    submit
+                    className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
+                  >
                     Join
                   </Button>
                 </div>
-                {errorMessage && <p className="text-red-500 text-sm">{errorMessage}</p>}
+                {errorMessage && (
+                  <p className="text-red-500 text-sm">{errorMessage}</p>
+                )}
               </form>
             </div>
           </div>
 
           {/* Illustration */}
           <div>
-            <Image
-              priority
-              alt="A mobile phone and tablet each showing a Quizard game session"
-              src={GamePreviewImage}
-              className="w-full"
-            />
+            <FloatingImage>
+              <Image
+                priority
+                alt="A mobile phone and tablet each showing a Quizard game session"
+                src={GamePreviewImage}
+                className="w-full"
+              />
+            </FloatingImage>
           </div>
         </div>
       </section>
