@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import {
   EasySharing,
@@ -12,8 +13,27 @@ import {
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
 import team from "../../assets/data"
+import FloatingImage from '../molecules/FloatingImage';
 
 export default function ComingSoon() {
+  const [email, setEmail] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleJoinWaitlist = (e) => {
+    e.preventDefault();
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      setErrorMessage('Please enter a valid email address.');
+      return;
+    }
+    // Code to submit the form and add the email to the waitlist goes here
+    setErrorMessage('Thank you for joining the waitlist!');
+    setEmail('');
+  };
+
   return (
     <>
       {/* --- Hero Section --- */}
@@ -40,7 +60,7 @@ export default function ComingSoon() {
               </div>
 
               {/* On Desktop view */}
-              <form className="hidden lg:block">
+              <form className="hidden lg:block" onSubmit={handleJoinWaitlist}>
                 <div className="text-sm font-light mb-2 text-[#00391B]">
                   Join the waitlist to get notified when we launch
                 </div>
@@ -51,23 +71,34 @@ export default function ComingSoon() {
                     id="waitlist_email"
                     placeholder="Email address"
                     className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
+                    autoComplete="off"
+                    value={email}
+                    onChange={handleEmailChange}
                   />
-                  <Button submit className="primary-btn text-[#00210E]">
+                  <Button
+                    submit
+                    className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
+                  >
                     Join
                   </Button>
                 </div>
+                {errorMessage && (
+                  <p className="text-red-500 text-sm">{errorMessage}</p>
+                )}
               </form>
             </div>
           </div>
 
           {/* Illustration */}
           <div>
-            <Image
-              priority
-              alt="A mobile phone and tablet each showing a Quizard game session"
-              src={GamePreviewImage}
-              className="w-full"
-            />
+            <FloatingImage>
+              <Image
+                priority
+                alt="A mobile phone and tablet each showing a Quizard game session"
+                src={GamePreviewImage}
+                className="w-full"
+              />
+            </FloatingImage>
           </div>
         </div>
       </section>
@@ -121,7 +152,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- Features --- */}
-      <section className="p-5 lg:py-12 lg:px-32">
+      <section id="features" className="p-5 lg:py-12 lg:px-32">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
