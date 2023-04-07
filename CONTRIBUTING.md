@@ -42,7 +42,7 @@ We use the following tools on this codebase:
 - [GitHub](https://github.com/) - For collaboration. [Here's a crash course](https://www.youtube.com/watch?v=8Dd7KRpKeaE) that covers the basics
 - You are free to use any code editor you want; however, we strongly recommend using [Visual Studio Code](https://code.visualstudio.com/) for a good developer experience
 
-## Getting Started
+<!-- ## Getting Started -->
 
 <!-- Add an introduction here -->
 
@@ -78,24 +78,19 @@ The following tags mark issues that are not ready to be worked on yet:
 - **🧹 status: ticket work required** -> Needs additional work before it is ready to be taken up
 
 ### Contribution Process
-Before creating an Issue for `features`, `bugs` or `improvements`, please follow these steps:
+Contributing to open-source projects can be a great way to build your skills, network with other developers, and give back to the community. However, before making any contributions, it's important to understand the process and guidelines for contributing. Here are some steps to follow when contributing to an open-source project:
 
-1. Search existing issues before creating a new issue (has someone raised this already)
-2. If it doesn't exist, create a new issue giving as much context as possible (please select the correct Issue type, for example bug or feature)
-3. All Issues are automatically given the label `status: waiting for triage`. Please wait until the maintainers review the Issue and update the labels.
-4. Look out for when the Issue label changes to `status: ready for dev`.
-5. Comment on the Issue asking for it to be assigned to you (do not tag maintainers as all maintainers receive your comment notifications).
-6. Only start working on this issue (and open a Pull Request) when it has been assigned to you - this will prevent confusion, multiple people working on the same issue and work not being used.
 
-#### Working on an Issue (get it assigned to you)
-Before working on an existing Issue please follow these steps:
-
-1. Pease do not ask to be assigned an issue that has the label `status: awaiting triage` - this creates more notifications for maintainers and it will not be assigned.
-2. Look out for the Issue label status: `ready for dev` (if it does not have this label, your work might not be accepted)
-3. Comment asking for the issue to be assigned to you (do not tag any maintainers as all maintainers receive your comment notifications)
-4. After the issue is assigned to you, you can start working on it
-5. Do not enable GitHub Actions on your fork
-6. Reference the Issue in your Pull Request (for example `closes #123`)
+1. Search for existing issues: Before creating a new issue, search through the existing ones to avoid duplicating efforts. If you find an existing issue, read through it carefully to ensure you understand the context and requirements.
+2. Create a new issue: If you can't find an existing issue that matches your needs, create a new one. When creating a new issue, be sure to provide as much context and detail as possible, including what you're trying to accomplish, steps to reproduce the issue, and any relevant code snippets or screenshots.
+3. Wait for triage: After submitting an issue, it will be reviewed by the maintainers of the project. They may ask for more information or provide additional context. Be patient and wait for the status label to change to `waiting for triage.`
+4. Ready for development: If the maintainers decide that your issue is worth addressing, they may label it as `ready for development`. This means that it's okay for you to start working on the issue.
+5. Comment to request assignment: If you want to work on a `ready for development` issue, comment on the issue to request assignment. Do not tag maintainers in your comment, as they will receive a notification automatically.
+6. Wait for assignment: The maintainers will review your comment and assign the issue to you if they agree that you're a good fit. Only start working on the issue once it has been assigned to you.
+7. Work on the issue: Once you've been assigned an issue, you can start working on it. Be sure to follow the guidelines for code style, testing, and documentation outlined in the project's documentation. If you're unsure about anything, don't hesitate to ask for help.
+8. Submit a pull request: Once you've completed your work, submit a pull request to the project's repository. Be sure to reference the issue in your pull request so that the maintainers can track the progress.
+9. Wait for review: The maintainers will review your pull request and provide feedback. Be prepared to make changes and iterate on your work based on their feedback.
+10. Merge and close: If the maintainers are satisfied with your work, they will merge your pull request and close the associated issue. Congratulations, you've made a valuable contribution to the project!
 
 > Notes: Any issues that have no activity after 2 weeks will be unassigned and re-assigned to someone else. Only request to be assigned an issue if you know how to work on it
 An issue can be assigned to multiple people, if you all agree to collaborate on the issue (the Pull Request can contain commits from different collaborators)
