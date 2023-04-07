@@ -90,7 +90,7 @@ Before creating an Issue for `features`, `bugs` or `improvements`, please follow
 #### Working on an Issue (get it assigned to you)
 Before working on an existing Issue please follow these steps:
 
-1. Pease do not ask to be assigned an issue that has the label status: awaiting triage - this creates more notifications for maintainers and it will not be assigned.
+1. Pease do not ask to be assigned an issue that has the label `status: awaiting triage` - this creates more notifications for maintainers and it will not be assigned.
 2. Look out for the Issue label status: `ready for dev` (if it does not have this label, your work might not be accepted)
 3. Comment asking for the issue to be assigned to you (do not tag any maintainers as all maintainers receive your comment notifications)
 4. After the issue is assigned to you, you can start working on it
