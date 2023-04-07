@@ -26,9 +26,6 @@ Quizard is committed to creating a respectful, collaborative, and transparent co
 
 Unacceptable behavior includes harassment, violence, and spreading misinformation, among other things. Project maintainers are responsible for enforcing these standards and may take corrective action when necessary. The Code of Conduct applies both within project spaces and in public spaces where individuals are representing the project or its community.
 
-# How to Contribute
-
-<!-- Add an introduction here -->
 
 ## First Time Contributor
 
@@ -81,7 +78,27 @@ The following tags mark issues that are not ready to be worked on yet:
 - **🧹 status: ticket work required** -> Needs additional work before it is ready to be taken up
 
 ### Contribution Process
+Before creating an Issue for `features`, `bugs` or `improvements`, please follow these steps:
 
+1. Search existing issues before creating a new issue (has someone raised this already)
+2. If it doesn't exist, create a new issue giving as much context as possible (please select the correct Issue type, for example bug or feature)
+3. All Issues are automatically given the label `status: waiting for triage`. Please wait until the maintainers review the Issue and update the labels.
+4. Look out for when the Issue label changes to `status: ready for dev`.
+5. Comment on the Issue asking for it to be assigned to you (do not tag maintainers as all maintainers receive your comment notifications).
+6. Only start working on this issue (and open a Pull Request) when it has been assigned to you - this will prevent confusion, multiple people working on the same issue and work not being used.
+
+#### Working on an Issue (get it assigned to you)
+Before working on an existing Issue please follow these steps:
+
+1. Pease do not ask to be assigned an issue that has the label status: awaiting triage - this creates more notifications for maintainers and it will not be assigned.
+2. Look out for the Issue label status: `ready for dev` (if it does not have this label, your work might not be accepted)
+3. Comment asking for the issue to be assigned to you (do not tag any maintainers as all maintainers receive your comment notifications)
+4. After the issue is assigned to you, you can start working on it
+5. Do not enable GitHub Actions on your fork
+6. Reference the Issue in your Pull Request (for example `closes #123`)
+
+> Notes: Any issues that have no activity after 2 weeks will be unassigned and re-assigned to someone else. Only request to be assigned an issue if you know how to work on it
+An issue can be assigned to multiple people, if you all agree to collaborate on the issue (the Pull Request can contain commits from different collaborators)
 <!-- How to get started with contributing once you find an issue -->
 
 <!-- commenting on an issue and getting it assigned to you -->
@@ -89,34 +106,37 @@ The following tags mark issues that are not ready to be worked on yet:
 <!-- creating a separate branch for each feature and making changes as required using a mobile-first approach -->
 <!-- sending a pull request -->
 
-**Picking an issue to work on**
+<!-- **Picking an issue to work on** -->
 
 <!-- Comment on the issue and get it assigned to you first -->
 
-**Forking and cloning the repo**
+<!-- **Forking and cloning the repo** -->
 
 <!-- Click the fork icon at the top right corner of the project and fork the repo -->
 <!-- In your fork, click the code button, and copy the git URL to clone to your local PC. See how to clone here -->
 
-**Working on your chosen issue in a separate branch**
+<!-- **Working on your chosen issue in a separate branch** -->
 
 <!-- Create a branch with feat/refactor/bugfix/docs... following these concise branching guidelines -->
 
-**Sending a pull request**
+<!-- **Sending a pull request** -->
 
 <!-- Send a pull request from your branch to the repo's staging branch -->
 
-### Proposing a New Issue
+<!-- ### Proposing a New Issue -->
 
 <!-- Didn't find an issue? How to raise a new one -->
 
-If you discover any bugs or possible improvements while going through the project, **check the list of open issues first** to see if someone else has already proposed it.
+<!-- If you discover any bugs or possible improvements while going through the project, **check the list of open issues first** to see if someone else has already proposed it.
 
 You can **only** file a bug report or suggest a new feature **if no open issues exist addressing it**.
 
 **How to file a bug report**
 
-**How to suggest a new feature**
+**How to suggest a new feature** -->
+
+### Reviewing Pull Requests
+We welcome everyone to review Pull Requests, it is a great way to learn and network.
 
 # Support
 
