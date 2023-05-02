@@ -11,4 +11,4 @@ services:
       - .:/quizardhq-frontend
       - /quizardhq-frontend/node_modules
     environment:
-      NODE_ENV: development
+      NODE_ENV: production
