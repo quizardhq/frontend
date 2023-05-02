@@ -8,11 +8,11 @@ import {
   RealtimeResults,
   Pana,
   Twitter,
-  LinkedIn
+  LinkedIn,
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
-import team from "../../assets/data"
+import team from '../../assets/data';
 import FloatingImage from '../molecules/FloatingImage';
 
 export default function ComingSoon() {
@@ -152,7 +152,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- Features --- */}
-      <section id="features" className="p-5 lg:py-12 lg:px-32">
+      <section id="features" className="p-5 lg:py-12 lg:px-32 mt-[10rem]">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
@@ -174,9 +174,10 @@ export default function ComingSoon() {
                 <div className="font-medium text-2xl lg:text-4xl mb-2">
                   Interactive Sessions
                 </div>
-                <div className="text-sm lg:text-2xl">
-                  Engage your audience with interactive questions that include
-                  multiple-choice, true/false, and open-ended responses.
+                <div className="text-sm lg:text-xl">
+                  Create engaging and interactive sessions with our quizard
+                  platform, allowing you to customize quizzes, surveys, and
+                  polls to fit your audience's learning goals and needs.
                 </div>
               </div>
             </div>
@@ -194,9 +195,10 @@ export default function ComingSoon() {
                 <div className="font-medium text-2xl lg:text-4xl mb-2">
                   Real-time Results
                 </div>
-                <div className="text-sm lg:text-2xl">
-                  See results in real-time as users complete your quizzes,
-                  surveys, and polls.
+                <div className="text-sm lg:text-xl">
+                  Get instant feedback and monitor performance over time with
+                  our real-time results feature. Customize your feedback to
+                  address misunderstandings and engage your audience.
                 </div>
               </div>
             </div>
@@ -212,11 +214,12 @@ export default function ComingSoon() {
               </div>
               <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
                 <div className="font-medium text-2xl lg:text-4xl mb-2">
-                  Easy Sharing
+                  Audio Communication
                 </div>
-                <div className="text-sm lg:text-2xl">
-                  Share your quizzes on social media, email, and other platforms
-                  with just a few clicks.
+                <div className="text-sm lg:text-xl">
+                  Our audio communication feature enables you to connect with
+                  your team members in real-time, regardless of where they are
+                  located.
                 </div>
               </div>
             </div>
@@ -234,7 +237,7 @@ export default function ComingSoon() {
                 <div className="font-medium text-2xl lg:text-4xl mb-2">
                   Free to use
                 </div>
-                <div className="text-sm lg:text-2xl">
+                <div className="text-sm lg:text-xl">
                   Capitalism has nothing on us, creating and hosting quizzes on
                   Quizard will always be free, We Promise.
                 </div>
@@ -254,16 +257,35 @@ export default function ComingSoon() {
           {/* Team Members */}
           <div className="flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
             {team.map((member) => (
-              <div key={member.name} className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4">
-                <Image src={member.image} alt={member.name} className="w-full" />
-                <div className="flex align-top justify-between mt-4"> 
+              <div
+                key={member.name}
+                className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
+              >
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full"
+                />
+                <div className="flex align-top justify-between mt-4">
                   <div>
-                    <div className="text-[#00391B] font-semibold md:text-3xl text-lg">{member.name}</div>
-                    <div className="text-lg text-[#006D3A] font-normal">{member.role}</div>
+                    <div className="text-[#00391B] font-semibold md:text-3xl text-lg">
+                      {member.name}
+                    </div>
+                    <div className="text-lg text-[#006D3A] font-normal">
+                      {member.role}
+                    </div>
                   </div>
                   <div className="flex gap-2">
-                    <Image className="w-6 h-6 md:w-8 md:h-8" src={Twitter} alt="twitter" />
-                    <Image className="w-6 h-6 md:w-8 md:h-8" src={LinkedIn} alt="LinkedIn" />
+                    <Image
+                      className="w-6 h-6 md:w-8 md:h-8"
+                      src={Twitter}
+                      alt="twitter"
+                    />
+                    <Image
+                      className="w-6 h-6 md:w-8 md:h-8"
+                      src={LinkedIn}
+                      alt="LinkedIn"
+                    />
                   </div>
                 </div>
               </div>

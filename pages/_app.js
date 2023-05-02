@@ -1,6 +1,6 @@
 import '@/styles/globals.css';
 import Head from 'next/head';
-import localFont from '@next/font/local';
+import localFont from 'next/font/local';
 
 const mena = localFont({
   src: [

@@ -12,5 +12,11 @@ RUN yarn install
 # copy source code
 COPY . .
 
+# Build the Next.js application
+RUN npm run build
+
+# Expose the port that the application will run on
+EXPOSE 3000
+
 # start the development server
-CMD ["yarn", "dev"]
+CMD ["npm", "start"]

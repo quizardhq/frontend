@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from "next/link";
+import Link from 'next/link';
 import { MenuIcon, QuizardFullLogo } from '@/components/assets';
 import Button from '@/components/ui/atoms/Button';
 
@@ -31,7 +31,6 @@ export default function Header() {
                 JOIN THE WAITLIST
               </Button>
             </Link>
-
           </div>
         </nav>
       </div>

@@ -1,6 +1,7 @@
 # Contributing to Quizard (Frontend)
 
 <!-- Add a thank you message for new/existing contributors -->
+
 Welcome to QuizardHq! We appreciate your interest in contributing to our open-source project. Below are some guidelines to help you get started.
 
 To get an overview of the project, look at the [README.md](README.md) file.
@@ -22,10 +23,10 @@ Read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand how you can help ke
 ### A quick summary
 
 <!-- a quick summary of the Code of Conduct -->
+
 Quizard is committed to creating a respectful, collaborative, and transparent community where individuals from different backgrounds can share their ideas without fear of harassment or discrimination. The Code of Conduct outlines the standards of behavior expected of all contributors and maintainers, including using respectful and inclusive language, accepting constructive criticism, and focusing on what is best for the community.
 
 Unacceptable behavior includes harassment, violence, and spreading misinformation, among other things. Project maintainers are responsible for enforcing these standards and may take corrective action when necessary. The Code of Conduct applies both within project spaces and in public spaces where individuals are representing the project or its community.
-
 
 ## First Time Contributor
 
@@ -78,8 +79,8 @@ The following tags mark issues that are not ready to be worked on yet:
 - **🧹 status: ticket work required** -> Needs additional work before it is ready to be taken up
 
 ### Contribution Process
-Contributing to open-source projects can be a great way to build your skills, network with other developers, and give back to the community. However, before making any contributions, it's important to understand the process and guidelines for contributing. Here are some steps to follow when contributing to an open-source project:
 
+Contributing to open-source projects can be a great way to build your skills, network with other developers, and give back to the community. However, before making any contributions, it's important to understand the process and guidelines for contributing. Here are some steps to follow when contributing to an open-source project:
 
 1. Search for existing issues: Before creating a new issue, search through the existing ones to avoid duplicating efforts. If you find an existing issue, read through it carefully to ensure you understand the context and requirements.
 2. Create a new issue: If you can't find an existing issue that matches your needs, create a new one. When creating a new issue, be sure to provide as much context and detail as possible, including what you're trying to accomplish, steps to reproduce the issue, and any relevant code snippets or screenshots.
@@ -93,7 +94,8 @@ Contributing to open-source projects can be a great way to build your skills, ne
 10. Merge and close: If the maintainers are satisfied with your work, they will merge your pull request and close the associated issue. Congratulations, you've made a valuable contribution to the project!
 
 > Notes: Any issues that have no activity after 2 weeks will be unassigned and re-assigned to someone else. Only request to be assigned an issue if you know how to work on it
-An issue can be assigned to multiple people, if you all agree to collaborate on the issue (the Pull Request can contain commits from different collaborators)
+> An issue can be assigned to multiple people, if you all agree to collaborate on the issue (the Pull Request can contain commits from different collaborators)
+
 <!-- How to get started with contributing once you find an issue -->
 
 <!-- commenting on an issue and getting it assigned to you -->
@@ -131,6 +133,7 @@ You can **only** file a bug report or suggest a new feature **if no open issues 
 **How to suggest a new feature** -->
 
 ### Reviewing Pull Requests
+
 We welcome everyone to review Pull Requests, it is a great way to learn and network.
 
 # Support
