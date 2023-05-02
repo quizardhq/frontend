@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import {
   EasySharing,
@@ -5,11 +6,34 @@ import {
   GroupDiscussion,
   InteractiveSessions,
   RealtimeResults,
+  Pana,
+  Twitter,
+  LinkedIn
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
+import team from "../../assets/data"
+import FloatingImage from '../molecules/FloatingImage';
 
 export default function ComingSoon() {
+  const [email, setEmail] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleJoinWaitlist = (e) => {
+    e.preventDefault();
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      setErrorMessage('Please enter a valid email address.');
+      return;
+    }
+    // Code to submit the form and add the email to the waitlist goes here
+    setErrorMessage('Thank you for joining the waitlist!');
+    setEmail('');
+  };
+
   return (
     <>
       {/* --- Hero Section --- */}
@@ -36,7 +60,7 @@ export default function ComingSoon() {
               </div>
 
               {/* On Desktop view */}
-              <form className="hidden lg:block">
+              <form className="hidden lg:block" onSubmit={handleJoinWaitlist}>
                 <div className="text-sm font-light mb-2 text-[#00391B]">
                   Join the waitlist to get notified when we launch
                 </div>
@@ -48,23 +72,33 @@ export default function ComingSoon() {
                     placeholder="Email address"
                     className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
                     autoComplete="off"
+                    value={email}
+                    onChange={handleEmailChange}
                   />
-                  <Button submit className="primary-btn text-[#00210E]">
+                  <Button
+                    submit
+                    className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
+                  >
                     Join
                   </Button>
                 </div>
+                {errorMessage && (
+                  <p className="text-red-500 text-sm">{errorMessage}</p>
+                )}
               </form>
             </div>
           </div>
 
           {/* Illustration */}
           <div>
-            <Image
-              priority
-              alt="A mobile phone and tablet each showing a Quizard game session"
-              src={GamePreviewImage}
-              className="w-full"
-            />
+            <FloatingImage>
+              <Image
+                priority
+                alt="A mobile phone and tablet each showing a Quizard game session"
+                src={GamePreviewImage}
+                className="w-full"
+              />
+            </FloatingImage>
           </div>
         </div>
       </section>
@@ -118,7 +152,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- Features --- */}
-      <section className="p-5 lg:py-12 lg:px-32">
+      <section id="features" className="p-5 lg:py-12 lg:px-32">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
@@ -186,6 +220,54 @@ export default function ComingSoon() {
                 </div>
               </div>
             </div>
+
+            {/* Feature Four */}
+            <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
+              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
+                <Image
+                  src={Pana}
+                  alt="A vector illustration showing five people discussing"
+                  className="w-full"
+                />
+              </div>
+              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-medium text-2xl lg:text-4xl mb-2">
+                  Free to use
+                </div>
+                <div className="text-sm lg:text-2xl">
+                  Capitalism has nothing on us, creating and hosting quizzes on
+                  Quizard will always be free, We Promise.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Team */}
+      <section className="p-20 bg-[url('/assets/Background.svg')] bg-no-repeat bg-cover">
+        <div className="max-w-full py-10 mx-auto">
+          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
+            Meet the Team
+          </div>
+
+          {/* Team Members */}
+          <div className="flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
+            {team.map((member) => (
+              <div key={member.name} className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4">
+                <Image src={member.image} alt={member.name} className="w-full" />
+                <div className="flex align-top justify-between mt-4"> 
+                  <div>
+                    <div className="text-[#00391B] font-semibold md:text-3xl text-lg">{member.name}</div>
+                    <div className="text-lg text-[#006D3A] font-normal">{member.role}</div>
+                  </div>
+                  <div className="flex gap-2">
+                    <Image className="w-6 h-6 md:w-8 md:h-8" src={Twitter} alt="twitter" />
+                    <Image className="w-6 h-6 md:w-8 md:h-8" src={LinkedIn} alt="LinkedIn" />
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
