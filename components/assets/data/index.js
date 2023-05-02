@@ -45,4 +45,4 @@ const team = [
   },
 ];
 
-export default team
+export default team;

@@ -1,9 +1,5 @@
 {
-  "include": [
-    "components/**/*",
-    "pages/**/*",
-    "layouts/**/*"
-  ],
+  "include": ["components/**/*", "pages/**/*", "layouts/**/*"],
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -24,7 +20,5 @@
       "@/styles/*": ["./styles/*"]
     }
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

@@ -104,11 +104,6 @@
   dependencies:
     glob "7.1.7"
 
-"@next/font@^13.1.2":
-  version "13.1.2"
-  resolved "https://registry.npmjs.org/@next/font/-/font-13.1.2.tgz"
-  integrity sha512-NXGXGFGiOKEnvBIHq9cdFTKbHO2/4B3Zd9K27M7j1DioIQVar7oVRqZMYs0h3XMVEZLwjjkdAtqRPCzzd3RtXg==
-
 "@next/swc-android-arm-eabi@13.2.4":
   version "13.2.4"
   resolved "https://registry.yarnpkg.com/@next/swc-android-arm-eabi/-/swc-android-arm-eabi-13.2.4.tgz#758d0403771e549f9cee71cbabc0cb16a6c947c0"
