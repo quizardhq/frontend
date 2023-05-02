@@ -3,7 +3,8 @@ name: Build and Deploy Docker Image
 on:
   push:
     branches:
-      - [staging,main]
+      - staging
+      - main
 
 jobs:
   build-and-deploy:
