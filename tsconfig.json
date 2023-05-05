@@ -17,8 +17,12 @@
     "paths": {
       "@/components/*": ["./components/*"],
       "@/layouts/*": ["./layouts/*"],
-      "@/styles/*": ["./styles/*"]
+      "@/styles/*": ["./styles/*"],
+      "@/public/*": ["./public/*"]
     }
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "rules": {
+    "func-names": "off"
+  }
 }
