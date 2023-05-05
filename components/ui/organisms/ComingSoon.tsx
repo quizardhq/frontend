@@ -18,6 +18,8 @@ import FloatingImage from '../molecules/FloatingImage';
 export default function ComingSoon() {
   const [email, setEmail] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+  const [submiting, setSubmiting] = useState(false);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -25,13 +27,19 @@ export default function ComingSoon() {
 
   const handleJoinWaitlist = (e) => {
     e.preventDefault();
+    setSubmiting(true);
+    setSuccessMessage(null);
+    setErrorMessage(null);
+
     if (!email || !/\S+@\S+\.\S+/.test(email)) {
       setErrorMessage('Please enter a valid email address.');
+      setSubmiting(false);
       return;
     }
     // Code to submit the form and add the email to the waitlist goes here
-    setErrorMessage('Thank you for joining the waitlist!');
     setEmail('');
+    setSubmiting(false);
+    setSuccessMessage("You've been added to the waitlist");
   };
 
   return (
@@ -74,16 +82,23 @@ export default function ComingSoon() {
                     autoComplete="off"
                     value={email}
                     onChange={handleEmailChange}
+                    disabled={submiting}
                   />
                   <Button
-                    submit
+                    submit={false}
                     className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
+                    onClick={handleJoinWaitlist}
+                    isLoading={submiting}
+                    isDisabled={submiting}
                   >
                     Join
                   </Button>
                 </div>
                 {errorMessage && (
                   <p className="text-red-500 text-sm">{errorMessage}</p>
+                )}
+                {successMessage && (
+                  <p className="text-white-500 text-sm">{successMessage}</p>
                 )}
               </form>
             </div>
