@@ -42,14 +42,16 @@ export default function FrontEndIntern() {
             emerging technologies and trends
           </li>
         </ul>
-        <a
-          rel="noreferrer"
-          href="https://www.notion.so/codemon/Frontend-Engineer-Intern-9cded5f5772141e4bb4e6254295dbba9"
-          target="_blank"
-          className="primary-btn text-[#00210E] mt-[1rem]"
-        >
-          Apply Now
-        </a>
+        <div className="flex justify-center items-center">
+          <a
+            rel="noreferrer"
+            href="https://www.notion.so/codemon/Frontend-Engineer-Intern-9cded5f5772141e4bb4e6254295dbba9"
+            target="_blank"
+            className="primary-btn text-[#00210E] mt-[1rem] block w-[max-content]"
+          >
+            Apply Now
+          </a>
+        </div>
       </div>
     </HomeLayout>
   );
