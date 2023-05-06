@@ -10,6 +10,7 @@ import GroupDiscussion from './illustrations/group_discussion.svg';
 import InteractiveSessions from './illustrations/interactive_sessions.svg';
 import RealtimeResults from './illustrations/realtime_results.svg';
 import Pana from './illustrations/pana.svg';
+import FAQs from './illustrations/faqs.svg';
 
 // --- logo ---
 import QuizardFullLogo from './logo/logo-full.svg';
@@ -24,6 +25,7 @@ import Christi from './images/Christi.png';
 export {
   MenuIcon,
   EasySharing,
+  FAQs,
   GamePreviewImage,
   GroupDiscussion,
   InteractiveSessions,

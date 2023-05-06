@@ -9,6 +9,7 @@ import {
   Pana,
   Twitter,
   LinkedIn,
+  FAQs,
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
@@ -311,9 +312,17 @@ export default function ComingSoon() {
 
       {/* FAQs */}
       <section className="p-20 bg-[#00894A]">
-        <div>
-          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#F5FFF3] my-10">
-            FAQs
+        <div className="max-w-full py-10 mx-auto">
+          <div className="grid md:grid-cols-12 gap-20 font-semibold text-2xl lg:text-4xl text-[#F5FFF3] my-10">
+            <div className="col-span-5"></div>
+            <div className="col-span-7">FAQs</div>
+          </div>
+
+          <div className="grid md:grid-cols-12 gap-20">
+            <div className="col-span-5">
+              <Image src={FAQs} alt="" className="w-full object-contain" />
+            </div>
+            <div className="col-span-7">Questions questions</div>
           </div>
         </div>
       </section>
