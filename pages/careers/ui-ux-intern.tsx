@@ -47,7 +47,7 @@ export default function UIUXIntern() {
         <div className="flex justify-center items-center">
           <a
             rel="noreferrer"
-            href="https://www.notion.so/codemon/Frontend-Engineer-Intern-9cded5f5772141e4bb4e6254295dbba9"
+            href="https://www.notion.so/codemon/UI-UX-Design-Intern-00f0e49eb3f04111971e84e6a1982810"
             target="_blank"
             className="primary-btn text-[#00210E] mt-[1rem] block w-[max-content]"
           >
