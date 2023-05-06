@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MenuIcon, QuizardFullLogo } from '@/components/assets';
+import { MenuIcon, QuizardFullLogo, Github } from '@/components/assets';
 import Button from '@/components/ui/atoms/Button';
 
 export default function Header() {
@@ -30,6 +30,11 @@ export default function Header() {
               <Button submit className="primary-btn text-[#00391B] font-medium">
                 JOIN THE WAITLIST
               </Button>
+            </Link>
+          </div>
+          <div className="border-2 p-2 rounded-md border-primary">
+            <Link href="https://github.com/quizardhq">
+              <Image src={Github} alt="Github" width="28" height="26" />
             </Link>
           </div>
         </nav>
