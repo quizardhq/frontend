@@ -308,6 +308,15 @@ export default function ComingSoon() {
           </div>
         </div>
       </section>
+
+      {/* FAQs */}
+      <section className="p-20 bg-[#00894A]">
+        <div>
+          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#F5FFF3] my-10">
+            FAQs
+          </div>
+        </div>
+      </section>
     </>
   );
 }
