@@ -48,7 +48,7 @@ export default function ComingSoon() {
       <section className="p-5 lg:px-32 lg:pt-20 lg:pb-40 bg-[url(/assets/waves.svg)] bg-no-repeat bg-bottom bg-cover">
         <div className="max-w-7xl mx-auto grid gap-10 lg:gap-20 lg:grid-cols-2 items-center">
           {/* Content */}
-          <div className="grid gap-5">
+          <div className="grid gap-5 mt-[3rem]">
             <h1 className="text-3xl leading-snug lg:text-5xl lg:leading-[1.1] text-[#00391B] font-bold">
               <div>Engage & Interact</div>
               <div>with your Audience</div>
@@ -61,14 +61,9 @@ export default function ComingSoon() {
             {/* Waitlist form */}
             <div className="max-w-md">
               {/* On Mobile view */}
-              <div className="lg:hidden">
-                <Button className="primary-btn text-[#00210E]">
-                  JOIN THE WAITLIST
-                </Button>
-              </div>
 
               {/* On Desktop view */}
-              <form className="hidden lg:block" onSubmit={handleJoinWaitlist}>
+              <form className="" onSubmit={handleJoinWaitlist}>
                 <div className="text-sm font-light mb-2 text-[#00391B]">
                   Join the waitlist to get notified when we launch
                 </div>
@@ -78,7 +73,7 @@ export default function ComingSoon() {
                     name="waitlist_email"
                     id="waitlist_email"
                     placeholder="Email address"
-                    className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
+                    className="bg-transparent w-full outline-none rounded-md m-3 placeholder:text-[#006D3A]"
                     autoComplete="off"
                     value={email}
                     onChange={handleEmailChange}
