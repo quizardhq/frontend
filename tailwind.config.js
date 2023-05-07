@@ -14,6 +14,9 @@ module.exports = {
         sans: ['var(--mena-grotesk)'],
       },
     },
+    colors: {
+      primary: '#00522A',
+    },
   },
   plugins: [],
 };

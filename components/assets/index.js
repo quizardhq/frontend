@@ -2,6 +2,7 @@
 import MenuIcon from './icons/menu.svg';
 import Twitter from './icons/Twitter.png';
 import LinkedIn from './icons/Linkedin.png';
+import Github from './icons/Github.png';
 
 // --- illustrations ---
 import EasySharing from './illustrations/easy_sharing.svg';
@@ -38,4 +39,5 @@ export {
   Divine,
   Praise,
   Christi,
+  Github,
 };
