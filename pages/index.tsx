@@ -7,7 +7,7 @@ export default function Home() {
     <HomeLayout>
       <MetaTag
         title="Quizard - Engage and Interact with your Audience"
-        description="Quizard is an all-in-one platform for engaging your audience with interactive quiz sessions "
+        description="Discover the fun and engaging world of personalized learning with Quizard, the open-source quiz platform. Create, share and play custom quizzes with ease. Join our community today!"
         url="/"
       />
       <ComingSoon />
