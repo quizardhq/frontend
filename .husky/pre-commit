@@ -4,7 +4,7 @@
 echo '🏗️👷 Running checks on your code before committing' 🔍🧐
 
 npx lint-staged
-
+yarn format .
 yarn build
 
 echo '✅✅ Awesome work! ✅✅'
