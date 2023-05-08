@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import Image from 'next/image';
 import {
   EasySharing,
@@ -7,41 +7,19 @@ import {
   InteractiveSessions,
   RealtimeResults,
   Pana,
-  Twitter,
   LinkedIn,
+  FAQs,
+  TwitterIcon,
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
-import team from '../../assets/data';
+import team, { faqs } from '../../assets/data';
 import FloatingImage from '../molecules/FloatingImage';
+import Accordion from '../atoms/Accordion';
+import { WaitlistForm } from '../molecules/JoinWaitlist';
+// import { WaitlistForm } from '../molecules/JoinWaitlist';
 
 export default function ComingSoon() {
-  const [email, setEmail] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
-  const [submiting, setSubmiting] = useState(false);
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleJoinWaitlist = (e) => {
-    e.preventDefault();
-    setSubmiting(true);
-    setSuccessMessage(null);
-    setErrorMessage(null);
-
-    if (!email || !/\S+@\S+\.\S+/.test(email)) {
-      setErrorMessage('Please enter a valid email address.');
-      setSubmiting(false);
-      return;
-    }
-    // Code to submit the form and add the email to the waitlist goes here
-    setEmail('');
-    setSubmiting(false);
-    setSuccessMessage("You've been added to the waitlist");
-  };
-
   return (
     <>
       {/* --- Hero Section --- */}
@@ -63,39 +41,12 @@ export default function ComingSoon() {
               {/* On Mobile view */}
 
               {/* On Desktop view */}
-              <form className="" onSubmit={handleJoinWaitlist}>
+              <div className="hidden lg:block">
                 <div className="text-sm font-light mb-2 text-[#00391B]">
                   Join the waitlist to get notified when we launch
                 </div>
-                <div className="w-full flex border border-[#00A65B] rounded-md p-1">
-                  <input
-                    type="email"
-                    name="waitlist_email"
-                    id="waitlist_email"
-                    placeholder="Email address"
-                    className="bg-transparent w-full outline-none rounded-md m-3 placeholder:text-[#006D3A]"
-                    autoComplete="off"
-                    value={email}
-                    onChange={handleEmailChange}
-                    disabled={submiting}
-                  />
-                  <Button
-                    submit={false}
-                    className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
-                    onClick={handleJoinWaitlist}
-                    isLoading={submiting}
-                    isDisabled={submiting}
-                  >
-                    Join
-                  </Button>
-                </div>
-                {errorMessage && (
-                  <p className="text-red-500 text-sm">{errorMessage}</p>
-                )}
-                {successMessage && (
-                  <p className="text-white-500 text-sm">{successMessage}</p>
-                )}
-              </form>
+                <WaitlistForm accent="#00A65B" />
+              </div>
             </div>
           </div>
 
@@ -288,7 +239,7 @@ export default function ComingSoon() {
                   <div className="flex gap-2">
                     <Image
                       className="w-6 h-6 md:w-8 md:h-8"
-                      src={Twitter}
+                      src={TwitterIcon}
                       alt="twitter"
                     />
                     <Image
@@ -300,6 +251,27 @@ export default function ComingSoon() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="p-5 pb-20 lg:p-20 bg-[#00894A]">
+        <div className="max-w-full py-10 mx-auto">
+          <div className="grid lg:grid-cols-12 gap-20 font-semibold text-2xl lg:text-4xl text-[#F5FFF3] lg:my-10">
+            <div className="hidden lg:block lg:col-span-5"></div>
+            <div className="lg:col-span-7 mx-auto text-2xl lg:text-4xl">
+              FAQs
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-20">
+            <div className="hidden lg:block lg:col-span-5">
+              <Image src={FAQs} alt="" className="w-full object-contain" />
+            </div>
+            <div className="lg:col-span-7 text-white">
+              <Accordion content={faqs} />
+            </div>
           </div>
         </div>
       </section>
