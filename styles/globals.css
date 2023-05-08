@@ -26,3 +26,7 @@ a {
 .secondary-btn {
   @apply border border-[#00ED85] text-[#006D3A] px-8 py-3 rounded-md;
 }
+
+.bg-transparent {
+  background: transparent;
+}
