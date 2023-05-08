@@ -14,22 +14,12 @@ export function Bellow({ title, content }: BellowProps) {
     setIsOpen(!isOpen);
   };
 
-  // const handleKeyPress = (event: KeyboardEvent<HTMLDivElement>) => {
-  //   if (event.key === 'Enter' || event.key === ' ') {
-  //     handleClick();
-  //   }
-  // };
-
-  // const handleDivClick = (event: MouseEvent<HTMLDivElement>) => {
-  //   handleClick();
-  // };
-
   return (
     <div className="p-4 border-b-2 border-b-[#C3FFD0] grid gap-4">
       {/* Title */}
       <button
         type="button"
-        className="flex items-start justify-between gap-4"
+        className="flex items-start justify-between text-left gap-4"
         onClick={handleClick}
       >
         <div className="flex-1">{title}</div>
