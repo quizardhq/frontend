@@ -11,7 +11,6 @@ import {
   FAQs,
   TwitterIcon,
 } from '@/components/assets';
-import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
 import team, { faqs } from '../../assets/data';
 import FloatingImage from '../molecules/FloatingImage';

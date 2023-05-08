@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MenuIcon, QuizardFullLogo, Github } from '@/components/assets';
+import { GitHubIcon, MenuIcon, QuizardFullLogo } from '@/components/assets';
 import Button from '@/components/ui/atoms/Button';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -106,7 +106,7 @@ export default function Header() {
                 <li>
                   <Link href="/" onClick={handleToggle}>
                     <Button
-                      submit
+                      isSubmit
                       className="primary-btn text-[#00391B] font-normal text-lg"
                     >
                       JOIN THE WAITLIST
@@ -118,7 +118,7 @@ export default function Header() {
                     <Link href="https://github.com/quizardhq">
                       <Image
                         className="inline"
-                        src={Github}
+                        src={GitHubIcon}
                         alt="Github"
                         width="28"
                         height="26"
@@ -145,7 +145,7 @@ export default function Header() {
           </div>
           <div className="border-2 p-2 rounded-md border-primary">
             <Link href="https://github.com/quizardhq">
-              <Image src={Github} alt="Github" width="28" height="26" />
+              <Image src={GitHubIcon} alt="Github" width="28" height="26" />
             </Link>
           </div>
         </nav>
