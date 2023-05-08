@@ -46,11 +46,12 @@ export default function ComingSoon() {
               </div>
 
               {/* On Desktop view */}
-              <div className="text-sm font-light mb-2 text-[#00391B]">
-                Join the waitlist to get notified when we launch
+              <div className="hidden lg:block">
+                <div className="text-sm font-light mb-2 text-[#00391B]">
+                  Join the waitlist to get notified when we launch
+                </div>
+                <WaitlistForm accent="#00A65B" />
               </div>
-
-              <WaitlistForm accent="#00A65B" />
             </div>
           </div>
 
@@ -260,18 +261,20 @@ export default function ComingSoon() {
       </section>
 
       {/* FAQs */}
-      <section className="p-20 bg-[#00894A]">
+      <section className="p-5 pb-20 lg:p-20 bg-[#00894A]">
         <div className="max-w-full py-10 mx-auto">
-          <div className="grid md:grid-cols-12 gap-20 font-semibold text-2xl lg:text-4xl text-[#F5FFF3] my-10">
-            <div className="col-span-5"></div>
-            <div className="col-span-7">FAQs</div>
+          <div className="grid lg:grid-cols-12 gap-20 font-semibold text-2xl lg:text-4xl text-[#F5FFF3] lg:my-10">
+            <div className="hidden lg:block lg:col-span-5"></div>
+            <div className="lg:col-span-7 mx-auto text-2xl lg:text-4xl">
+              FAQs
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-12 gap-20">
-            <div className="col-span-5">
+          <div className="grid lg:grid-cols-12 gap-20">
+            <div className="hidden lg:block lg:col-span-5">
               <Image src={FAQs} alt="" className="w-full object-contain" />
             </div>
-            <div className="col-span-7 text-white">
+            <div className="lg:col-span-7 text-white">
               <Accordion content={faqs} />
             </div>
           </div>

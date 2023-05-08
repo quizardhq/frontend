@@ -41,7 +41,7 @@ export function WaitlistForm({ accent }: WaitlistFormProps) {
   };
 
   return (
-    <form className="hidden lg:block" onSubmit={handleJoinWaitlist}>
+    <form onSubmit={handleJoinWaitlist}>
       <div className={`w-full flex border border-[${accent}] rounded-md p-1`}>
         <input
           type="email"
@@ -79,10 +79,12 @@ WaitlistForm.defaultProps = {
 
 export default function JoinWaitlist() {
   return (
-    <div className="grid grid-cols-5 p-12 relative bg-[#00b15e] bg-[url(/assets/images/bg_grass_green.png)] border-4 border-[#00e47a] rounded-lg">
-      <div className="flex flex-col gap-6 text-[#F5FFF3] col-span-3">
-        <div className="text-4xl font-semibold">JOIN THE WAITLIST</div>
-        <div className="text-xl">
+    <div className="grid lg:grid-cols-5 p-6 lg:p-12 relative bg-[#00b15e] bg-[url(/assets/images/bg_grass_green.png)] border-4 border-[#00e47a] rounded-lg">
+      <div className="flex flex-col gap-6 text-[#F5FFF3] lg:col-span-3">
+        <div className="text-2xl lg:text-4xl font-semibold">
+          JOIN THE WAITLIST
+        </div>
+        <div className="lg:text-xl">
           Want to be among the first to know when Quizard is live? Sign up for
           our waiting list below. We'll notify you as soon as Quizard is ready
           to launch.
@@ -91,7 +93,7 @@ export default function JoinWaitlist() {
           <WaitlistForm accent="#00e47a" />
         </div>
       </div>
-      <div className="col-span-2 absolute right-0 bottom-0">
+      <div className="hidden lg:block lg:col-span-2 absolute right-0 bottom-0">
         <Image src={YoungWomenStanding} alt="young women standing" />
       </div>
     </div>

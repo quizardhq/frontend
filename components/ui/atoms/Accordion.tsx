@@ -10,19 +10,33 @@ interface BellowProps {
 export function Bellow({ title, content }: BellowProps) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // const handleKeyPress = (event: KeyboardEvent<HTMLDivElement>) => {
+  //   if (event.key === 'Enter' || event.key === ' ') {
+  //     handleClick();
+  //   }
+  // };
+
+  // const handleDivClick = (event: MouseEvent<HTMLDivElement>) => {
+  //   handleClick();
+  // };
+
   return (
     <div className="p-4 border-b-2 border-b-[#C3FFD0] grid gap-4">
       {/* Title */}
-      <div className="flex items-center justify-between">
-        <div>{title}</div>
-        <button
-          type="button"
-          className={`${isOpen ? 'rotate-45' : ''}`}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <Image src={CrossIcon} alt="" />
-        </button>
-      </div>
+      <button
+        type="button"
+        className="flex items-start justify-between gap-4"
+        onClick={handleClick}
+      >
+        <div className="flex-1">{title}</div>
+        <div className={`${isOpen ? 'rotate-45' : ''} w-6`}>
+          <Image src={CrossIcon} alt="" className="w-full" />
+        </div>
+      </button>
 
       {/* Content */}
       <div className={`${isOpen ? 'block' : 'hidden'}`}>{content}</div>
