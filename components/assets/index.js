@@ -2,6 +2,7 @@
 import MenuIcon from './icons/menu.svg';
 import Twitter from './icons/Twitter.png';
 import LinkedIn from './icons/Linkedin.png';
+import CrossIcon from './icons/large_plus.svg';
 
 // --- illustrations ---
 import EasySharing from './illustrations/easy_sharing.svg';
@@ -40,4 +41,5 @@ export {
   Divine,
   Praise,
   Christi,
+  CrossIcon,
 };

@@ -13,8 +13,9 @@ import {
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
-import team from '../../assets/data';
+import team, { faqs } from '../../assets/data';
 import FloatingImage from '../molecules/FloatingImage';
+import Accordion from '../atoms/Accordion';
 
 export default function ComingSoon() {
   const [email, setEmail] = useState('');
@@ -322,7 +323,9 @@ export default function ComingSoon() {
             <div className="col-span-5">
               <Image src={FAQs} alt="" className="w-full object-contain" />
             </div>
-            <div className="col-span-7">Questions questions</div>
+            <div className="col-span-7 text-white">
+              <Accordion content={faqs} />
+            </div>
           </div>
         </div>
       </section>
