@@ -61,4 +61,5 @@ export {
   Divine,
   Praise,
   Christi,
+  Github,
 };
