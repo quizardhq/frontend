@@ -42,7 +42,7 @@ export default function Accordion({ content }: AccordionProps) {
   return (
     <div>
       {content?.map((d) => (
-        <Bellow title={d.title} content={d.content} />
+        <Bellow key={d.id} title={d.title} content={d.content} />
       ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import Image from 'next/image';
 import {
   EasySharing,
@@ -16,34 +16,10 @@ import Divider from '../atoms/Divider';
 import team, { faqs } from '../../assets/data';
 import FloatingImage from '../molecules/FloatingImage';
 import Accordion from '../atoms/Accordion';
+import { WaitlistForm } from '../molecules/JoinWaitlist';
+// import { WaitlistForm } from '../molecules/JoinWaitlist';
 
 export default function ComingSoon() {
-  const [email, setEmail] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
-  const [submiting, setSubmiting] = useState(false);
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleJoinWaitlist = (e) => {
-    e.preventDefault();
-    setSubmiting(true);
-    setSuccessMessage(null);
-    setErrorMessage(null);
-
-    if (!email || !/\S+@\S+\.\S+/.test(email)) {
-      setErrorMessage('Please enter a valid email address.');
-      setSubmiting(false);
-      return;
-    }
-    // Code to submit the form and add the email to the waitlist goes here
-    setEmail('');
-    setSubmiting(false);
-    setSuccessMessage("You've been added to the waitlist");
-  };
-
   return (
     <>
       {/* --- Hero Section --- */}
@@ -70,39 +46,11 @@ export default function ComingSoon() {
               </div>
 
               {/* On Desktop view */}
-              <form className="hidden lg:block" onSubmit={handleJoinWaitlist}>
-                <div className="text-sm font-light mb-2 text-[#00391B]">
-                  Join the waitlist to get notified when we launch
-                </div>
-                <div className="w-full flex border border-[#00A65B] rounded-md p-1">
-                  <input
-                    type="email"
-                    name="waitlist_email"
-                    id="waitlist_email"
-                    placeholder="Email address"
-                    className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#006D3A]"
-                    autoComplete="off"
-                    value={email}
-                    onChange={handleEmailChange}
-                    disabled={submiting}
-                  />
-                  <Button
-                    submit={false}
-                    className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
-                    onClick={handleJoinWaitlist}
-                    isLoading={submiting}
-                    isDisabled={submiting}
-                  >
-                    Join
-                  </Button>
-                </div>
-                {errorMessage && (
-                  <p className="text-red-500 text-sm">{errorMessage}</p>
-                )}
-                {successMessage && (
-                  <p className="text-white-500 text-sm">{successMessage}</p>
-                )}
-              </form>
+              <div className="text-sm font-light mb-2 text-[#00391B]">
+                Join the waitlist to get notified when we launch
+              </div>
+
+              <WaitlistForm accent="#00A65B" />
             </div>
           </div>
 

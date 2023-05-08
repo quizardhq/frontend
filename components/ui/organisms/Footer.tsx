@@ -9,10 +9,14 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import JoinWaitlist from '../molecules/JoinWaitlist';
 
 export default function Footer() {
   return (
     <footer className="bg-[#5DFF9E] p-5 lg:px-32">
+      <div className="-mt-20">
+        <JoinWaitlist />
+      </div>
       <div className="w-5/6 mx-auto grid grid-cols-12 py-16">
         {/* Logo */}
         <div className="col-span-4">
