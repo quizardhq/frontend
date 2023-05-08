@@ -12,7 +12,7 @@ export default function MetaTag({ title, description, url }) {
       <meta property="og:description" content={description} />
       <meta
         property="og:image"
-        content="https://quizardhq.com/assets/og:image.png"
+        content="https://quizardhq.com/assets/og_image.png"
       />
 
       {/* Twitter */}
@@ -22,7 +22,7 @@ export default function MetaTag({ title, description, url }) {
       <meta property="twitter:description" content={description} />
       <meta
         property="twitter:image"
-        content="https://quizardhq.com/assets/og:image.png"
+        content="https://quizardhq.com/assets/og_image.png"
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@quizardHQ" />
