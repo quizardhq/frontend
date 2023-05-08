@@ -268,7 +268,7 @@ export default function ComingSoon() {
             <div className="hidden lg:block lg:col-span-5">
               <Image src={FAQs} alt="" className="w-full object-contain" />
             </div>
-            <div className="lg:col-span-7 text-white">
+            <div className="lg:col-span-7 text-[#fff]">
               <Accordion content={faqs} />
             </div>
           </div>
