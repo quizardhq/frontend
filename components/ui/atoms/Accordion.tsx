@@ -10,19 +10,23 @@ interface BellowProps {
 export function Bellow({ title, content }: BellowProps) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="p-4 border-b-2 border-b-[#C3FFD0] grid gap-4">
       {/* Title */}
-      <div className="flex items-center justify-between">
-        <div>{title}</div>
-        <button
-          type="button"
-          className={`${isOpen ? 'rotate-45' : ''}`}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <Image src={CrossIcon} alt="" />
-        </button>
-      </div>
+      <button
+        type="button"
+        className="flex items-start justify-between text-left gap-4"
+        onClick={handleClick}
+      >
+        <div className="flex-1">{title}</div>
+        <div className={`${isOpen ? 'rotate-45' : ''} w-6`}>
+          <Image src={CrossIcon} alt="" className="w-full" />
+        </div>
+      </button>
 
       {/* Content */}
       <div className={`${isOpen ? 'block' : 'hidden'}`}>{content}</div>
@@ -42,7 +46,7 @@ export default function Accordion({ content }: AccordionProps) {
   return (
     <div>
       {content?.map((d) => (
-        <Bellow title={d.title} content={d.content} />
+        <Bellow key={d.id} title={d.title} content={d.content} />
       ))}
     </div>
   );

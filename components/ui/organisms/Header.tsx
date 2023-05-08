@@ -138,7 +138,7 @@ export default function Header() {
           <Link href="/#faq">FAQ</Link>
           <div>
             <Link href="/">
-              <Button submit className="primary-btn text-[#00391B] font-medium">
+              <Button className="primary-btn text-[#00391B] font-medium">
                 JOIN THE WAITLIST
               </Button>
             </Link>

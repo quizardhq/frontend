@@ -17,6 +17,7 @@ import InteractiveSessions from './illustrations/interactive_sessions.svg';
 import RealtimeResults from './illustrations/realtime_results.svg';
 import Pana from './illustrations/pana.svg';
 import FAQs from './illustrations/faqs.svg';
+import YoungWomenStanding from './illustrations/young_women_standing.png';
 
 // --- logo ---
 import QuizardFullLogo from './logo/logo-full.svg';
@@ -49,6 +50,7 @@ export {
   InteractiveSessions,
   RealtimeResults,
   Pana,
+  YoungWomenStanding,
 
   // logo
   QuizardFullLogo,
