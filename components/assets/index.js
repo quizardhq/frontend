@@ -7,6 +7,7 @@ import LinkedIn from './icons/Linkedin.png';
 import CrossIcon from './icons/large_plus.svg';
 import PhoneIcon from './icons/phone.svg';
 import MailIcon from './icons/mail.svg';
+import Github from './icons/Github.svg';
 
 // --- illustrations ---
 import EasySharing from './illustrations/easy_sharing.svg';
@@ -61,4 +62,6 @@ export {
   Divine,
   Praise,
   Christi,
+  CrossIcon,
+  Github,
 };
