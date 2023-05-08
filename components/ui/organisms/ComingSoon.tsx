@@ -7,9 +7,9 @@ import {
   InteractiveSessions,
   RealtimeResults,
   Pana,
-  Twitter,
   LinkedIn,
   FAQs,
+  TwitterIcon,
 } from '@/components/assets';
 import Button from '../atoms/Button';
 import Divider from '../atoms/Divider';
@@ -295,7 +295,7 @@ export default function ComingSoon() {
                   <div className="flex gap-2">
                     <Image
                       className="w-6 h-6 md:w-8 md:h-8"
-                      src={Twitter}
+                      src={TwitterIcon}
                       alt="twitter"
                     />
                     <Image
