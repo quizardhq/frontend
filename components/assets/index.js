@@ -1,10 +1,13 @@
 // --- icons ---
 import MenuIcon from './icons/menu.svg';
-import Twitter from './icons/Twitter.png';
+import TwitterIcon from './icons/twitter.svg';
+import GitHubIcon from './icons/github.svg';
+import SlackIcon from './icons/slack.svg';
 import LinkedIn from './icons/Linkedin.png';
 import CrossIcon from './icons/large_plus.svg';
+import PhoneIcon from './icons/phone.svg';
+import MailIcon from './icons/mail.svg';
 import Github from './icons/Github.svg';
-
 
 // --- illustrations ---
 import EasySharing from './illustrations/easy_sharing.svg';
@@ -17,6 +20,8 @@ import FAQs from './illustrations/faqs.svg';
 
 // --- logo ---
 import QuizardFullLogo from './logo/logo-full.svg';
+
+// profile images
 import Codemon from './images/codemon.svg';
 import ShowBaba from './images/ShowBaba.svg';
 import Jonathan from './images/Jonathan.svg';
@@ -26,18 +31,30 @@ import Christi from './images/Christi.png';
 
 // --- Exports ---
 export {
+  // icons
   MenuIcon,
+  CrossIcon,
+  TwitterIcon,
+  GitHubIcon,
+  SlackIcon,
+  LinkedIn,
+  PhoneIcon,
+  MailIcon,
+
+  // illustrations
   EasySharing,
   FAQs,
   GamePreviewImage,
   GroupDiscussion,
   InteractiveSessions,
   RealtimeResults,
-  QuizardFullLogo,
   Pana,
+
+  // logo
+  QuizardFullLogo,
+
+  // profile images
   Codemon,
-  Twitter,
-  LinkedIn,
   ShowBaba,
   Jonathan,
   Divine,
