@@ -1,6 +1,8 @@
 import '@/styles/globals.css';
 import localFont from 'next/font/local';
 
+import { wrapper } from '../redux/store';
+
 const mena = localFont({
   src: [
     {
@@ -25,10 +27,12 @@ const mena = localFont({
   variable: '--mena-grotesk',
 });
 
-export default function App({ Component, pageProps }) {
+ function App({ Component, pageProps }) {
   return (
     <div className={`${mena.variable} font-sans bg-[#F5FFF3]`}>
       <Component {...pageProps} />
     </div>
   );
 }
+
+export default wrapper.withRedux(App);
