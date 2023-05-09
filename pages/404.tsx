@@ -4,7 +4,7 @@ import HomeLayout from '@/layouts/HomeLayout';
 export default function Custom404() {
   return (
     <HomeLayout>
-      <div className="p-5 lg:p-32 min-h-[80vh]">
+      <div className="p-5 lg:p-32 min-h-[80vh] grid items-center">
         <div className="text-center flex flex-col gap-8">
           <h1 className="text-9xl font-bold">404</h1>
           <p className="text-xl">This page doesn't exist yet.</p>
