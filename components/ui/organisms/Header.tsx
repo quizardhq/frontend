@@ -64,19 +64,6 @@ export default function Header() {
                 </svg>
               </button>
               <ul className="flex flex-col items-center justify-center h-full text-xl font-normal">
-                <li className="my-5 ">
-                  <Link
-                    onKeyPress={(e) => {
-                      if (e.key === 'Enter') {
-                        handleToggle();
-                      }
-                    }}
-                    onClick={handleToggle}
-                    href="/#features"
-                  >
-                    Features
-                  </Link>
-                </li>
                 <li className="my-5">
                   <Link
                     onKeyPress={(e) => {
@@ -88,6 +75,19 @@ export default function Header() {
                     href="/#about-us"
                   >
                     About Us
+                  </Link>
+                </li>
+                <li className="my-5 ">
+                  <Link
+                    onKeyPress={(e) => {
+                      if (e.key === 'Enter') {
+                        handleToggle();
+                      }
+                    }}
+                    onClick={handleToggle}
+                    href="/#features"
+                  >
+                    Features
                   </Link>
                 </li>
                 <li className="my-5">
@@ -133,8 +133,8 @@ export default function Header() {
         </AnimatePresence>
 
         <nav className="hidden lg:flex font-medium space-x-5 items-center text-[#00210E] cursor-pointer">
-          <Link href="/#features">Features</Link>
           <Link href="/#about-us">About Us</Link>
+          <Link href="/#features">Features</Link>
           <Link href="/#faq">FAQ</Link>
           <div>
             <Link href="/">
