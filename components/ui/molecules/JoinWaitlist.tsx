@@ -5,9 +5,10 @@ import Button from '../atoms/Button';
 
 type WaitlistFormProps = {
   accent?: string;
+  placeholderColor?: string;
 };
 
-export function WaitlistForm({ accent }: WaitlistFormProps) {
+export function WaitlistForm({ accent, placeholderColor }: WaitlistFormProps) {
   const [email, setEmail] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string | null>('');
   const [successMessage, setSuccessMessage] = useState<string | null>('');
@@ -48,7 +49,7 @@ export function WaitlistForm({ accent }: WaitlistFormProps) {
           name="waitlist_email"
           id="waitlist_email"
           placeholder="Email address"
-          className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#FFFFFF]"
+          className={`w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[${placeholderColor}]`}
           autoComplete="off"
           value={email}
           onChange={handleEmailChange}
@@ -75,6 +76,7 @@ export function WaitlistForm({ accent }: WaitlistFormProps) {
 // Default WaitlistForm props
 WaitlistForm.defaultProps = {
   accent: '#00A65B',
+  placeholderColor: '#ffffff',
 };
 
 export default function JoinWaitlist() {

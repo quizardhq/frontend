@@ -44,7 +44,7 @@ export default function ComingSoon() {
                 <div className="text-sm font-light mb-2 text-[#00391B]">
                   Join the waitlist to get notified when we launch
                 </div>
-                <WaitlistForm accent="#00A65B" />
+                <WaitlistForm accent="#00A65B" placeholderColor="#00A65B" />
               </div>
             </div>
           </div>
