@@ -48,7 +48,7 @@ export function WaitlistForm({ accent }: WaitlistFormProps) {
           name="waitlist_email"
           id="waitlist_email"
           placeholder="Email address"
-          className={`w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[${accent}]`}
+          className="w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[#FFFFFF]"
           autoComplete="off"
           value={email}
           onChange={handleEmailChange}
