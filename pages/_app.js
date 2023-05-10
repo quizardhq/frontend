@@ -27,7 +27,7 @@ const mena = localFont({
   variable: '--mena-grotesk',
 });
 
- function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <div className={`${mena.variable} font-sans bg-[#F5FFF3]`}>
       <Component {...pageProps} />

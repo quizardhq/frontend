@@ -43,7 +43,9 @@ export default function Footer() {
                 <div>
                   <Image src={MailIcon} alt="mail icon" />
                 </div>
-                <div>support@quizzardhq.com</div>
+                <div>
+                  <a href="mailto:quizard.hq@gmail.com">quizard.hq@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>
@@ -58,13 +60,13 @@ export default function Footer() {
                 <Link href="/">Home</Link>
               </div>
               <div>
-                <Link href="/">About Us</Link>
+                <Link href="/#about-us">About Us</Link>
               </div>
               <div>
-                <Link href="/">Features</Link>
+                <Link href="/#features">Features</Link>
               </div>
               <div>
-                <Link href="/">FAQs</Link>
+                <Link href="/#faq">FAQs</Link>
               </div>
             </div>
           </div>
@@ -76,34 +78,46 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-3">
               <div>
-                <Link href="/">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://twitter.com/quizardHQ"
+                >
                   <div className="flex space-x-2 items-center">
                     <div>
                       <Image src={TwitterIcon} alt="phone icon" />
                     </div>
                     <div>Twitter</div>
                   </div>
-                </Link>
+                </a>
               </div>
               <div>
-                <Link href="/">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://github.com/quizardhq/frontend"
+                >
                   <div className="flex space-x-2 items-center">
                     <div>
                       <Image src={GitHubIcon} alt="phone icon" />
                     </div>
                     <div>GitHub</div>
                   </div>
-                </Link>
+                </a>
               </div>
               <div>
-                <Link href="/">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://join.slack.com/t/quizardhq/shared_invite/zt-1uys4uo7k-PNdgNv0bdsk7Ezb52HMhfg"
+                >
                   <div className="flex space-x-2 items-center">
                     <div>
                       <Image src={SlackIcon} alt="phone icon" />
                     </div>
                     <div>Slack</div>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

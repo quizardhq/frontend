@@ -64,7 +64,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- What is Quizard --- */}
-      <section className="p-5 lg:py-12 lg:px-32">
+      <section className="p-5 lg:py-12 lg:px-32" id="about-us">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
@@ -255,7 +255,7 @@ export default function ComingSoon() {
       </section>
 
       {/* FAQs */}
-      <section className="p-5 pb-20 lg:p-20 bg-[#00894A]">
+      <section id="faq" className="p-5 pb-20 lg:p-20 bg-[#00894A]">
         <div className="max-w-full py-10 mx-auto">
           <div className="grid lg:grid-cols-12 gap-20 font-semibold text-2xl lg:text-4xl text-[#F5FFF3] lg:my-10">
             <div className="hidden lg:block lg:col-span-5"></div>
