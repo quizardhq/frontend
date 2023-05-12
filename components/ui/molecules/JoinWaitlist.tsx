@@ -5,10 +5,10 @@ import Button from '../atoms/Button';
 
 type WaitlistFormProps = {
   accent?: string;
-  placeholderColor?: string;
+  isLight?: boolean;
 };
 
-export function WaitlistForm({ accent, placeholderColor }: WaitlistFormProps) {
+export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
   const [email, setEmail] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string | null>('');
   const [successMessage, setSuccessMessage] = useState<string | null>('');
@@ -49,7 +49,9 @@ export function WaitlistForm({ accent, placeholderColor }: WaitlistFormProps) {
           name="waitlist_email"
           id="waitlist_email"
           placeholder="Email address"
-          className={`w-full outline-none bg-transparent rounded-md m-3 placeholder:text-[${placeholderColor}]`}
+          className={`w-full outline-none bg-transparent rounded-md m-3 ${
+            isLight ? 'placeholder:text-white' : ''
+          }`}
           autoComplete="off"
           value={email}
           onChange={handleEmailChange}
@@ -76,7 +78,7 @@ export function WaitlistForm({ accent, placeholderColor }: WaitlistFormProps) {
 // Default WaitlistForm props
 WaitlistForm.defaultProps = {
   accent: '#00A65B',
-  placeholderColor: '#ffffff',
+  isLight: false,
 };
 
 export default function JoinWaitlist() {
@@ -92,7 +94,7 @@ export default function JoinWaitlist() {
           to launch.
         </div>
         <div>
-          <WaitlistForm accent="#00e47a" />
+          <WaitlistForm accent="#00e47a" isLight />
         </div>
       </div>
       <div className="hidden lg:block lg:col-span-2 absolute right-0 bottom-0">
