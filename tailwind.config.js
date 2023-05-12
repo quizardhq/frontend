@@ -15,9 +15,9 @@ module.exports = {
         sans: ['var(--mena-grotesk)'],
       },
     },
-    colors: {
+    /*colors: {
       primary: '#00522A',
-    },
+    }, */
   },
   plugins: [require('flowbite/plugin')],
 };
