@@ -1,5 +1,8 @@
-// import { useState } from 'react';
 import Image from 'next/image';
+
+// Add carousel component
+import { Carousel } from 'flowbite-react';
+
 import {
   EasySharing,
   GamePreviewImage,
@@ -16,8 +19,8 @@ import team, { faqs } from '../../assets/data';
 import FloatingImage from '../molecules/FloatingImage';
 import Accordion from '../atoms/Accordion';
 import { WaitlistForm } from '../molecules/JoinWaitlist';
-// import { WaitlistForm } from '../molecules/JoinWaitlist';
 
+// --- Coming Soon Page ---
 export default function ComingSoon() {
   return (
     <>
@@ -64,7 +67,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- What is Quizard --- */}
-      <section className="p-5 lg:py-12 lg:px-32">
+      <section className="p-5 lg:py-12 lg:px-32" id="about-us">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
@@ -208,17 +211,17 @@ export default function ComingSoon() {
       </section>
 
       {/* Meet the Team */}
-      <section className="p-20 bg-[url('/assets/Background.svg')] bg-no-repeat bg-cover">
+      <section className="p-5 lg:p-20 bg-[url('/assets/Background.svg')] bg-no-repeat bg-cover">
         <div className="max-w-full py-10 mx-auto">
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
             Meet the Team
           </div>
 
-          {/* Team Members */}
-          <div className="flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
+          {/* Team Members - Desktop */}
+          <div className="hidden lg:flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
             {team.map((member) => (
               <div
-                key={member.name}
+                key={`${member.name}-desktop`}
                 className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
               >
                 <Image
@@ -251,11 +254,51 @@ export default function ComingSoon() {
               </div>
             ))}
           </div>
+
+          {/* Team Members - Mobile */}
+          <div className="lg:hidden h-[480px]">
+            <Carousel indicators={false}>
+              {team.map((member) => (
+                <div
+                  key={`${member.name}-mobile`}
+                  className="bg-[#C3FFD0] w-full shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
+                >
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full"
+                  />
+                  <div className="flex align-top justify-between mt-4">
+                    <div>
+                      <div className="text-[#00391B] font-semibold md:text-3xl text-lg">
+                        {member.name}
+                      </div>
+                      <div className="text-lg text-[#006D3A] font-normal">
+                        {member.role}
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <Image
+                        className="w-6 h-6 md:w-8 md:h-8"
+                        src={TwitterIcon}
+                        alt="twitter"
+                      />
+                      <Image
+                        className="w-6 h-6 md:w-8 md:h-8"
+                        src={LinkedIn}
+                        alt="LinkedIn"
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Carousel>
+          </div>
         </div>
       </section>
 
       {/* FAQs */}
-      <section className="p-5 pb-20 lg:p-20 bg-[#00894A]">
+      <section id="faq" className="p-5 pb-20 lg:p-20 bg-[#00894A]">
         <div className="max-w-full py-10 mx-auto">
           <div className="grid lg:grid-cols-12 gap-20 font-semibold text-2xl lg:text-4xl text-[#F5FFF3] lg:my-10">
             <div className="hidden lg:block lg:col-span-5"></div>
