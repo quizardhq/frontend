@@ -3,8 +3,8 @@
 
 echo '🏗️👷 Running checks on your code before committing' 🔍🧐
 
-npx lint-staged
 yarn format .
+npx lint-staged
 yarn build
 
 echo '✅✅ Awesome work! ✅✅'

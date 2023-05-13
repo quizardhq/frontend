@@ -40,15 +40,10 @@ export default function ComingSoon() {
 
             {/* Waitlist form */}
             <div className="max-w-md">
-              {/* On Mobile view */}
-
-              {/* On Desktop view */}
-              <div className="hidden lg:block">
-                <div className="text-sm font-light mb-2 text-[#00391B]">
-                  Join the waitlist to get notified when we launch
-                </div>
-                <WaitlistForm accent="#00A65B" />
+              <div className="text-sm font-light mb-2 text-[#00391B]">
+                Join the waitlist to get notified when we launch
               </div>
+              <WaitlistForm accent="#00A65B" />
             </div>
           </div>
 
