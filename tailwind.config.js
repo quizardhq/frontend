@@ -19,5 +19,5 @@ module.exports = {
       primary: '#00522A',
     }, */
   },
-  plugins: [require('flowbite/plugin')],
+  // plugins: [require('flowbite/plugin')],
 };
