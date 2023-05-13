@@ -116,7 +116,7 @@ export default function Header() {
                 <li className="w-[100%]">
                   <div
                     className="w-[100%] mt-[1rem] text-center border-[1px] p-2 rounded-md border-primary font-normal"
-                    style={{ border: '1px solid #0275d8' }}
+                    style={{ border: '1px solid #00522A' }}
                   >
                     <Link href="https://github.com/quizardhq">
                       <Image
@@ -148,7 +148,7 @@ export default function Header() {
           </div>
           <div
             className="border-2 p-2 rounded-md border-primary"
-            style={{ border: '1px solid #0275d8' }}
+            style={{ border: '1px solid #00522A' }}
           >
             <Link href="https://github.com/quizardhq">
               <Image src={GitHubIcon} alt="Github" width="28" height="26" />
