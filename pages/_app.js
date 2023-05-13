@@ -1,7 +1,8 @@
 import '@/styles/globals.css';
 import localFont from 'next/font/local';
+import { Provider } from 'react-redux';
 
-import { wrapper } from '../redux/store';
+import store from '../redux/store';
 
 const mena = localFont({
   src: [
@@ -29,10 +30,12 @@ const mena = localFont({
 
 function App({ Component, pageProps }) {
   return (
-    <div className={`${mena.variable} font-sans bg-[#F5FFF3]`}>
-      <Component {...pageProps} />
-    </div>
+    <Provider store={store}>
+      <div className={`${mena.variable} font-sans bg-[#F5FFF3]`}>
+        <Component {...pageProps} />
+      </div>
+    </Provider>
   );
 }
 
-export default wrapper.withRedux(App);
+export default App;
