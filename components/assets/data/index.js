@@ -5,14 +5,14 @@ const team = [
     image: Codemon,
     name: 'Codemon',
     role: 'Back-End',
-    twitter: '',
+    twitter: 'https://twitter.com/codemon_',
     linkedin: '',
   },
   {
     image: ShowBaba,
     name: 'ShowBaba',
     role: 'Back-End',
-    twitter: '',
+    twitter: 'https://twitter.com/samshandle_',
     linkedin: '',
   },
   {
@@ -26,7 +26,7 @@ const team = [
     image: Divine,
     name: 'Divine Orji',
     role: 'Front-End',
-    twitter: '',
+    twitter: 'https://twitter.com/dpkreativ',
     linkedin: '',
   },
   {
@@ -40,7 +40,7 @@ const team = [
     image: Christi,
     name: 'Christiana Ojo',
     role: 'Front-End',
-    twitter: '',
+    twitter: 'https://twitter.com/technicalchriss',
     linkedin: '',
   },
 ];
