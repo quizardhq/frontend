@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
-
-interface WaitlistState {
+import { HttpService, APIResponse } from '../../utils/http/service';
+import config from '../../utils/config';
+export interface WaitlistState {
   status: 'idle' | 'loading' | 'succeeded' | 'failed';
   error: string | null;
 }
@@ -10,14 +10,16 @@ interface AddToWaitlistPayload {
   email: string;
 }
 
+const http: HttpService = new HttpService(config.QUIZARD_USERS_BASE_URL);
+
 export const addToWaitlist = createAsyncThunk(
   'waitlist/add',
   async (payload: AddToWaitlistPayload, thunkAPI) => {
     try {
-      const response = await axios.post('/api/waitlist', payload);
-      return response.data; // If your backend API returns any data
+      await http.post<APIResponse>('/waitlist', payload);
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.response.data);
+      const message = error?.response?.data?.message;
+      return thunkAPI.rejectWithValue(message || error.message);
     }
   }
 );
@@ -33,9 +35,11 @@ const waitlistSlice = createSlice({
     builder
       .addCase(addToWaitlist.pending, (state) => {
         state.status = 'loading';
+        state.error = null;
       })
-      .addCase(addToWaitlist.fulfilled, (state, action) => {
+      .addCase(addToWaitlist.fulfilled, (state) => {
         state.status = 'succeeded';
+        state.error = null;
       })
       .addCase(addToWaitlist.rejected, (state, action) => {
         state.status = 'failed';
