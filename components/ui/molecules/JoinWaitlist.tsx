@@ -2,6 +2,11 @@ import Image from 'next/image';
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { YoungWomenStanding } from '@/components/assets';
 import Button from '../atoms/Button';
+import { useAppDispatch, useAppSelector } from '../../../redux/hooks';
+import {
+  WaitlistState,
+  addToWaitlist,
+} from '../../../redux/reducer/waitlist.slice';
 
 type WaitlistFormProps = {
   accent?: string;
@@ -11,17 +16,20 @@ type WaitlistFormProps = {
 export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
   const [email, setEmail] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string | null>('');
-  const [successMessage, setSuccessMessage] = useState<string | null>('');
   const [submitting, setSubmitting] = useState<boolean>(false);
+  const waitlistState = useAppSelector<WaitlistState>(
+    (state) => state.waitlist
+  );
+
+  const dispatch = useAppDispatch();
 
   const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
 
-  const handleJoinWaitlist = (e: FormEvent<HTMLFormElement>) => {
+  const handleJoinWaitlist = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
-    setSuccessMessage(null);
     setErrorMessage(null);
 
     if (!email || !/\S+@\S+\.\S+/.test(email)) {
@@ -31,9 +39,7 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
     }
 
     try {
-      // Code to submit the form and add the email to the waitlist goes here
-      setEmail('');
-      setSuccessMessage("You've been added to the waitlist");
+      await dispatch(addToWaitlist({ email }));
     } catch (error) {
       setErrorMessage('An error occurred while submitting the form.');
     } finally {
@@ -55,21 +61,30 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
           autoComplete="off"
           value={email}
           onChange={handleEmailChange}
-          disabled={submitting}
+          disabled={submitting && waitlistState.status === 'loading'}
         />
         <Button
           isSubmit={false}
           className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
           onClick={handleJoinWaitlist}
-          isLoading={submitting}
-          isDisabled={submitting}
+          isLoading={submitting && waitlistState.status === 'loading'}
+          isDisabled={submitting && waitlistState.status === 'loading'}
         >
           Join
         </Button>
       </div>
-      {errorMessage && <p className="text-red-500 text-sm">{errorMessage}</p>}
-      {successMessage && (
-        <p className="text-white-500 text-sm">{successMessage}</p>
+
+      {waitlistState.error ? (
+        <p className="text-[#FF0000] text-sm">{waitlistState.error}</p>
+      ) : (
+        ''
+      )}
+
+      {waitlistState.status === 'succeeded' && !errorMessage && (
+        <p className="text-white-500 text-sm mt-5">
+          By the mystical powers that govern this realm, thou hast been duly
+          inscribed onto the scroll of the waitlist.
+        </p>
       )}
     </form>
   );
@@ -83,7 +98,10 @@ WaitlistForm.defaultProps = {
 
 export default function JoinWaitlist() {
   return (
-    <div className="grid lg:grid-cols-5 p-6 lg:p-12 relative bg-[#00b15e] bg-[url(/assets/images/bg_grass_green.png)] border-4 border-[#00e47a] rounded-lg">
+    <div
+      className="grid lg:grid-cols-5 p-6 lg:p-12 relative bg-[#00b15e] bg-[url(/assets/images/bg_grass_green.png)] border-4 border-[#00e47a] rounded-lg"
+      id="join_waitlist"
+    >
       <div className="flex flex-col gap-6 text-[#F5FFF3] lg:col-span-3">
         <div className="text-2xl lg:text-4xl font-semibold">
           JOIN THE WAITLIST

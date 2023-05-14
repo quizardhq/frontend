@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Add carousel component
 import { Carousel } from 'flowbite-react';
@@ -14,11 +15,12 @@ import {
   FAQs,
   TwitterIcon,
 } from '@/components/assets';
-import Divider from '../atoms/Divider';
+import Divider from '@/components/ui/atoms/Divider';
+import Button from '@/components/ui/atoms/Button';
+import Accordion from '@/components/ui/atoms/Accordion';
+
 import team, { faqs } from '../../assets/data';
 import FloatingImage from '../molecules/FloatingImage';
-import Accordion from '../atoms/Accordion';
-import { WaitlistForm } from '../molecules/JoinWaitlist';
 
 // --- Coming Soon Page ---
 export default function ComingSoon() {
@@ -41,9 +43,15 @@ export default function ComingSoon() {
             {/* Waitlist form */}
             <div className="max-w-md">
               <div className="text-sm font-light mb-2 text-[#00391B]">
-                Join the waitlist to get notified when we launch
+                <Link href="/#join_waitlist">
+                  <Button
+                    isSubmit
+                    className="primary-btn text-[#00391B] font-normal text-lg"
+                  >
+                    JOIN THE WAITLIST
+                  </Button>
+                </Link>
               </div>
-              <WaitlistForm accent="#00A65B" />
             </div>
           </div>
 

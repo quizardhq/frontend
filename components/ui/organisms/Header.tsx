@@ -104,7 +104,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={handleToggle}>
+                  <Link href="/#join_waitlist" onClick={handleToggle}>
                     <Button
                       isSubmit
                       className="primary-btn text-[#00391B] font-normal text-lg"
@@ -140,7 +140,7 @@ export default function Header() {
           <Link href="/#features">Features</Link>
           <Link href="/#faq">FAQ</Link>
           <div>
-            <Link href="/">
+            <Link href="/#join_waitlist">
               <Button className="primary-btn text-[#00391B] font-medium">
                 JOIN THE WAITLIST
               </Button>
