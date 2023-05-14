@@ -19,17 +19,20 @@ export function Bellow({ title, content }: BellowProps) {
       {/* Title */}
       <button
         type="button"
-        className="flex items-start justify-between text-left gap-4"
+        className="flex items-start justify-between text-left gap-4 "
         onClick={handleClick}
       >
         <div className="flex-1">{title}</div>
-        <div className={`${isOpen ? 'rotate-45' : ''} w-6`}>
+        <div className={`${isOpen ? 'rotate-45' : ''} w-6 `}>
           <Image src={CrossIcon} alt="" className="w-full" />
         </div>
       </button>
 
       {/* Content */}
-      <div className={`${isOpen ? 'block' : 'hidden'}`}>{content}</div>
+
+      <div className={`${isOpen ? 'contentt show' : 'contentt'} 	`}>
+        {content}
+      </div>
     </div>
   );
 }

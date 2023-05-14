@@ -8,10 +8,26 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+*,
+html {
+  scroll-behavior: smooth !important;
+}
 
 body {
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+.contentt {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0, 1, 0, 1);
+}
+
+.contentt.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.8s cubic-bezier(1, 0, 1, 0);
 }
 
 a {
