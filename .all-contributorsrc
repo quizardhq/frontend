@@ -1,5 +1,21 @@
 {
-  "projectName" : "frontend",
-  "projectOwner":"quizardhq",
-  "repoType" : "github"
+  "projectName": "frontend",
+  "projectOwner": "quizardhq",
+  "repoType": "github",
+  "files": [
+    "README.md"
+  ],
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "CeoFred",
+      "name": "Johnson-Awah Alfred",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32965534?v=4",
+      "profile": "https://codemon.me",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
 }
