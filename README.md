@@ -50,6 +50,7 @@ pnpm dev
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://codemon.me"><img src="https://avatars.githubusercontent.com/u/32965534?v=4?s=100" width="100px;" alt="Johnson-Awah Alfred"/><br /><sub><b>Johnson-Awah Alfred</b></sub></a><br /><a href="https://github.com/quizardhq/frontend/commits?author=CeoFred" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://dpkreativ.dev"><img src="https://avatars.githubusercontent.com/u/49480381?v=4?s=100" width="100px;" alt="Divine Orji"/><br /><sub><b>Divine Orji</b></sub></a><br /><a href="https://github.com/quizardhq/frontend/commits?author=dpkreativ" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
