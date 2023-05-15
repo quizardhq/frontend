@@ -28,12 +28,12 @@ import Jonathan from './images/Jonathan.svg';
 import Divine from './images/Divi.png';
 import Praise from './images/Praise.png';
 import Christi from './images/Christi.png';
-import Chukwunonso from './images/Chukwunonso.jpg';
-import Godwin from './images/Godwin.jpg';
-import Ikeh from './images/Ikeh.jpg';
-import Lemboye from './images/Lemboye.jpg';
-import Sinach from './images/Sinach.jpg';
-import Triumph from './images/Triumph.jpeg';
+import Chukwunonso from './images/Chukwunonso.png';
+import Godwin from './images/Godwin.png';
+import Ikeh from './images/Ikeh.png';
+import Lemboye from './images/Lemboye.png';
+import Sinach from './images/Sinach.png';
+import Triumph from './images/Triumph.png';
 
 // --- Exports ---
 export {
