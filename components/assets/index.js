@@ -3,7 +3,6 @@ import MenuIcon from './icons/menu.svg';
 import TwitterIcon from './icons/twitter.svg';
 import GitHubIcon from './icons/github.svg';
 import SlackIcon from './icons/slack.svg';
-import LinkedIn from './icons/Linkedin.png';
 import CrossIcon from './icons/large_plus.svg';
 import PhoneIcon from './icons/phone.svg';
 import MailIcon from './icons/mail.svg';
@@ -28,6 +27,12 @@ import Jonathan from './images/Jonathan.svg';
 import Divine from './images/Divi.png';
 import Praise from './images/Praise.png';
 import Christi from './images/Christi.png';
+import Chukwunonso from './images/Chukwunonso.png';
+import Godwin from './images/Godwin.png';
+import Ikeh from './images/Ikeh.png';
+import Lemboye from './images/Lemboye.png';
+import Sinach from './images/Sinach.png';
+import Triumph from './images/Triumph.png';
 
 // --- Exports ---
 export {
@@ -37,7 +42,6 @@ export {
   TwitterIcon,
   GitHubIcon,
   SlackIcon,
-  LinkedIn,
   PhoneIcon,
   MailIcon,
 
@@ -61,4 +65,10 @@ export {
   Divine,
   Praise,
   Christi,
+  Chukwunonso, 
+  Godwin, 
+  Ikeh, 
+  Lemboye, 
+  Sinach, 
+  Triumph,
 };

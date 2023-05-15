@@ -11,7 +11,6 @@ import {
   InteractiveSessions,
   RealtimeResults,
   Pana,
-  LinkedIn,
   FAQs,
   TwitterIcon,
 } from '@/components/assets';
@@ -230,7 +229,7 @@ export default function ComingSoon() {
                 <Image
                   src={member.image}
                   alt={member.name}
-                  className="w-full"
+                  className="w-full rounded-lg"
                 />
                 <div className="flex align-top justify-between mt-4">
                   <div>
@@ -242,16 +241,14 @@ export default function ComingSoon() {
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <Image
-                      className="w-6 h-6 md:w-8 md:h-8"
-                      src={TwitterIcon}
-                      alt="twitter"
-                    />
-                    <Image
-                      className="w-6 h-6 md:w-8 md:h-8"
-                      src={LinkedIn}
-                      alt="LinkedIn"
-                    />
+                    <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        className="w-6 h-6 md:w-8 md:h-8"
+                        src={TwitterIcon}
+                        alt="twitter"
+                      />
+                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -281,16 +278,14 @@ export default function ComingSoon() {
                       </div>
                     </div>
                     <div className="flex gap-2">
-                      <Image
-                        className="w-6 h-6 md:w-8 md:h-8"
-                        src={TwitterIcon}
-                        alt="twitter"
-                      />
-                      <Image
-                        className="w-6 h-6 md:w-8 md:h-8"
-                        src={LinkedIn}
-                        alt="LinkedIn"
-                      />
+                      <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+                        <Image
+                          className="w-6 h-6 md:w-8 md:h-8"
+                          src={TwitterIcon}
+                          alt="twitter"
+                        />
+                      </a>
+                      
                     </div>
                   </div>
                 </div>
