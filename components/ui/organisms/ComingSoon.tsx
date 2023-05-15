@@ -229,7 +229,7 @@ export default function ComingSoon() {
                 <Image
                   src={member.image}
                   alt={member.name}
-                  className="w-full"
+                  className="w-full rounded-lg"
                 />
                 <div className="flex align-top justify-between mt-4">
                   <div>
