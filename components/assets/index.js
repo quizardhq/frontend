@@ -32,8 +32,8 @@ import Chukwunonso from './images/Chukwunonso.jpg';
 import Godwin from './images/Godwin.jpg';
 import Ikeh from './images/Ikeh.jpg';
 import Lemboye from './images/Lemboye.jpg';
-import Sinach from './images/ Sinach.jpg';
-import Triumph from './images/Triumph.jpg';
+import Sinach from './images/Sinach.jpg';
+import Triumph from './images/Triumph.jpeg';
 
 // --- Exports ---
 export {
