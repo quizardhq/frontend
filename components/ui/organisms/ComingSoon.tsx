@@ -242,16 +242,20 @@ export default function ComingSoon() {
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <Image
-                      className="w-6 h-6 md:w-8 md:h-8"
-                      src={TwitterIcon}
-                      alt="twitter"
-                    />
-                    <Image
-                      className="w-6 h-6 md:w-8 md:h-8"
-                      src={LinkedIn}
-                      alt="LinkedIn"
-                    />
+                    <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        className="w-6 h-6 md:w-8 md:h-8"
+                        src={TwitterIcon}
+                        alt="twitter"
+                      />
+                    </a>
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        className="w-6 h-6 md:w-8 md:h-8"
+                        src={LinkedIn}
+                        alt="LinkedIn"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -281,16 +285,20 @@ export default function ComingSoon() {
                       </div>
                     </div>
                     <div className="flex gap-2">
-                      <Image
-                        className="w-6 h-6 md:w-8 md:h-8"
-                        src={TwitterIcon}
-                        alt="twitter"
-                      />
-                      <Image
-                        className="w-6 h-6 md:w-8 md:h-8"
-                        src={LinkedIn}
-                        alt="LinkedIn"
-                      />
+                      <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+                        <Image
+                          className="w-6 h-6 md:w-8 md:h-8"
+                          src={TwitterIcon}
+                          alt="twitter"
+                        />
+                      </a>
+                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Image
+                          className="w-6 h-6 md:w-8 md:h-8"
+                          src={LinkedIn}
+                          alt="LinkedIn"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
