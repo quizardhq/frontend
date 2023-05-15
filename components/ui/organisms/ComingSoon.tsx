@@ -11,7 +11,6 @@ import {
   InteractiveSessions,
   RealtimeResults,
   Pana,
-  LinkedIn,
   FAQs,
   TwitterIcon,
 } from '@/components/assets';
@@ -249,13 +248,7 @@ export default function ComingSoon() {
                         alt="twitter"
                       />
                     </a>
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                      <Image
-                        className="w-6 h-6 md:w-8 md:h-8"
-                        src={LinkedIn}
-                        alt="LinkedIn"
-                      />
-                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -292,13 +285,7 @@ export default function ComingSoon() {
                           alt="twitter"
                         />
                       </a>
-                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                        <Image
-                          className="w-6 h-6 md:w-8 md:h-8"
-                          src={LinkedIn}
-                          alt="LinkedIn"
-                        />
-                      </a>
+                      
                     </div>
                   </div>
                 </div>

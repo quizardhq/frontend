@@ -3,7 +3,6 @@ import MenuIcon from './icons/menu.svg';
 import TwitterIcon from './icons/twitter.svg';
 import GitHubIcon from './icons/github.svg';
 import SlackIcon from './icons/slack.svg';
-import LinkedIn from './icons/Linkedin.png';
 import CrossIcon from './icons/large_plus.svg';
 import PhoneIcon from './icons/phone.svg';
 import MailIcon from './icons/mail.svg';
@@ -43,7 +42,6 @@ export {
   TwitterIcon,
   GitHubIcon,
   SlackIcon,
-  LinkedIn,
   PhoneIcon,
   MailIcon,
 
