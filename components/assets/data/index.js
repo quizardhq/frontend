@@ -1,4 +1,4 @@
-import { Christi, Codemon, Divine, Jonathan, Praise, ShowBaba } from '..';
+import { Christi, Codemon, Divine, Jonathan, Praise, ShowBaba, Chukwunonso, Godwin, Ikeh, Lemboye, Sinach, Triumph } from '..';
 
 const team = [
   {
@@ -19,7 +19,7 @@ const team = [
     image: Jonathan,
     name: 'Joeburg',
     role: 'Design',
-    twitter: '',
+    twitter: 'https://twitter.com/joeburg_',
     linkedin: '',
   },
   {
@@ -33,7 +33,7 @@ const team = [
     image: Praise,
     name: 'Okoli Praise',
     role: 'Front-End',
-    twitter: '',
+    twitter: 'https://twitter.com/okolipraiz',
     linkedin: '',
   },
   {
@@ -41,6 +41,48 @@ const team = [
     name: 'Christiana Ojo',
     role: 'Front-End',
     twitter: 'https://twitter.com/technicalchriss',
+    linkedin: '',
+  },
+  {
+    image: Godwin,
+    name: 'Godwin Alexander Ekainu',
+    role: 'Mobile',
+    twitter: 'https://twitter.com/godwinAekainu',
+    linkedin: '',
+  },
+  {
+    image: Triumph,
+    name: 'Triumph Ugoji',
+    role: 'Product Manager',
+    twitter: 'https://twitter.com/TriumphUgoji',
+    linkedin: '',
+  },
+  {
+    image: Ikeh,
+    name: 'Ikeh Ernest',
+    role: 'Design',
+    twitter: 'https://twitter.com/Ernest_dezign',
+    linkedin: '',
+  },
+  {
+    image: Lemboye,
+    name: 'Lemboye Oluwafunmilayo',
+    role: 'Design',
+    twitter: 'https://twitter.com/olemboye046',
+    linkedin: '',
+  },
+  {
+    image: Chukwunonso,
+    name: 'Chukwunonso victor',
+    role: 'UX Writer',
+    twitter: 'https://twitter.com/tis_cnvictor',
+    linkedin: '',
+  },
+  {
+    image: Sinach,
+    name: 'Sinach Pat',
+    role: 'Design',
+    twitter: 'https://twitter.com/sinachpatrick',
     linkedin: '',
   },
 ];
