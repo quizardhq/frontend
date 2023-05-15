@@ -104,7 +104,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" onClick={handleToggle}>
+                  <Link href="/#join_waitlist" onClick={handleToggle}>
                     <Button
                       isSubmit
                       className="primary-btn text-[#00391B] font-normal text-lg"
@@ -114,11 +114,12 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="w-[100%]">
-                  <div
-                    className="w-[100%] mt-[1rem] text-center border-[1px] p-2 rounded-md border-primary font-normal"
-                    style={{ border: '1px solid #00522A' }}
-                  >
-                    <Link href="https://github.com/quizardhq">
+                  <Link href="https://github.com/quizardhq">
+                    <button
+                      className="w-[100%] mt-[1rem] text-center border-[1px] p-2 rounded-md border-primary font-normal"
+                      style={{ border: '1px solid #00522A' }}
+                      type="button"
+                    >
                       <Image
                         className="inline"
                         src={GitHubIcon}
@@ -126,9 +127,9 @@ export default function Header() {
                         width="28"
                         height="26"
                       />{' '}
-                      <span className="pl-4">Github</span>
-                    </Link>
-                  </div>
+                      <span className="ml-4">Github</span>
+                    </button>
+                  </Link>
                 </li>
               </ul>
             </motion.div>
@@ -136,24 +137,39 @@ export default function Header() {
         </AnimatePresence>
 
         <nav className="hidden lg:flex font-medium space-x-5 items-center text-[#00210E] cursor-pointer">
-          <Link href="/#about-us">About Us</Link>
-          <Link href="/#features">Features</Link>
-          <Link href="/#faq">FAQ</Link>
+          <Link
+            href="/#about-us"
+            className="hover:underline hover:underline-offset-8"
+          >
+            About Us
+          </Link>
+          <Link
+            href="/#features"
+            className="hover:underline hover:underline-offset-8"
+          >
+            Features
+          </Link>
+          <Link
+            href="/#faq"
+            className="hover:underline hover:underline-offset-8"
+          >
+            FAQ
+          </Link>
           <div>
-            <Link href="/">
+            <Link href="/#join_waitlist">
               <Button className="primary-btn text-[#00391B] font-medium">
                 JOIN THE WAITLIST
               </Button>
             </Link>
           </div>
-          <div
-            className="border-2 p-2 rounded-md border-primary"
-            style={{ border: '1px solid #00522A' }}
-          >
-            <Link href="https://github.com/quizardhq">
+          <Link href="https://github.com/quizardhq">
+            <div
+              className="border-2 p-2 rounded-md border-primary"
+              style={{ border: '1px solid #00522A' }}
+            >
               <Image src={GitHubIcon} alt="Github" width="28" height="26" />
-            </Link>
-          </div>
+            </div>
+          </Link>
         </nav>
       </div>
     </header>
