@@ -28,6 +28,12 @@ import Jonathan from './images/Jonathan.svg';
 import Divine from './images/Divi.png';
 import Praise from './images/Praise.png';
 import Christi from './images/Christi.png';
+import Chukwunonso from './images/Chukwunonso.jpg';
+import Godwin from './images/Godwin.jpg';
+import Ikeh from './images/Ikeh.jpg';
+import Lemboye from './images/Lemboye.jpg';
+import Sinach from './images/ Sinach.jpg';
+import Triumph from './images/Triumph.jpg';
 
 // --- Exports ---
 export {
@@ -61,4 +67,10 @@ export {
   Divine,
   Praise,
   Christi,
+  Chukwunonso, 
+  Godwin, 
+  Ikeh, 
+  Lemboye, 
+  Sinach, 
+  Triumph,
 };
