@@ -49,13 +49,35 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
 
   return (
     <form onSubmit={handleJoinWaitlist}>
-      <div className={`w-full flex border border-[${accent}] rounded-md p-1`}>
+      <div
+        className={`w-full flex flex-wrap border border-[${accent}] rounded-md p-1`}
+      >
+        <div className="flex flex-row">
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            placeholder="First Name"
+            className={`w-1/2 outline-none border border-[${accent}] p-2 bg-transparent rounded-md m-3 ${
+              isLight ? 'placeholder:text-white' : ''
+            }`}
+          />
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            placeholder="Last Name"
+            className={`w-1/2 outline-none border border-[${accent}] p-2 bg-transparent rounded-md m-3 ${
+              isLight ? 'placeholder:text-white' : ''
+            }`}
+          />
+        </div>
         <input
           type="email"
           name="waitlist_email"
           id="waitlist_email"
           placeholder="Email address"
-          className={`w-full outline-none bg-transparent rounded-md m-3 ${
+          className={`w-full outline-none border border-[${accent}] p-2 bg-transparent rounded-md m-3 ${
             isLight ? 'placeholder:text-white' : ''
           }`}
           autoComplete="off"
@@ -65,12 +87,12 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
         />
         <Button
           isSubmit={false}
-          className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
+          className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E] w-full"
           onClick={handleJoinWaitlist}
           isLoading={submitting && waitlistState.status === 'loading'}
           isDisabled={submitting && waitlistState.status === 'loading'}
         >
-          Join
+          Join Waitlist
         </Button>
       </div>
 
