@@ -52,13 +52,13 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
       <div
         className={`w-full flex flex-wrap border border-[${accent}] rounded-md p-1`}
       >
-        <div className="flex flex-row">
+        <div className="columns-2 gap-2">
           <input
             type="text"
             name="first_name"
             id="first_name"
             placeholder="First Name"
-            className={`w-1/2 outline-none border border-[${accent}] p-2 bg-transparent rounded-md m-3 ${
+            className={`w-48 outline-none border border-[${accent}] p-2 bg-transparent rounded-md m-3 ${
               isLight ? 'placeholder:text-white' : ''
             }`}
           />
@@ -67,7 +67,7 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
             name="last_name"
             id="last_name"
             placeholder="Last Name"
-            className={`w-1/2 outline-none border border-[${accent}] p-2 bg-transparent rounded-md m-3 ${
+            className={`w-48 outline-none border border-[${accent}] p-2 bg-transparent rounded-md m-3 ${
               isLight ? 'placeholder:text-white' : ''
             }`}
           />

@@ -1,4 +1,17 @@
-import { Christi, Codemon, Divine, Jonathan, Praise, ShowBaba, Chukwunonso, Godwin, Ikeh, Lemboye, Sinach, Triumph } from '..';
+import {
+  Christi,
+  Codemon,
+  Divine,
+  Jonathan,
+  Praise,
+  ShowBaba,
+  Chukwunonso,
+  Godwin,
+  Ikeh,
+  Lemboye,
+  Sinach,
+  Triumph,
+} from '..';
 
 const team = [
   {
