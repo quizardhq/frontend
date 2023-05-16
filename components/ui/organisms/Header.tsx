@@ -162,14 +162,14 @@ export default function Header() {
               </Button>
             </Link>
           </div>
-          <Link href="https://github.com/quizardhq">
+          <a href="https://github.com/quizardhq" target="_blank" rel="noopener noreferrer">
             <div
               className="border-2 p-2 rounded-md border-primary"
               style={{ border: '1px solid #00522A' }}
             >
               <Image src={GitHubIcon} alt="Github" width="28" height="26" />
             </div>
-          </Link>
+          </a>
         </nav>
       </div>
     </header>
