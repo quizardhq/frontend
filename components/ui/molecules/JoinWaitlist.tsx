@@ -13,8 +13,18 @@ type WaitlistFormProps = {
   isLight?: boolean;
 };
 
+type FormInputValue = {
+  first_name: string;
+  last_name: string;
+  email: string;
+};
+
 export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
-  const [email, setEmail] = useState<string>('');
+  const [formInput, setFormInput] = useState<FormInputValue>({
+    first_name: '',
+    last_name: '',
+    email: '',
+  });
   const [errorMessage, setErrorMessage] = useState<string | null>('');
   const [submitting, setSubmitting] = useState<boolean>(false);
   const waitlistState = useAppSelector<WaitlistState>(
@@ -23,8 +33,13 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
 
   const dispatch = useAppDispatch();
 
-  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
+  const handleFormInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setFormInput((old) => {
+      return {
+        ...old,
+        [e.target.id]: e.target.value.trim(),
+      };
+    });
   };
 
   const handleJoinWaitlist = async (e: FormEvent<HTMLFormElement>) => {
@@ -32,14 +47,25 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
     setSubmitting(true);
     setErrorMessage(null);
 
-    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+    if (!formInput.email || !/\S+@\S+\.\S+/.test(formInput.email)) {
       setErrorMessage('Please enter a valid email address.');
       setSubmitting(false);
       return;
     }
 
+    if (formInput.first_name.length <= 0) {
+      setErrorMessage('Please enter your first name.');
+      setSubmitting(false);
+      return;
+    }
+    if (formInput.last_name.length <= 0) {
+      setErrorMessage('Please enter your last name.');
+      setSubmitting(false);
+      return;
+    }
+
     try {
-      await dispatch(addToWaitlist({ email }));
+      await dispatch(addToWaitlist(formInput));
     } catch (error) {
       setErrorMessage('An error occurred while submitting the form.');
     } finally {
@@ -49,18 +75,52 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
 
   return (
     <form onSubmit={handleJoinWaitlist}>
-      <div className={`w-full flex border border-[${accent}] rounded-md p-1`}>
+      <div
+        className={`w-full flex flex-col border border-[${accent}] rounded-md p-1`}
+      >
+        <div className="lg:columns-2 gap-2">
+          <div>
+            <input
+              type="text"
+              name="waitlist_first_name"
+              id="first_name"
+              placeholder="First name"
+              className={`w-full my-1 lg:my-0 outline-none bg-transparent border border-[${accent}] rounded-md p-3 rounded-md ${
+                isLight ? 'placeholder:text-white' : ''
+              }`}
+              autoComplete="off"
+              value={formInput.first_name}
+              onChange={handleFormInputChange}
+              disabled={submitting && waitlistState.status === 'loading'}
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="waitlist_last_name"
+              id="last_name"
+              placeholder="Last name"
+              className={`w-full outline-none bg-transparent border border-[${accent}] rounded-md p-3 rounded-md ${
+                isLight ? 'placeholder:text-white' : ''
+              }`}
+              autoComplete="off"
+              value={formInput.last_name}
+              onChange={handleFormInputChange}
+              disabled={submitting && waitlistState.status === 'loading'}
+            />
+          </div>
+        </div>
         <input
           type="email"
           name="waitlist_email"
-          id="waitlist_email"
-          placeholder="Email address"
-          className={`w-full outline-none bg-transparent rounded-md m-3 ${
+          id="email"
+          placeholder="Email"
+          className={`w-full outline-none bg-transparent border border-[${accent}] rounded-md p-3 rounded-md my-1 ${
             isLight ? 'placeholder:text-white' : ''
           }`}
           autoComplete="off"
-          value={email}
-          onChange={handleEmailChange}
+          value={formInput.email}
+          onChange={handleFormInputChange}
           disabled={submitting && waitlistState.status === 'loading'}
         />
         <Button
@@ -75,7 +135,12 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
       </div>
 
       {waitlistState.error ? (
-        <p className="text-[#FF0000] text-sm">{waitlistState.error}</p>
+        <p className="text-[#FF0000] text-sm mt-5">{waitlistState.error}</p>
+      ) : (
+        ''
+      )}
+      {errorMessage ? (
+        <p className="text-[#FF0000] text-sm mt-5">{errorMessage}</p>
       ) : (
         ''
       )}
