@@ -8,6 +8,8 @@ export interface WaitlistState {
 
 interface AddToWaitlistPayload {
   email: string;
+  first_name: string;
+  last_name: string;
 }
 
 const http: HttpService = new HttpService(config.QUIZARD_USERS_BASE_URL);

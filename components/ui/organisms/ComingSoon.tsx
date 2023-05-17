@@ -241,14 +241,17 @@ export default function ComingSoon() {
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={member.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Image
                         className="w-6 h-6 md:w-8 md:h-8"
                         src={TwitterIcon}
                         alt="twitter"
                       />
                     </a>
-                    
                   </div>
                 </div>
               </div>
@@ -278,14 +281,17 @@ export default function ComingSoon() {
                       </div>
                     </div>
                     <div className="flex gap-2">
-                      <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={member.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Image
                           className="w-6 h-6 md:w-8 md:h-8"
                           src={TwitterIcon}
                           alt="twitter"
                         />
                       </a>
-                      
                     </div>
                   </div>
                 </div>
