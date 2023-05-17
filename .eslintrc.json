@@ -12,6 +12,7 @@
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/self-closing-comp": "off",
-    "func-names": "off"
+    "func-names": "off",
+    "arrow-body-style": "off"
   }
 }

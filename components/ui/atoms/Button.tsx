@@ -24,7 +24,7 @@ export default function Button({
       disabled={isDisabled}
       onClick={onClick}
       type={isSubmit ? 'submit' : 'button'}
-      className={className}
+      className={`${className} flex justify-center item-center`}
     >
       {isLoading ? <SpinnerIcon /> : children}
     </button>
