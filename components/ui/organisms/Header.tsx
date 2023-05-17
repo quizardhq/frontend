@@ -114,7 +114,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="w-[100%]">
-                  <Link href="https://github.com/quizardhq">
+                  <a href="https://github.com/quizardhq" target="_blank" rel="noopener noreferrer">
                     <button
                       className="w-[100%] mt-[1rem] text-center border-[1px] p-2 rounded-md border-primary font-normal"
                       style={{ border: '1px solid #00522A' }}
@@ -129,7 +129,7 @@ export default function Header() {
                       />{' '}
                       <span className="ml-4">Github</span>
                     </button>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </motion.div>
@@ -162,14 +162,14 @@ export default function Header() {
               </Button>
             </Link>
           </div>
-          <Link href="https://github.com/quizardhq">
+          <a href="https://github.com/quizardhq" target="_blank" rel="noopener noreferrer">
             <div
               className="border-2 p-2 rounded-md border-primary"
               style={{ border: '1px solid #00522A' }}
             >
               <Image src={GitHubIcon} alt="Github" width="28" height="26" />
             </div>
-          </Link>
+          </a>
         </nav>
       </div>
     </header>
