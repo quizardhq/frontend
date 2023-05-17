@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    QUIZARD_USERS_API: 'http://127.0.0.1:3006/api/v1',
+    QUIZARD_USERS_API: 'https://api.quizardhq.com/api/v1',
   },
 };
 

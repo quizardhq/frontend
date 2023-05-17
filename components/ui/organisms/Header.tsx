@@ -114,7 +114,11 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="w-[100%]">
-                  <a href="https://github.com/quizardhq" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://github.com/quizardhq"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button
                       className="w-[100%] mt-[1rem] text-center border-[1px] p-2 rounded-md border-primary font-normal"
                       style={{ border: '1px solid #00522A' }}
@@ -162,7 +166,11 @@ export default function Header() {
               </Button>
             </Link>
           </div>
-          <a href="https://github.com/quizardhq" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/quizardhq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               className="border-2 p-2 rounded-md border-primary"
               style={{ border: '1px solid #00522A' }}
