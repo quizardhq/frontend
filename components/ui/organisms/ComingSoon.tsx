@@ -26,7 +26,7 @@ export default function ComingSoon() {
   return (
     <>
       {/* --- Hero Section --- */}
-      <section className="p-5 lg:px-32 lg:pt-20 lg:pb-40 bg-[url(/assets/waves.svg)] bg-no-repeat bg-bottom bg-cover">
+      <section className="p-5 lg:px-32 lg:pt-20 lg:pb-40 bg-[url(/assets/waves.png)] bg-no-repeat bg-bottom bg-cover">
         <div className="max-w-7xl mx-auto grid gap-10 lg:gap-20 lg:grid-cols-2 items-center">
           {/* Content */}
           <div className="grid gap-5 mt-[3rem]">
@@ -213,7 +213,7 @@ export default function ComingSoon() {
       </section>
 
       {/* Meet the Team */}
-      <section className="p-5 lg:p-20 bg-[url('/assets/Background.svg')] bg-no-repeat bg-cover">
+      <section className="p-5 lg:p-20 bg-[url('/assets/Background.png')] bg-no-repeat bg-cover">
         <div className="max-w-full py-10 mx-auto">
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
             Meet the Team

@@ -41,7 +41,7 @@ export default function Header() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className="bg-[#C4FBDD] bg-[url(/assets/noise.svg)] fixed top-0 left-0 w-screen h-screen z-50 flex flex-col items-center justify-center"
+              className="bg-[#C4FBDD] bg-[url(/assets/noise.png)] fixed top-0 left-0 w-screen h-screen z-50 flex flex-col items-center justify-center"
               initial={{ opacity: 0, x: '-100%' }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: '-100%' }}

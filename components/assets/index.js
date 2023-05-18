@@ -25,13 +25,8 @@ import Codemon from './images/codemon.svg';
 import ShowBaba from './images/ShowBaba.svg';
 import Jonathan from './images/Jonathan.svg';
 import Divine from './images/Divi.png';
-import Praise from './images/Praise.png';
-import Christi from './images/Christi.png';
 import Chukwunonso from './images/Chukwunonso.png';
 import Godwin from './images/Godwin.png';
-import Ikeh from './images/Ikeh.png';
-import Lemboye from './images/Lemboye.png';
-import Sinach from './images/Sinach.png';
 import Triumph from './images/Triumph.png';
 
 // --- Exports ---
@@ -63,12 +58,7 @@ export {
   ShowBaba,
   Jonathan,
   Divine,
-  Praise,
-  Christi,
   Chukwunonso,
   Godwin,
-  Ikeh,
-  Lemboye,
-  Sinach,
   Triumph,
 };
