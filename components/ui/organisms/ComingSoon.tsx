@@ -69,7 +69,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- What is Quizard --- */}
-      <section className="p-5 lg:py-12 lg:px-32" id="about-us">
+      <section className="p-5 lg:py-12 lg:px-32 mt-10" id="about-us">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
@@ -117,7 +117,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- Features --- */}
-      <section id="features" className="p-5 lg:py-12 lg:px-32 mt-[10rem]">
+      <section id="features" className="p-5 lg:py-12 lg:px-32 mt-10 lg:mt-20">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
@@ -214,7 +214,7 @@ export default function ComingSoon() {
 
       {/* Meet the Team */}
       <section className="bg-gradient-to-t from-[#00894A]">
-        <section className="px-5 py-20 lg:px-20 lg:pb-48 bg-[url('/assets/Background.png')] bg-no-repeat bg-cover">
+        <section className="px-5 py-10 lg:p-20 lg:pb-48 bg-[url('/assets/Background.png')] bg-no-repeat bg-cover">
           <div className="max-w-full py-10 mx-auto">
             <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
               Meet the Team
