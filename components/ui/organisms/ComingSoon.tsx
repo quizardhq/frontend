@@ -213,63 +213,24 @@ export default function ComingSoon() {
       </section>
 
       {/* Meet the Team */}
-      <section className="p-5 lg:p-20 bg-[url('/assets/Background.png')] bg-no-repeat bg-cover">
-        <div className="max-w-full py-10 mx-auto">
-          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
-            Meet the Team
-          </div>
+      <section className="bg-gradient-to-t from-[#00894A]">
+        <section className="px-5 py-20 lg:px-20 lg:pb-96 bg-[url('/assets/Background.png')] bg-no-repeat bg-cover">
+          <div className="max-w-full py-10 mx-auto">
+            <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
+              Meet the Team
+            </div>
 
-          {/* Team Members - Desktop */}
-          <div className="hidden lg:flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
-            {team.map((member) => (
-              <div
-                key={`${member.name}-desktop`}
-                className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
-              >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full rounded-lg"
-                />
-                <div className="flex align-top justify-between mt-4">
-                  <div>
-                    <div className="text-[#00391B] font-semibold md:text-3xl text-lg">
-                      {member.name}
-                    </div>
-                    <div className="text-lg text-[#006D3A] font-normal">
-                      {member.role}
-                    </div>
-                  </div>
-                  <div className="flex gap-2">
-                    <a
-                      href={member.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Image
-                        className="w-6 h-6 md:w-8 md:h-8"
-                        src={TwitterIcon}
-                        alt="twitter"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Team Members - Mobile */}
-          <div className="lg:hidden h-[480px]">
-            <Carousel indicators={false}>
+            {/* Team Members - Desktop */}
+            <div className="hidden lg:flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
               {team.map((member) => (
                 <div
-                  key={`${member.name}-mobile`}
-                  className="bg-[#C3FFD0] w-full shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
+                  key={`${member.name}-desktop`}
+                  className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
                 >
                   <Image
                     src={member.image}
                     alt={member.name}
-                    className="w-full"
+                    className="w-full rounded-lg"
                   />
                   <div className="flex align-top justify-between mt-4">
                     <div>
@@ -296,13 +257,54 @@ export default function ComingSoon() {
                   </div>
                 </div>
               ))}
-            </Carousel>
+            </div>
+
+            {/* Team Members - Mobile */}
+            <div className="lg:hidden h-[480px]">
+              <Carousel indicators={false}>
+                {team.map((member) => (
+                  <div
+                    key={`${member.name}-mobile`}
+                    className="bg-[#C3FFD0] w-full shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
+                  >
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full"
+                    />
+                    <div className="flex align-top justify-between mt-4">
+                      <div>
+                        <div className="text-[#00391B] font-semibold md:text-3xl text-lg">
+                          {member.name}
+                        </div>
+                        <div className="text-lg text-[#006D3A] font-normal">
+                          {member.role}
+                        </div>
+                      </div>
+                      <div className="flex gap-2">
+                        <a
+                          href={member.twitter}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Image
+                            className="w-6 h-6 md:w-8 md:h-8"
+                            src={TwitterIcon}
+                            alt="twitter"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </Carousel>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
 
       {/* FAQs */}
-      <section id="faq" className="p-5 pb-20 lg:p-20 bg-[#00894A]">
+      <section id="faq" className="p-5 pb-20 lg:px-20 bg-[#00894A]">
         <div className="max-w-full py-10 mx-auto">
           <div className="grid lg:grid-cols-12 gap-20 font-semibold text-2xl lg:text-4xl text-[#F5FFF3] lg:my-10">
             <div className="hidden lg:block lg:col-span-5"></div>
