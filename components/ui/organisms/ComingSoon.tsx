@@ -125,86 +125,83 @@ export default function ComingSoon() {
           </div>
 
           {/* Section Content */}
-          <div className="grid gap-5">
+          <div className="grid gap-5 lg:gap-0">
             {/* Feature One */}
-            <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
-              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
+            <div className="grid lg:grid-cols-5 lg:gap-20 items-center">
+              <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
                 <Image
                   src={InteractiveSessions}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
-                <div className="font-medium text-2xl lg:text-4xl mb-2">
+              <div className="lg:justify-self-end text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-semibold text-2xl lg:text-[32px] mb-2">
                   Interactive Sessions
                 </div>
                 <div className="text-sm lg:text-xl">
-                  Create engaging and interactive sessions with our quizard
-                  platform, allowing you to customize quizzes, surveys, and
-                  polls to fit your audience's learning goals and needs.
+                  Engage your audience with interactive questions that include
+                  multiple-choice, true/false, and open-ended responses.
                 </div>
               </div>
             </div>
 
             {/* Feature Two */}
             <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
-              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
+              <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
                 <Image
                   src={RealtimeResults}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
-                <div className="font-medium text-2xl lg:text-4xl mb-2">
+              <div className="text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-semibold text-2xl lg:text-[32px] mb-2">
                   Real-time Results
                 </div>
                 <div className="text-sm lg:text-xl">
-                  Get instant feedback and monitor performance over time with
-                  our real-time results feature. Customize your feedback to
-                  address misunderstandings and engage your audience.
+                  See results in real-time as users complete your quizzes,
+                  surveys, and polls.
                 </div>
               </div>
             </div>
 
             {/* Feature Three */}
             <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
-              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
+              <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
                 <Image
                   src={EasySharing}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
-                <div className="font-medium text-2xl lg:text-4xl mb-2">
-                  Audio Communication
+              <div className="lg:justify-self-end text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-semibold text-2xl lg:text-[32px] mb-2">
+                  Easy Sharing
                 </div>
                 <div className="text-sm lg:text-xl">
-                  Our audio communication feature enables you to connect with
-                  your team members in real-time, regardless of where they are
-                  located.
+                  Share your quizzes on social media, email, and other platforms
+                  with just a few clicks.
                 </div>
               </div>
             </div>
 
             {/* Feature Four */}
             <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
-              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
+              <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
                 <Image
                   src={Pana}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
-                <div className="font-medium text-2xl lg:text-4xl mb-2">
+              <div className="text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-semibold text-2xl lg:text-[32px] mb-2">
                   Free to use
                 </div>
                 <div className="text-sm lg:text-xl">
-                  Capitalism has nothing on us, creating and hosting quizzes on
-                  Quizard will always be free, We Promise.
+                  Capitalism has nothing on us. Creating and hosting quizzes on
+                  Quizard will always be free, we promise.
                 </div>
               </div>
             </div>
