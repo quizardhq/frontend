@@ -106,6 +106,6 @@ export const faqs = [
   {
     id: 9,
     title: 'Will there be a mobile app?',
-    content: `Yes, we're working hard to bring you a mobile App experience on both iOS and Andriod. Join the waitlist to be among the early users to be notified when the mobile app goes live!`,
+    content: `Yes, we're working hard to bring you a mobile App experience on both iOS and Android. Join the waitlist to be among the early users to be notified when the mobile app goes live!`,
   },
 ];
