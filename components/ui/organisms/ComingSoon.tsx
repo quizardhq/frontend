@@ -69,7 +69,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- What is Quizard --- */}
-      <section className="p-5 lg:py-12 lg:px-32" id="about-us">
+      <section className="p-5 lg:py-12 lg:px-32 mt-10" id="about-us">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
@@ -117,7 +117,7 @@ export default function ComingSoon() {
       </section>
 
       {/* --- Features --- */}
-      <section id="features" className="p-5 lg:py-12 lg:px-32 mt-[10rem]">
+      <section id="features" className="p-5 lg:py-12 lg:px-32 mt-10 lg:mt-20">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] mb-10">
@@ -125,86 +125,83 @@ export default function ComingSoon() {
           </div>
 
           {/* Section Content */}
-          <div className="grid gap-5">
+          <div className="grid gap-5 lg:gap-0">
             {/* Feature One */}
-            <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
-              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
+            <div className="grid lg:grid-cols-5 lg:gap-20 items-center">
+              <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
                 <Image
                   src={InteractiveSessions}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
-                <div className="font-medium text-2xl lg:text-4xl mb-2">
+              <div className="lg:justify-self-end text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-semibold text-2xl lg:text-[32px] mb-2">
                   Interactive Sessions
                 </div>
                 <div className="text-sm lg:text-xl">
-                  Create engaging and interactive sessions with our quizard
-                  platform, allowing you to customize quizzes, surveys, and
-                  polls to fit your audience's learning goals and needs.
+                  Engage your audience with interactive questions that include
+                  multiple-choice, true/false, and open-ended responses.
                 </div>
               </div>
             </div>
 
             {/* Feature Two */}
             <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
-              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
+              <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
                 <Image
                   src={RealtimeResults}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
-                <div className="font-medium text-2xl lg:text-4xl mb-2">
+              <div className="text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-semibold text-2xl lg:text-[32px] mb-2">
                   Real-time Results
                 </div>
                 <div className="text-sm lg:text-xl">
-                  Get instant feedback and monitor performance over time with
-                  our real-time results feature. Customize your feedback to
-                  address misunderstandings and engage your audience.
+                  See results in real-time as users complete your quizzes,
+                  surveys, and polls.
                 </div>
               </div>
             </div>
 
             {/* Feature Three */}
             <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
-              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
+              <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
                 <Image
                   src={EasySharing}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
-                <div className="font-medium text-2xl lg:text-4xl mb-2">
-                  Audio Communication
+              <div className="lg:justify-self-end text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-semibold text-2xl lg:text-[32px] mb-2">
+                  Easy Sharing
                 </div>
                 <div className="text-sm lg:text-xl">
-                  Our audio communication feature enables you to connect with
-                  your team members in real-time, regardless of where they are
-                  located.
+                  Share your quizzes on social media, email, and other platforms
+                  with just a few clicks.
                 </div>
               </div>
             </div>
 
             {/* Feature Four */}
             <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
-              <div className="p-5 border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
+              <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
                 <Image
                   src={Pana}
                   alt="A vector illustration showing five people discussing"
                   className="w-full"
                 />
               </div>
-              <div className="text-[#00522A] p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
-                <div className="font-medium text-2xl lg:text-4xl mb-2">
+              <div className="text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
+                <div className="font-semibold text-2xl lg:text-[32px] mb-2">
                   Free to use
                 </div>
                 <div className="text-sm lg:text-xl">
-                  Capitalism has nothing on us, creating and hosting quizzes on
-                  Quizard will always be free, We Promise.
+                  Capitalism has nothing on us. Creating and hosting quizzes on
+                  Quizard will always be free, we promise.
                 </div>
               </div>
             </div>
@@ -213,63 +210,24 @@ export default function ComingSoon() {
       </section>
 
       {/* Meet the Team */}
-      <section className="p-5 lg:p-20 bg-[url('/assets/Background.png')] bg-no-repeat bg-cover">
-        <div className="max-w-full py-10 mx-auto">
-          <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
-            Meet the Team
-          </div>
+      <section className="bg-gradient-to-t from-[#00894A]">
+        <section className="px-5 py-10 lg:p-20 lg:pb-48 bg-[url('/assets/Background.png')] bg-no-repeat bg-cover">
+          <div className="max-w-full py-10 mx-auto">
+            <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
+              Meet the Team
+            </div>
 
-          {/* Team Members - Desktop */}
-          <div className="hidden lg:flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
-            {team.map((member) => (
-              <div
-                key={`${member.name}-desktop`}
-                className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
-              >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full rounded-lg"
-                />
-                <div className="flex align-top justify-between mt-4">
-                  <div>
-                    <div className="text-[#00391B] font-semibold md:text-3xl text-lg">
-                      {member.name}
-                    </div>
-                    <div className="text-lg text-[#006D3A] font-normal">
-                      {member.role}
-                    </div>
-                  </div>
-                  <div className="flex gap-2">
-                    <a
-                      href={member.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Image
-                        className="w-6 h-6 md:w-8 md:h-8"
-                        src={TwitterIcon}
-                        alt="twitter"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Team Members - Mobile */}
-          <div className="lg:hidden h-[480px]">
-            <Carousel indicators={false}>
+            {/* Team Members - Desktop */}
+            <div className="hidden lg:flex align-middle justify-between gap-5 flex-wrap md:justify-center sm:justify-center">
               {team.map((member) => (
                 <div
-                  key={`${member.name}-mobile`}
-                  className="bg-[#C3FFD0] w-full shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
+                  key={`${member.name}-desktop`}
+                  className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
                 >
                   <Image
                     src={member.image}
                     alt={member.name}
-                    className="w-full"
+                    className="w-full rounded-lg"
                   />
                   <div className="flex align-top justify-between mt-4">
                     <div>
@@ -296,17 +254,58 @@ export default function ComingSoon() {
                   </div>
                 </div>
               ))}
-            </Carousel>
+            </div>
+
+            {/* Team Members - Mobile */}
+            <div className="lg:hidden h-[480px]">
+              <Carousel indicators={false}>
+                {team.map((member) => (
+                  <div
+                    key={`${member.name}-mobile`}
+                    className="bg-[#C3FFD0] w-full shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
+                  >
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full"
+                    />
+                    <div className="flex align-top justify-between mt-4">
+                      <div>
+                        <div className="text-[#00391B] font-semibold md:text-3xl text-lg">
+                          {member.name}
+                        </div>
+                        <div className="text-lg text-[#006D3A] font-normal">
+                          {member.role}
+                        </div>
+                      </div>
+                      <div className="flex gap-2">
+                        <a
+                          href={member.twitter}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Image
+                            className="w-6 h-6 md:w-8 md:h-8"
+                            src={TwitterIcon}
+                            alt="twitter"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </Carousel>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
 
       {/* FAQs */}
-      <section id="faq" className="p-5 pb-20 lg:p-20 bg-[#00894A]">
-        <div className="max-w-full py-10 mx-auto">
-          <div className="grid lg:grid-cols-12 gap-20 font-semibold text-2xl lg:text-4xl text-[#F5FFF3] lg:my-10">
+      <section id="faq" className="p-5 pb-20 lg:px-20 bg-[#00894A]">
+        <div className="max-w-full pb-10 mx-auto">
+          <div className="grid lg:grid-cols-12 gap-20 font-semibold text-2xl pt-2 pb-5 bg-[url(/assets/faqs-design.png)] bg-fit lg:text-4xl text-[#F5FFF3] lg:my-10">
             <div className="hidden lg:block lg:col-span-5"></div>
-            <div className="lg:col-span-7 mx-auto text-2xl lg:text-4xl">
+            <div className="lg:col-span-7 mx-auto lg:mx-4 text-2xl lg:text-4xl">
               FAQs
             </div>
           </div>
