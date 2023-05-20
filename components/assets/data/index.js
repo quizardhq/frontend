@@ -54,7 +54,7 @@ const team = [
   {
     image: Chukwunonso,
     name: 'Victor',
-    role: 'Verbal Enchantress',
+    role: 'Verbal Enchanter',
     twitter: 'https://twitter.com/tis_cnvictor',
     linkedin: '',
   },
