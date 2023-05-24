@@ -26,7 +26,7 @@ export default function ComingSoon() {
   return (
     <>
       {/* --- Hero Section --- */}
-      <section className="p-5 lg:px-32 lg:pt-20 lg:pb-40 bg-[url(/assets/waves.png)] bg-no-repeat bg-bottom bg-cover">
+      <section className="p-5 lg:px-32 lg:pt-20 lg:pb-40 bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919931/quizard-frontend/public/waves_k8xxnr.png)] bg-no-repeat bg-bottom bg-cover">
         <div className="max-w-7xl mx-auto grid gap-10 lg:gap-20 lg:grid-cols-2 items-center">
           {/* Content */}
           <div className="grid gap-5 mt-[3rem]">
@@ -211,7 +211,7 @@ export default function ComingSoon() {
 
       {/* Meet the Team */}
       <section className="bg-gradient-to-t from-[#00894A]">
-        <section className="px-5 py-10 lg:p-20 lg:pb-48 bg-[url('/assets/Background.png')] bg-no-repeat bg-cover">
+        <section className="px-5 py-10 lg:p-20 lg:pb-48 bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919931/quizard-frontend/public/Background_w1o6ck.png)] bg-no-repeat bg-cover">
           <div className="max-w-full py-10 mx-auto">
             <div className="text-center font-semibold text-2xl lg:text-4xl text-[#00A65B] my-10">
               Meet the Team
@@ -303,7 +303,7 @@ export default function ComingSoon() {
       {/* FAQs */}
       <section id="faq" className="p-5 pb-20 lg:px-20 bg-[#00894A]">
         <div className="max-w-full pb-10 mx-auto">
-          <div className="grid lg:grid-cols-12 gap-20 font-semibold text-2xl pt-2 pb-5 bg-[url(/assets/faqs-design.png)] bg-fit lg:text-4xl text-[#F5FFF3] lg:my-10">
+          <div className="grid lg:grid-cols-12 gap-20 font-semibold text-2xl pt-2 pb-5 bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919930/quizard-frontend/public/faqs-design_r87wfs.png)] bg-fit lg:text-4xl text-[#F5FFF3] lg:my-10">
             <div className="hidden lg:block lg:col-span-5"></div>
             <div className="lg:col-span-7 mx-auto lg:mx-4 text-2xl lg:text-4xl">
               FAQs

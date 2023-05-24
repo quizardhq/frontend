@@ -164,7 +164,7 @@ WaitlistForm.defaultProps = {
 export default function JoinWaitlist() {
   return (
     <div
-      className="grid lg:grid-cols-5 p-6 lg:p-12 relative bg-[#00b15e] bg-[url(/assets/images/bg_grass_green.png)] border-4 border-[#00e47a] rounded-lg"
+      className="grid lg:grid-cols-5 p-6 lg:p-12 relative bg-[#00b15e] bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919930/quizard-frontend/public/images/bg_grass_green_gk3hid.png)] border-4 border-[#00e47a] rounded-lg"
       id="join_waitlist"
     >
       <div className="flex flex-col gap-6 text-[#F5FFF3] lg:col-span-3">
