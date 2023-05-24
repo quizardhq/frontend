@@ -86,7 +86,7 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
               id="first_name"
               placeholder="First name"
               className={`w-full my-1 lg:my-0 outline-none bg-transparent border border-[${accent}] rounded-md p-3 rounded-md ${
-                isLight ? 'placeholder:text-white' : ''
+                isLight ? 'placeholder:text-[#ffffff9c]' : ''
               }`}
               autoComplete="off"
               value={formInput.first_name}
@@ -101,7 +101,7 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
               id="last_name"
               placeholder="Last name"
               className={`w-full outline-none bg-transparent border border-[${accent}] rounded-md p-3 rounded-md ${
-                isLight ? 'placeholder:text-white' : ''
+                isLight ? 'placeholder:text-[#ffffff9c]' : ''
               }`}
               autoComplete="off"
               value={formInput.last_name}
@@ -116,7 +116,7 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
           id="email"
           placeholder="Email"
           className={`w-full outline-none bg-transparent border border-[${accent}] rounded-md p-3 rounded-md my-1 ${
-            isLight ? 'placeholder:text-white' : ''
+            isLight ? 'placeholder:text-[#ffffff9c]' : ''
           }`}
           autoComplete="off"
           value={formInput.email}
@@ -124,7 +124,7 @@ export function WaitlistForm({ accent, isLight }: WaitlistFormProps) {
           disabled={submitting && waitlistState.status === 'loading'}
         />
         <Button
-          isSubmit={false}
+          isSubmit
           className="primary-btn hover:bg-[#5DFF9E] duration-200 text-[#00210E]"
           onClick={handleJoinWaitlist}
           isLoading={submitting && waitlistState.status === 'loading'}
