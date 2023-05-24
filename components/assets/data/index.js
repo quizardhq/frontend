@@ -51,7 +51,7 @@ export const team = [
     image:
       'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:eco/v1684920821/quizard-frontend/components/images/Chukwunonso_ri5d8b.png',
     name: 'Victor',
-    role: 'Verbal Enchantress',
+    role: 'Verbal Enchanter',
     twitter: 'https://twitter.com/tis_cnvictor',
     linkedin: '',
   },
