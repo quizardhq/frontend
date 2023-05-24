@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { ChangeEvent, FormEvent, useState } from 'react';
-import { YoungWomenStanding } from '@/components/assets';
+import { illustrations } from '@/components/assets/data';
 import Button from '../atoms/Button';
 import { useAppDispatch, useAppSelector } from '../../../redux/hooks';
 import {
@@ -180,8 +180,16 @@ export default function JoinWaitlist() {
           <WaitlistForm accent="#00e47a" isLight />
         </div>
       </div>
-      <div className="hidden lg:block lg:col-span-2 absolute right-0 bottom-0">
-        <Image src={YoungWomenStanding} alt="young women standing" />
+      <div className="w-full hidden lg:block lg:col-span-2">
+        <div className="absolute right-0 bottom-0">
+          <Image
+            src={illustrations.YoungWomenStanding}
+            height={0}
+            width={400}
+            // fill={true}
+            alt="young women standing"
+          />
+        </div>
       </div>
     </div>
   );

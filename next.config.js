@@ -7,6 +7,14 @@ const nextConfig = {
         ? 'http://localhost:3006/api/v1'
         : 'https://api.quizardhq.com/api/v1',
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

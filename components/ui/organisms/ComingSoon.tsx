@@ -4,21 +4,12 @@ import Link from 'next/link';
 // Add carousel component
 import { Carousel } from 'flowbite-react';
 
-import {
-  EasySharing,
-  GamePreviewImage,
-  GroupDiscussion,
-  InteractiveSessions,
-  RealtimeResults,
-  Pana,
-  FAQs,
-  TwitterIcon,
-} from '@/components/assets';
+import { TwitterIcon } from '@/components/assets';
 import Divider from '@/components/ui/atoms/Divider';
 import Button from '@/components/ui/atoms/Button';
 import Accordion from '@/components/ui/atoms/Accordion';
 
-import team, { faqs } from '../../assets/data';
+import { faqs, illustrations, team } from '@/components/assets/data';
 import FloatingImage from '../molecules/FloatingImage';
 
 // --- Coming Soon Page ---
@@ -57,12 +48,15 @@ export default function ComingSoon() {
           {/* Illustration */}
           <div>
             <FloatingImage>
-              <Image
-                priority
-                alt="A mobile phone and tablet each showing a Quizard game session"
-                src={GamePreviewImage}
-                className="w-full"
-              />
+              <div className="w-full h-96 relative">
+                <Image
+                  priority
+                  alt="A mobile phone and tablet each showing a Quizard game session"
+                  src={illustrations.GamePreviewImage}
+                  className="w-full object-contain"
+                  fill
+                />
+              </div>
             </FloatingImage>
           </div>
         </div>
@@ -80,11 +74,14 @@ export default function ComingSoon() {
           <div className="grid gap-5 lg:grid-cols-5 items-center">
             {/* Illustration */}
             <div className="lg:col-span-2">
-              <Image
-                src={GroupDiscussion}
-                alt="A vector illustration showing five people discussing"
-                className="w-full"
-              />
+              <div className="relative w-full h-72">
+                <Image
+                  src={illustrations.GroupDiscussion}
+                  alt="A vector illustration showing five people discussing"
+                  className="w-full object-contain"
+                  fill
+                />
+              </div>
             </div>
 
             <div className="flex flex-col space-y-5 lg:flex-row lg:col-span-3">
@@ -92,7 +89,7 @@ export default function ComingSoon() {
               <Divider />
 
               {/* Content */}
-              <div className="text-[#00522A] text-sm lg:text-xl grid gap-5">
+              <div className="text-[#00522A] text-center lg:text-left text-sm lg:text-xl grid gap-5">
                 <p>
                   Quizard is an all-in-one platform for interactive quizzes that
                   makes it easy for you to engage your audience and collect
@@ -129,11 +126,14 @@ export default function ComingSoon() {
             {/* Feature One */}
             <div className="grid lg:grid-cols-5 lg:gap-20 items-center">
               <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
-                <Image
-                  src={InteractiveSessions}
-                  alt="A vector illustration showing five people discussing"
-                  className="w-full"
-                />
+                <div className="relative h-72 w-full">
+                  <Image
+                    src={illustrations.InteractiveSessions}
+                    alt="A vector illustration showing two people interacting and holding gadgets"
+                    className="w-full"
+                    fill
+                  />
+                </div>
               </div>
               <div className="lg:justify-self-end text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
                 <div className="font-semibold text-2xl lg:text-[32px] mb-2">
@@ -149,11 +149,14 @@ export default function ComingSoon() {
             {/* Feature Two */}
             <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
               <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
-                <Image
-                  src={RealtimeResults}
-                  alt="A vector illustration showing five people discussing"
-                  className="w-full"
-                />
+                <div className="w-full h-72 relative">
+                  <Image
+                    src={illustrations.RealtimeResults}
+                    alt="A vector illustration showing a leaderboard"
+                    className="w-full object-contain"
+                    fill
+                  />
+                </div>
               </div>
               <div className="text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
                 <div className="font-semibold text-2xl lg:text-[32px] mb-2">
@@ -169,11 +172,14 @@ export default function ComingSoon() {
             {/* Feature Three */}
             <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
               <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2 lg:order-2">
-                <Image
-                  src={EasySharing}
-                  alt="A vector illustration showing five people discussing"
-                  className="w-full"
-                />
+                <div className="w-full h-72 relative">
+                  <Image
+                    src={illustrations.EasySharing}
+                    alt="A vector illustration showing three people in a communication triangle"
+                    className="w-full object-contain"
+                    fill
+                  />
+                </div>
               </div>
               <div className="lg:justify-self-end text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
                 <div className="font-semibold text-2xl lg:text-[32px] mb-2">
@@ -189,11 +195,14 @@ export default function ComingSoon() {
             {/* Feature Four */}
             <div className="grid lg:grid-cols-5 lg:gap-5 items-center">
               <div className="p-5 max-w-sm border-t border-x border-[#5DFF9E] lg:border-none rounded-t-lg lg:col-span-2">
-                <Image
-                  src={Pana}
-                  alt="A vector illustration showing five people discussing"
-                  className="w-full"
-                />
+                <div className="w-full h-96 relative">
+                  <Image
+                    src={illustrations.Pana}
+                    alt="A vector illustration showing two people casually interacting with their phones"
+                    className="w-full object-contain"
+                    fill
+                  />
+                </div>
               </div>
               <div className="text-[#00522A] w-full lg:max-w-xl p-2 border border-[#5DFF9E] lg:border-none rounded-b-lg bg-[#EAFFEB] lg:bg-transparent lg:col-span-3">
                 <div className="font-semibold text-2xl lg:text-[32px] mb-2">
@@ -224,11 +233,14 @@ export default function ComingSoon() {
                   key={`${member.name}-desktop`}
                   className="bg-[#C3FFD0] w-[380px] shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
                 >
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full rounded-lg"
-                  />
+                  <div className="w-full h-[22rem] relative">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="w-full object-cover rounded-lg"
+                    />
+                  </div>
                   <div className="flex align-top justify-between mt-4">
                     <div>
                       <div className="text-[#00391B] font-semibold md:text-3xl text-lg">
@@ -262,13 +274,16 @@ export default function ComingSoon() {
                 {team.map((member) => (
                   <div
                     key={`${member.name}-mobile`}
-                    className="bg-[#C3FFD0] w-full shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl mb-4"
+                    className="bg-[#C3FFD0] w-full shadow-[4px 8px 24px rgba(170, 170, 170, 0.6)] cursor-pointer py-4 px-2 rounded-2xl overflow-hidden mb-4"
                   >
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full"
-                    />
+                    <div className="w-full h-80 relative">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="w-full"
+                      />
+                    </div>
                     <div className="flex align-top justify-between mt-4">
                       <div>
                         <div className="text-[#00391B] font-semibold md:text-3xl text-lg">
@@ -312,7 +327,14 @@ export default function ComingSoon() {
 
           <div className="grid lg:grid-cols-12 gap-20">
             <div className="hidden lg:block lg:col-span-5">
-              <Image src={FAQs} alt="" className="w-full object-contain" />
+              <div className="w-full h-96 relative">
+                <Image
+                  src={illustrations.FAQs}
+                  alt="faqs"
+                  className="w-full object-contain"
+                  fill
+                />
+              </div>
             </div>
             <div className="lg:col-span-7 text-[#fff]">
               <Accordion content={faqs} />
