@@ -1,66 +1,61 @@
-import {
-  Codemon,
-  Divine,
-  Jonathan,
-  ShowBaba,
-  Chukwunonso,
-  Godwin,
-  Triumph,
-} from '..';
-
-const team = [
+export const team = [
   {
-    image: Codemon,
+    image:
+      'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:eco/v1684920832/quizard-frontend/components/images/codemon_rk6czm.svg',
     name: 'Codemon',
     role: 'Sorcerous Architect',
     twitter: 'https://twitter.com/codemon_',
     linkedin: '',
   },
   {
-    image: Triumph,
+    image:
+      'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:eco/v1684920822/quizard-frontend/components/images/Triumph_x8zbr5.png',
     name: 'Triumph',
     role: 'Sage Product Conjurer',
     twitter: 'https://twitter.com/TriumphUgoji',
     linkedin: '',
   },
   {
-    image: Divine,
+    image:
+      'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:eco/v1684920823/quizard-frontend/components/images/Divi_qfgjty.png',
     name: 'Divine',
     role: 'Charmed Interface Enchanter',
     twitter: 'https://twitter.com/dpkreativ',
     linkedin: '',
   },
   {
-    image: ShowBaba,
+    image:
+      'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:eco/v1684920824/quizard-frontend/components/images/ShowBaba_qw4hlj.svg',
     name: 'ShowBaba',
     role: 'Magical Backend Alchemist',
     twitter: 'https://twitter.com/samshandle_',
     linkedin: '',
   },
   {
-    image: Jonathan,
+    image:
+      'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:eco/v1684920822/quizard-frontend/components/images/Jonathan_ylcxny.svg',
     name: 'Joeburg',
     role: 'Mystical Artificer',
     twitter: 'https://twitter.com/joeburg_',
     linkedin: '',
   },
   {
-    image: Godwin,
+    image:
+      'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:eco/v1684920823/quizard-frontend/components/images/Godwin_rclwqi.png',
     name: 'Godwin',
     role: 'Mobile Enchantment Mage',
     twitter: 'https://twitter.com/godwinAekainu',
     linkedin: '',
   },
   {
-    image: Chukwunonso,
+    image:
+      'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:eco/v1684920821/quizard-frontend/components/images/Chukwunonso_ri5d8b.png',
     name: 'Victor',
     role: 'Verbal Enchanter',
     twitter: 'https://twitter.com/tis_cnvictor',
     linkedin: '',
   },
 ];
-
-export default team;
 
 export const faqs = [
   {
@@ -109,3 +104,20 @@ export const faqs = [
     content: `Yes, we're working hard to bring you a mobile App experience on both iOS and Android. Join the waitlist to be among the early users to be notified when the mobile app goes live!`,
   },
 ];
+
+export const illustrations = {
+  GamePreviewImage:
+    'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684920836/quizard-frontend/components/illustrations/game_preview_efmpg7.svg',
+  GroupDiscussion:
+    'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684920820/quizard-frontend/components/illustrations/group_discussion_vjwvdr.svg',
+  InteractiveSessions:
+    'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684920818/quizard-frontend/components/illustrations/interactive_sessions_qzltyx.svg',
+  RealtimeResults:
+    'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684920818/quizard-frontend/components/illustrations/realtime_results_n9ph9g.svg',
+  EasySharing:
+    'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684920818/quizard-frontend/components/illustrations/easy_sharing_rfjq2c.svg',
+  Pana: 'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684920819/quizard-frontend/components/illustrations/pana_qdbglp.svg',
+  FAQs: 'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684920820/quizard-frontend/components/illustrations/faqs_ifzjd9.svg',
+  YoungWomenStanding:
+    'https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684920822/quizard-frontend/components/illustrations/young_women_standing_hdxxf2.png',
+};
