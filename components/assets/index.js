@@ -1,6 +1,7 @@
 // --- icons ---
 import MenuIcon from './icons/menu.svg';
 import TwitterIcon from './icons/twitter.svg';
+import LinkedIn from './icons/Linkedin.png';
 import GitHubIcon from './icons/github.svg';
 import SlackIcon from './icons/slack.svg';
 import CrossIcon from './icons/large_plus.svg';
@@ -30,6 +31,7 @@ export {
   SlackIcon,
   PhoneIcon,
   MailIcon,
+  LinkedIn,
 
   // illustrations
   EasySharing,
