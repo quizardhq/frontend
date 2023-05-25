@@ -21,15 +21,6 @@ import YoungWomenStanding from './illustrations/young_women_standing.png';
 // --- logo ---
 import QuizardFullLogo from './logo/logo-full.svg';
 
-// profile images
-import Codemon from './images/codemon.svg';
-import ShowBaba from './images/ShowBaba.svg';
-import Jonathan from './images/Jonathan.svg';
-import Divine from './images/Divi.png';
-import Chukwunonso from './images/Chukwunonso.png';
-import Godwin from './images/Godwin.png';
-import Triumph from './images/Triumph.png';
-
 // --- Exports ---
 export {
   // icons
@@ -54,13 +45,4 @@ export {
 
   // logo
   QuizardFullLogo,
-
-  // profile images
-  Codemon,
-  ShowBaba,
-  Jonathan,
-  Divine,
-  Chukwunonso,
-  Godwin,
-  Triumph,
 };

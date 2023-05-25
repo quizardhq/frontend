@@ -69,6 +69,9 @@ export default function Footer() {
               <div>
                 <Link href="/#faq">FAQs</Link>
               </div>
+              <div>
+                <Link href="/privacy-and-policy">Privacy</Link>
+              </div>
             </div>
           </div>
 

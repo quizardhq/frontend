@@ -13,7 +13,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[#C4FBDD] bg-[url(/assets/noise.svg)] p-5 lg:px-32 sticky top-0 z-50">
+    <header className="bg-[#C4FBDD] bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919930/quizard-frontend/public/noise_dhu9fl.png)] p-5 lg:px-32 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center font-medium">
         {/* Logo */}
         <Link href="/" className="h-6 lg:h-max cursor-pointer">
@@ -41,7 +41,7 @@ export default function Header() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className="bg-[#C4FBDD] bg-[url(/assets/noise.png)] fixed top-0 left-0 w-screen h-screen z-50 flex flex-col items-center justify-center"
+              className="bg-[#C4FBDD] bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919930/quizard-frontend/public/noise_dhu9fl.png)] fixed top-0 left-0 w-screen h-screen z-50 flex flex-col items-center justify-center"
               initial={{ opacity: 0, x: '-100%' }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: '-100%' }}
