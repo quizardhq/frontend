@@ -1,3 +1,5 @@
+import { Gatere } from '..';
+
 export const team = [
   {
     image:
@@ -53,6 +55,13 @@ export const team = [
     name: 'Victor',
     role: 'Verbal Enchanter',
     twitter: 'https://twitter.com/tis_cnvictor',
+    linkedin: '',
+  },
+  {
+    image: Gatere,
+    name: 'Mark',
+    role: 'Digital Spellbinder',
+    twitter: 'https://twitter.com/gatere_mark',
     linkedin: '',
   },
 ];
