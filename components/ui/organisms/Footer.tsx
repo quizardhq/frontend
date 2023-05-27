@@ -103,7 +103,11 @@ export default function Footer() {
                 >
                   <div className="flex space-x-2 items-center">
                     <div>
-                      <Image className="w-6 h-6 md:w-6 md:h-6" src={LinkedIn} alt="LinkedIn icon" />
+                      <Image
+                        className="w-6 h-6 md:w-6 md:h-6"
+                        src={LinkedIn}
+                        alt="LinkedIn icon"
+                      />
                     </div>
                     <div>LinkedIn</div>
                   </div>
