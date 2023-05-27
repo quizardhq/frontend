@@ -1,6 +1,7 @@
 // --- icons ---
 import MenuIcon from './icons/menu.svg';
 import TwitterIcon from './icons/twitter.svg';
+import LinkedIn from './icons/Linkedin.png';
 import GitHubIcon from './icons/github.svg';
 import SlackIcon from './icons/slack.svg';
 import CrossIcon from './icons/large_plus.svg';
@@ -20,6 +21,9 @@ import YoungWomenStanding from './illustrations/young_women_standing.png';
 // --- logo ---
 import QuizardFullLogo from './logo/logo-full.svg';
 
+// profile images
+import Gatere from './images/gateremark.png';
+
 // --- Exports ---
 export {
   // icons
@@ -30,6 +34,7 @@ export {
   SlackIcon,
   PhoneIcon,
   MailIcon,
+  LinkedIn,
 
   // illustrations
   EasySharing,
@@ -43,4 +48,7 @@ export {
 
   // logo
   QuizardFullLogo,
+
+  // profile images
+  Gatere,
 };

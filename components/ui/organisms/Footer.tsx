@@ -5,6 +5,7 @@ import {
   QuizardFullLogo,
   SlackIcon,
   TwitterIcon,
+  LinkedIn,
 } from '@/components/assets';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -88,9 +89,27 @@ export default function Footer() {
                 >
                   <div className="flex space-x-2 items-center">
                     <div>
-                      <Image src={TwitterIcon} alt="phone icon" />
+                      <Image src={TwitterIcon} alt="Twitter icon" />
                     </div>
                     <div>Twitter</div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://www.linkedin.com/company/quizardhq"
+                >
+                  <div className="flex space-x-2 items-center">
+                    <div>
+                      <Image
+                        className="w-6 h-6 md:w-6 md:h-6"
+                        src={LinkedIn}
+                        alt="LinkedIn icon"
+                      />
+                    </div>
+                    <div>LinkedIn</div>
                   </div>
                 </a>
               </div>
@@ -102,7 +121,7 @@ export default function Footer() {
                 >
                   <div className="flex space-x-2 items-center">
                     <div>
-                      <Image src={GitHubIcon} alt="phone icon" />
+                      <Image src={GitHubIcon} alt="GitHub icon" />
                     </div>
                     <div>GitHub</div>
                   </div>
@@ -116,7 +135,7 @@ export default function Footer() {
                 >
                   <div className="flex space-x-2 items-center">
                     <div>
-                      <Image src={SlackIcon} alt="phone icon" />
+                      <Image src={SlackIcon} alt="Slack icon" />
                     </div>
                     <div>Slack</div>
                   </div>
