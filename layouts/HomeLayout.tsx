@@ -5,7 +5,7 @@ export default function HomeLayout({ children }) {
   return (
     <div>
       <Header />
-      <main>{children}</main>
+      <main className="min-h-screen">{children}</main>
       <Footer />
     </div>
   );
