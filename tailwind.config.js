@@ -17,6 +17,9 @@ module.exports = {
       colors: {
         primary: '#00522A',
       },
+      screens: {
+        md: '768px',
+      },
     },
   },
   // plugins: [require('flowbite/plugin')],
