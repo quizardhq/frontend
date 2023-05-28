@@ -18,7 +18,7 @@ module.exports = {
         primary: '#00522A',
       },
       screens: {
-        md: '768px',
+        'md': '768px',
       },
     },
   },
