@@ -238,7 +238,7 @@ export default function ComingSoon() {
                       src={member.image}
                       alt={member.name}
                       fill
-                      className="w-full object-cover rounded-lg"
+                      className="w-full object-cover rounded-lg md:rounded-lg"
                     />
                   </div>
                   <div className="flex align-top justify-between mt-4">
