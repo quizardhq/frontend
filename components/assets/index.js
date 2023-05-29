@@ -21,6 +21,9 @@ import YoungWomenStanding from './illustrations/young_women_standing.png';
 // --- logo ---
 import QuizardFullLogo from './logo/logo-full.svg';
 
+// profile images
+import Gatere from './images/gateremark.png';
+
 // --- Exports ---
 export {
   // icons
@@ -45,4 +48,7 @@ export {
 
   // logo
   QuizardFullLogo,
+
+  // profile images
+  Gatere,
 };
