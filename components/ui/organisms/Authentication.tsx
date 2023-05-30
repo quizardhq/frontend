@@ -2,7 +2,7 @@ import Button from '../atoms/Button';
 
 export function SignUp() {
   return (
-    <div className="p-5 my-20 grid gap-8 max-w-xl mx-auto">
+    <div className="p-5 py-20 grid gap-8 max-w-xl mx-auto">
       {/* Heading */}
       <section className="text-center mx-auto grid gap-2">
         <h1 className="font-bold text-2xl lg:text-3xl">Create an Account</h1>

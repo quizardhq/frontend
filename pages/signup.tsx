@@ -1,10 +1,10 @@
-import HomeLayout from '@/layouts/HomeLayout';
+import AuthLayout from '@/layouts/AuthLayout';
 import { SignUp } from '@/components/ui/organisms/Authentication';
 
 export default function SignUpPage() {
   return (
-    <HomeLayout>
+    <AuthLayout>
       <SignUp />
-    </HomeLayout>
+    </AuthLayout>
   );
 }
