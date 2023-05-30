@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="mx-6 max-w-7xl mx-auto grid gap-10 lg:gap-20 lg:grid-cols-2 items-start my-6 justify-center">
+    <div className="mx-6 max-w-7xl lg:mx-auto grid gap-10 lg:gap-20 lg:grid-cols-2 items-start my-6 justify-center">
       <div>
         <h1 className="text-3xl leading-snug lg:text-5xl lg:leading-[1.1] text-[#00391B] font-bold">
           {' '}
