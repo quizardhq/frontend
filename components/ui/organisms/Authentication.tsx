@@ -51,7 +51,7 @@ export function SignUp() {
                   type="text"
                   name="firstName"
                   id="signUp_firstName"
-                  className="w-full bg-transparent outline-none"
+                  className="w-full bg-transparent outline-none placeholder:text-sm"
                   placeholder="John"
                 />
               </div>
@@ -66,7 +66,7 @@ export function SignUp() {
                   type="text"
                   name="lastName"
                   id="signUp_lastName"
-                  className="w-full bg-transparent outline-none"
+                  className="w-full bg-transparent outline-none placeholder:text-sm"
                   placeholder="Doe"
                 />
               </div>
@@ -81,7 +81,7 @@ export function SignUp() {
                   type="email"
                   name="email"
                   id="signUp_email"
-                  className="w-full bg-transparent outline-none"
+                  className="w-full bg-transparent outline-none placeholder:text-sm"
                   placeholder="example@gmail.com"
                 />
               </div>
@@ -96,7 +96,7 @@ export function SignUp() {
                   type="password"
                   name="password"
                   id="signUp_password"
-                  className="w-full bg-transparent outline-none"
+                  className="w-full bg-transparent outline-none placeholder:text-sm"
                   placeholder="******"
                 />
               </div>
@@ -191,7 +191,7 @@ export function Login() {
                   type="email"
                   name="email"
                   id="login_email"
-                  className="w-full bg-transparent outline-none"
+                  className="w-full bg-transparent outline-none placeholder:text-sm"
                   placeholder="example@gmail.com"
                 />
               </div>
@@ -206,7 +206,7 @@ export function Login() {
                   type="password"
                   name="password"
                   id="login_password"
-                  className="w-full bg-transparent outline-none"
+                  className="w-full bg-transparent outline-none placeholder:text-sm"
                   placeholder="******"
                 />
               </div>
