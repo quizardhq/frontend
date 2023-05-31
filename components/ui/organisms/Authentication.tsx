@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Button from '../atoms/Button';
 
 export function SignUp() {
@@ -132,7 +133,9 @@ export function SignUp() {
       {/* Choose to login instead */}
       <section className="flex gap-3 justify-center items-center text-sm">
         <div>Already have an account?</div>
-        <div>log in</div>
+        <Link href="/login" className="text-primary font-medium">
+          Log in
+        </Link>
       </section>
     </div>
   );
@@ -223,7 +226,9 @@ export function Login() {
               <div className="text-sm">Keep me logged in</div>
             </label>
 
-            <div className="text-xs">Forgot password?</div>
+            <Link href="/forgot-password" className="text-xs text-primary">
+              Forgot password?
+            </Link>
           </div>
 
           <div>
@@ -240,7 +245,9 @@ export function Login() {
       {/* Choose to login instead */}
       <section className="flex gap-3 justify-center items-center text-sm">
         <div>Don't have an account?</div>
-        <div>Sign up</div>
+        <Link href="/signup" className="text-primary font-medium">
+          Sign up
+        </Link>
       </section>
     </div>
   );
