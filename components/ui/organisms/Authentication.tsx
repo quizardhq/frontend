@@ -148,6 +148,8 @@ export function SignUp() {
 }
 
 export function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <div className="p-5 py-20 grid gap-8 max-w-xl mx-auto bg-[#C4FBDD] bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919930/quizard-frontend/public/noise_dhu9fl.png)]">
       {/* Heading */}
@@ -209,12 +211,15 @@ export function Login() {
               <div className="text-sm mb-1">Password</div>
               <div className="border border-black rounded-md px-1 py-2">
                 <input
-                  type="password"
+                  type={showPassword ? 'text' : 'password'}
                   name="password"
                   id="login_password"
                   className="w-full bg-transparent outline-none placeholder:text-sm"
                   placeholder="******"
                 />
+                <Button onClick={() => setShowPassword(!showPassword)}>
+                  {showPassword ? <EyeSlash /> : <Eye />}
+                </Button>
               </div>
             </label>
           </div>
