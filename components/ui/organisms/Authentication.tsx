@@ -112,14 +112,15 @@ export function SignUp() {
           <div>
             <label
               htmlFor="signUp_receiveQuizardInfo"
-              className="flex items-center gap-3"
+              className="grid grid-cols-[1.4rem_auto] gap-2"
             >
               <input
                 type="checkbox"
-                name="receiveQuizardInfo"
+                name="signUp_receiveQuizardInfo"
                 id="signUp_receiveQuizardInfo"
+                className='appearance-none bg-transparent border-2 border-primary rounded-md grid place-content-center before:content-[""] before:w-3.5 before:h-3.5 before:shadow-[inset_1em_1em_#005F32] before:scale-0 checked:before:scale-100 before:origin-bottom-left before:clip-path'
               />
-              <div className="text-sm">
+              <div className="text-sm pt-[2px]">
                 I wish to receive information, offers, and updates from Quizard
               </div>
             </label>
@@ -209,7 +210,7 @@ export function Login() {
           <div>
             <label htmlFor="login_password">
               <div className="text-sm mb-1">Password</div>
-              <div className="border border-black rounded-md px-1 py-2">
+              <div className="border border-black rounded-md px-1 py-2 flex items-center">
                 <input
                   type={showPassword ? 'text' : 'password'}
                   name="password"
@@ -227,14 +228,15 @@ export function Login() {
           <div className="flex items-center justify-between">
             <label
               htmlFor="login_keepLoggedIn"
-              className="flex items-center gap-3"
+              className="grid grid-cols-[1.4rem_auto] gap-2"
             >
               <input
                 type="checkbox"
-                name="receiveQuizardInfo"
+                name="login_keepLoggedIn"
                 id="login_keepLoggedIn"
+                className='appearance-none bg-transparent border-2 border-primary rounded-md grid place-content-center before:content-[""] before:w-3.5 before:h-3.5 before:shadow-[inset_1em_1em_#005F32] before:scale-0 checked:before:scale-100 before:origin-bottom-left before:clip-path'
               />
-              <div className="text-sm">Keep me logged in</div>
+              <div className="text-sm pt-[2px]">Keep me logged in</div>
             </label>
 
             <Link href="/forgot-password" className="text-xs text-primary">
