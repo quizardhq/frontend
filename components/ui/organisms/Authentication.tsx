@@ -1,7 +1,10 @@
 import Link from 'next/link';
+import { useState } from 'react';
+import { Eye, EyeSlash } from '@/components/assets/Icons';
 import Button from '../atoms/Button';
 
 export function SignUp() {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="p-5 py-20 grid gap-8 max-w-xl mx-auto">
       {/* Heading */}
@@ -91,14 +94,17 @@ export function SignUp() {
           <div>
             <label htmlFor="signUp_password">
               <div className="text-sm mb-1">Password</div>
-              <div className="border border-black rounded-md px-1 py-2">
+              <div className="border border-black rounded-md px-1 py-2 flex items-center">
                 <input
-                  type="password"
+                  type={showPassword ? 'text' : 'password'}
                   name="password"
                   id="signUp_password"
                   className="w-full bg-transparent outline-none placeholder:text-sm"
                   placeholder="******"
                 />
+                <Button onClick={() => setShowPassword(!showPassword)}>
+                  {showPassword ? <EyeSlash /> : <Eye />}
+                </Button>
               </div>
             </label>
           </div>
