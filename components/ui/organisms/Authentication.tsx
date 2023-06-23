@@ -7,6 +7,24 @@ export function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="p-5 py-20 grid gap-8 max-w-xl mx-auto">
+      {/* Quizard hats */}
+      <div>
+        <img
+          src="https://res.cloudinary.com/dpkreativ/image/upload/v1687491658/quizard-frontend/components/illustrations/quizardhat_g00saa.png"
+          alt="hat"
+          className="absolute top-1/3 left-0"
+        />
+        <img
+          src="https://res.cloudinary.com/dpkreativ/image/upload/v1687491658/quizard-frontend/components/illustrations/quizardhat_g00saa.png"
+          alt="hat"
+          className="absolute bottom-0 left-2/3"
+        />
+        <img
+          src="https://res.cloudinary.com/dpkreativ/image/upload/v1687491658/quizard-frontend/components/illustrations/quizardhat_g00saa.png"
+          alt="hat"
+          className="absolute top-0 right-0"
+        />
+      </div>
       {/* Heading */}
       <section className="text-center mx-auto grid gap-2">
         <h1 className="font-bold text-2xl lg:text-3xl">Create an Account</h1>
@@ -153,6 +171,24 @@ export function Login() {
 
   return (
     <div className="p-5 py-20 grid gap-8 max-w-xl mx-auto bg-[#C4FBDD] bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919930/quizard-frontend/public/noise_dhu9fl.png)]">
+      {/* Quizard hats */}
+      <div>
+        <img
+          src="https://res.cloudinary.com/dpkreativ/image/upload/v1687491658/quizard-frontend/components/illustrations/quizardhat_g00saa.png"
+          alt="hat"
+          className="absolute top-1/3 left-0"
+        />
+        <img
+          src="https://res.cloudinary.com/dpkreativ/image/upload/v1687491658/quizard-frontend/components/illustrations/quizardhat_g00saa.png"
+          alt="hat"
+          className="absolute bottom-0 left-2/3"
+        />
+        <img
+          src="https://res.cloudinary.com/dpkreativ/image/upload/v1687491658/quizard-frontend/components/illustrations/quizardhat_g00saa.png"
+          alt="hat"
+          className="absolute top-0 right-0"
+        />
+      </div>
       {/* Heading */}
       <section className="text-center mx-auto grid gap-2">
         <h1 className="font-bold text-2xl lg:text-3xl">Welcome Back</h1>
