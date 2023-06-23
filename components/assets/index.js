@@ -18,9 +18,9 @@ import Pana from './illustrations/pana.svg';
 import FAQs from './illustrations/faqs.svg';
 import YoungWomenStanding from './illustrations/young_women_standing.png';
 import QuizardHat from './images/quizardhat.png';
-
 // --- logo ---
 import QuizardFullLogo from './logo/logo-full.svg';
+import LogoVariant1 from './logo/variants/Logo.svg';
 
 // profile images
 import Gatere from './images/gateremark.png';
@@ -50,6 +50,7 @@ export {
 
   // logo
   QuizardFullLogo,
+  LogoVariant1,
 
   // profile images
   Gatere,

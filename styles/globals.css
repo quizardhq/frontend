@@ -8,6 +8,7 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+
 *,
 html {
   scroll-behavior: smooth !important;
@@ -51,4 +52,8 @@ a {
   .clip-path {
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   }
+}
+
+.input {
+  background-color: transparent !important;
 }
