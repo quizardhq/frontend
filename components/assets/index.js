@@ -17,6 +17,7 @@ import RealtimeResults from './illustrations/realtime_results.svg';
 import Pana from './illustrations/pana.svg';
 import FAQs from './illustrations/faqs.svg';
 import YoungWomenStanding from './illustrations/young_women_standing.png';
+import QuizardHat from './images/quizardhat.png';
 
 // --- logo ---
 import QuizardFullLogo from './logo/logo-full.svg';
@@ -45,6 +46,7 @@ export {
   RealtimeResults,
   Pana,
   YoungWomenStanding,
+  QuizardHat,
 
   // logo
   QuizardFullLogo,
