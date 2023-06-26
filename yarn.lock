@@ -19,6 +19,11 @@
   resolved "https://registry.npmjs.org/@colors/colors/-/colors-1.5.0.tgz"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
+"@cypress/react@^7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-7.0.3.tgz#e62d67c1344265ee959e99100ce237663f20abb1"
+  integrity sha512-YseqnMugTbdPV9YCYEMXVqIf+P7x+pfjXOdjv4dnDFqNCZeHaZfOZVFZ4XfEHVxMv0aDszxlaLiIp3QDPhr12w==
+
 "@cypress/request@^2.88.10":
   version "2.88.11"
   resolved "https://registry.npmjs.org/@cypress/request/-/request-2.88.11.tgz"

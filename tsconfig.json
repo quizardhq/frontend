@@ -1,5 +1,10 @@
 {
-  "include": ["components/**/*", "pages/**/*", "layouts/**/*"],
+  "include": [
+    "components/**/*",
+    "pages/**/*",
+    "layouts/**/*",
+    "cypress/components/Input.cy.js"
+  ],
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
