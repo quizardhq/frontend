@@ -7,6 +7,9 @@ import SlackIcon from './icons/slack.svg';
 import CrossIcon from './icons/large_plus.svg';
 import PhoneIcon from './icons/phone.svg';
 import MailIcon from './icons/mail.svg';
+import ErrorIcon from './icons/Alerts/error.svg';
+import WarningIcon from './icons/Alerts/warning.svg';
+import ChevronLeft from './icons/Arrows/chevron-left.svg';
 
 // --- illustrations ---
 import EasySharing from './illustrations/easy_sharing.svg';
@@ -36,6 +39,9 @@ export {
   PhoneIcon,
   MailIcon,
   LinkedIn,
+  ErrorIcon,
+  WarningIcon,
+  ChevronLeft,
 
   // illustrations
   EasySharing,
