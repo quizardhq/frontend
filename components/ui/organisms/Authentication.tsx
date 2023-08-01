@@ -17,7 +17,7 @@ interface ISignUpForm extends ILoginForm {
   lastName: string;
 }
 
-function OatuhButton() {
+function OAuthButton() {
   return (
     <section className="w-full grid gap-3">
       <Button className="font-[500] text-[#005F32] border border-primary w-full gap-3 p-3 rounded-[4px] h-[48px] md:h-[56px]">
@@ -69,7 +69,7 @@ export function SignUp() {
       </section>
 
       {/* Social Auth */}
-      <OatuhButton />
+      <OAuthButton />
 
       {/* Divider */}
       <section className="flex gap-3 items-center">
@@ -228,7 +228,7 @@ export function Login() {
       </section>
 
       {/* Social Auth */}
-      <OatuhButton />
+      <OAuthButton />
 
       {/* Divider */}
       <section className="flex gap-3 items-center">
