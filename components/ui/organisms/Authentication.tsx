@@ -68,6 +68,13 @@ export function SignUp() {
         </p>
       </section>
 
+      {/* Quizard logo */}
+      <div className="max-w-xl mx-auto my-5">
+        <Link href="/" className="cursor-pointer">
+          <Image src={LogoVariant1} priority alt="Quizard logo" />
+        </Link>
+      </div>
+
       {/* Social Auth */}
       <OAuthButton />
 
@@ -155,7 +162,7 @@ export function SignUp() {
             </label>
           </div>
 
-          <div>
+          <div className="flex items-center justify-between">
             <label
               htmlFor="signUp_receiveQuizardInfo"
               className="grid grid-cols-[1.4rem_auto] gap-2"
@@ -166,7 +173,7 @@ export function SignUp() {
                 id="signUp_receiveQuizardInfo"
                 className='appearance-none bg-transparent border-2 border-primary rounded-md grid place-content-center before:content-[""] before:w-3.5 before:h-3.5 before:shadow-[inset_1em_1em_#005F32] before:scale-0 checked:before:scale-100 before:origin-bottom-left before:clip-path h-[24px] w-[24px]'
               />
-              <div className="text-sm pt-[2px] font-[300] leading-[14px] text-[12px] w-[263px] md:w-[auto] md:text-[16px]">
+              <div className="text-sm pt-[2px]">
                 I wish to receive information, offers, and updates from Quizard
               </div>
             </label>
@@ -212,7 +219,7 @@ export function Login() {
   };
 
   return (
-    <div className="min-h-[100vh] p-5 py-20 grid gap-8 max-w-xl mx-auto md:bg-[#C4FBDD] md:bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919930/quizard-frontend/public/noise_dhu9fl.png)]">
+    <div className="min-h-[100vh] p-5 py-20 grid gap-8 max-w-xl mx-auto">
       <div className="max-w-xl mx-auto">
         <Link href="/" className="cursor-pointer">
           <Image src={LogoVariant1} priority alt="Quizard logo" />
@@ -296,9 +303,7 @@ export function Login() {
                 id="login_keepLoggedIn"
                 className='appearance-none bg-transparent border-2 border-primary rounded-md grid place-content-center before:content-[""] before:w-3.5 before:h-3.5 before:shadow-[inset_1em_1em_#005F32] before:scale-0 checked:before:scale-100 before:origin-bottom-left before:clip-path'
               />
-              <div className="text-sm pt-[2px] font-[400]">
-                Keep me logged in
-              </div>
+              <div className="text-sm pt-[2px]">Keep me logged in</div>
             </label>
 
             <Link href="/forgot-password" className="text-xs text-primary">
