@@ -57,3 +57,11 @@ a {
 .input {
   background-color: transparent !important;
 }
+
+.hats-bg {
+  background-image: url(https://res.cloudinary.com/dpkreativ/image/upload/v1687491658/quizard-frontend/components/illustrations/quizardhat_g00saa.png),
+    url(https://res.cloudinary.com/dpkreativ/image/upload/v1687491658/quizard-frontend/components/illustrations/quizardhat_g00saa.png),
+    url(https://res.cloudinary.com/dpkreativ/image/upload/v1687491658/quizard-frontend/components/illustrations/quizardhat_g00saa.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top right, left, 85% 100%;
+}

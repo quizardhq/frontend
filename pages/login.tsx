@@ -3,7 +3,7 @@ import MetaTag from '@/components/ui/atoms/MetaTag';
 
 export default function LoginPage() {
   return (
-    <div className="md:bg-[#C4FBDD] md:bg-[url(https://res.cloudinary.com/dpkreativ/image/upload/q_auto:low/v1684919930/quizard-frontend/public/noise_dhu9fl.png)]">
+    <div className="hats-bg md:bg-[#C4FBDD]">
       <MetaTag
         title="Quizard - Welcome Back"
         description="Discover the fun and engaging world of personalized learning with Quizard, the open-source quiz platform. Create, share and play custom quizzes with ease. Join our community today!"
